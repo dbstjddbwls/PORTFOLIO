@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Noto+Sans+KR:100,300,400,500,700,900|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>회원가입</title>
+    <style>
+    </style>
+    <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="headerBack">
+        <header>
+            <img src="images/header_gif.gif" alt="신선하게 직접배송 됩니다. 배송지역을 확인해보세요!" class="headerGif">
+            <a href="index.html">
+                <img src="images/logo.png" alt="한상차림로고" class="headerLogo">
+            </a>
+            <ul class="headerLinkUl">
+                <li><a href="signup.html" class="SignUp">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="service_center.html">고객센터</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="navBack">
+        <nav>
+            <ul class="navUl">
+                <li><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt" autocomplete="off">
+                <label for="searchTxt"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navBack2">
+        <nav>
+            <ul class="navUl">
+                <li onclick="location.href='menu_all.html'"><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt2" autocomplete="off">
+                <label for="searchTxt2"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navCateBack">
+        <div class="navCate">
+            <ul id="navCateUl">
+                <li><a href="menu1.html"><img src="images/navCate1.png" alt="채소"><span>채소</span></a></li>
+                <li><a href="menu2.html"><img src="images/navCate2.png" alt="과일"><span>과일</span></a></li>
+                <li><a href="menu3.html"><img src="images/navCate3.png" alt="육류"><span>육류</span></a></li>
+                <li><a href="menu4.html"><img src="images/navCate4.png" alt="해산물"><span>해산물</span></a></li>
+                <li><a href="menu5.html"><img src="images/navCate5.png" alt="간편식품"><span>간편식품</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--전체카테고리 누르면 카테고리목록 슬라이드 토글-->
+    <script>
+        var allCate = $('#navBack>nav>.navUl>li:eq(0)');
+        var navCate = $('#navCateBack');
+        allCate.click(function() {
+            navCate.slideToggle(300);
+        })
+
+    </script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var num = $(this).scrollTop();
+                if (num > 110) {
+                    $("#navBack2").slideDown(0);
+                    $("#navBack").css('opacity', '0');
+                } else {
+                    $("#navBack2").css('display', 'none');
+                    $("#navBack").css('opacity', '1');
+                }
+            });
+        });
+
+    </script>
+
+
+    <div id="content">
+        <div class="sign_up_box">
+            <div id="title1">
+                <h1>회원가입</h1>
+                <h2 id="title2"><span class="ess">*</span>는 필수입력 항목입니다.</h2>
+            </div>
+            <div id="line"></div>
+            <div class="signup_box">
+                <form method="post" id="signupform">
+                    <p class="sign_id">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            아이디
+                        </span>
+                        <input type="text" class="id_text" required>
+                    </p>
+                    <p class="sign_pw">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            패스워드
+                        </span>
+                        <input type="password" id="user_password" required>
+                    </p>
+                    <p class="sign_pw re_pw">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            패스워드 확인
+                        </span>
+                        <input type="password" id="user_password_checked" required>
+                        <span class="hidden" id="pw_pass"> 비밀번호가 일치합니다</span>
+                        <span class="hidden" id="pw_err"> 비밀번호가 일치하지 않습니다</span>
+                    </p>
+                    <script>
+                        $('#user_password').focusout(function() {
+                            var pwd1 = $('#user_password').val();
+                            var pwd2 = $('#user_password_checked').val();
+                            if (pwd1.search(/\s/) != -1) {
+                                alert('비밀번호를 제대로 입력해주세요');
+                                $('#user_password').val("");
+                            } else {
+                                if (pwd1 != "" || pwd2 != "") {
+                                    if (pwd1 == pwd2) {
+                                        $('#pw_pass').css('display', 'inline-block');
+                                        $('#pw_err').css('display', 'none');
+                                    } else {
+                                        $('#pw_pass').css('display', 'none');
+                                        $('#pw_err').css('display', 'inline-block');
+                                    }
+                                }
+                            }
+
+                        });
+                        $('.re_pw').focusout(function() {
+                            var pwd1 = $('#user_password').val();
+                            var pwd2 = $('#user_password_checked').val();
+                            if (pwd2.search(/\s/) != -1) {
+                                alert('비밀번호를 제대로 입력해주세요');
+                                $('#user_password_checked').val("");
+                            } else {
+                                if (pwd1 != "" || pwd2 != "") {
+                                    if (pwd1 == pwd2) {
+                                        $('#pw_pass').css('display', 'inline-block');
+                                        $('#pw_err').css('display', 'none');
+                                    } else {
+                                        $('#pw_pass').css('display', 'none');
+                                        $('#pw_err').css('display', 'inline-block');
+                                    }
+                                }
+
+                            }
+                        });
+
+                    </script>
+                    <p class="sign_name">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            이름
+                        </span>
+                        <input type="text" required>
+                        <span class="signup_subtext">공백없이 한글만 입력 가능</span>
+                    </p>
+                    <p class="sign_nickname">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            닉네임
+                        </span>
+                        <input type="text" required>
+                        <span class="signup_subtext">공백없이 한글만 입력 가능</span>
+                    </p>
+                    <p class="sign_email">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            E-mail
+                        </span>
+                        <input type="text" required> @
+                        <select required>
+                            <option value="" selected disabled hidden>선택해주세요</option>
+                            <option value="1">naver.com</option>
+                            <option value="2">daum.net</option>
+                            <option value="3">hanmail.com</option>
+                            <option value="4">gmail.com</option>
+                            <option value="5">hotmail.com</option>
+                        </select>
+                    </p>
+                    <p class="sign_birth">
+                        <span class="signup_text" required>
+                            <span class="ess">*</span>
+                            생년월일
+                        </span>
+                        <select required>
+                            <option value="" selected disabled hidden>선택해주세요</option>
+                            <option value="1">1999년</option>
+                            <option value="2">1998년</option>
+                            <option value="3">1997년</option>
+                            <option value="4">1996년</option>
+                            <option value="5">1995년</option>
+                            <option value="6">1994년</option>
+                            <option value="7">1993년</option>
+                            <option value="8">1992년</option>
+                            <option value="9">1991년</option>
+                        </select>
+                        <select required>
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="3">3월</option>
+                            <option value="4">4월</option>
+                            <option value="5">5월</option>
+                            <option value="6">6월</option>
+                            <option value="7">7월</option>
+                            <option value="8">8월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                        </select>
+                        <select required>
+                            <option value="1">1일</option>
+                            <option value="2">2일</option>
+                            <option value="3">3일</option>
+                            <option value="4">4일</option>
+                            <option value="5">5일</option>
+                            <option value="6">6일</option>
+                            <option value="7">7일</option>
+                            <option value="8">8일</option>
+                            <option value="9">9일</option>
+                            <option value="10">10일</option>
+                            <option value="11">11일</option>
+                            <option value="12">12일</option>
+                            <option value="13">13일</option>
+                            <option value="14">14일</option>
+                            <option value="15">15일</option>
+                            <option value="16">16일</option>
+                            <option value="17">17일</option>
+                            <option value="18">18일</option>
+                            <option value="19">19일</option>
+                            <option value="20">20일</option>
+                            <option value="21">21일</option>
+                            <option value="22">22일</option>
+                            <option value="23">23일</option>
+                            <option value="24">24일</option>
+                            <option value="25">25일</option>
+                            <option value="26">26일</option>
+                            <option value="27">27일</option>
+                            <option value="28">28일</option>
+                            <option value="29">29일</option>
+                            <option value="30">30일</option>
+                            <option value="31">31일</option>
+                        </select>
+                    </p>
+                    <p class="sign_gender">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            성별
+                        </span>
+                        <select required>
+                            <option value="" selected disabled hidden>&nbsp;선택&nbsp; </option>
+                            <option value="1">&nbsp;남성&nbsp;</option>
+                            <option value="2">&nbsp;여성&nbsp;</option>
+                        </select>
+                    </p>
+                    <p class="sign_tel">
+                        <span class="signup_text">전화번호</span>
+                        <select>
+                            <option value="" selected disabled hidden>&nbsp;선택&nbsp;</option>
+                            <option value="1">&nbsp;02</option>
+                            <option value="2">&nbsp;031</option>
+                            <option value="2">&nbsp;041</option>
+                            <option value="2">&nbsp;051</option>
+                            <option value="2">&nbsp;061</option>
+                        </select> -
+                        <input type="number"> -
+                        <input type="number">
+                    </p>
+                    <p class="sign_phone">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            핸드폰 번호
+                        </span>
+                        <select required>
+                            <option value="" selected disabled hidden>&nbsp;선택&nbsp;</option>
+                            <option value="1">&nbsp;010</option>
+                            <option value="2">&nbsp;011</option>
+                        </select> -
+                        <input type="number" required> -
+                        <input type="number" required>
+                    </p>
+                    <p class="sign_adress">
+                        <span class="signup_text">
+                            <span class="ess">*</span>
+                            주소
+                        </span>
+                        <input type="text" name="zip" required id="post_num">
+                        <button type="button" onclick="openZipSearch()">검색</button><br>
+                        <input type="text" name="addr1" readonly class="adress_main"><br>
+                        <input type="text" name="addr2" class="adress_sub">
+                    </p>
+                    <script>
+                        function openZipSearch() {
+                            new daum.Postcode({
+                                oncomplete: function(data) {
+                                    $('[name=zip]').val(data.zonecode); // 우편번호 (5자리)
+                                    $('[name=addr1]').val(data.address);
+                                    $('[name=addr2]').val(data.buildingName);
+                                }
+                            }).open();
+                        }
+
+                    </script>
+                    <p class="sign_sms">
+                        <span class="signup_text">SMS 수신여부</span>
+                        <input type="checkbox" name="snsbox" id="snsbox">
+                        <label for="snsbox">문자메시지로 한상차림의 소식을 받겠습니다.</label>
+                    </p>
+
+                    <div class="signup_btn">
+                        <button type="button" onclick="checked()">가입하기</button>
+                    </div>
+                </form>
+                <script>
+                    function checked() {
+                        var pwd1 = $('#user_password').val();
+                        var pwd2 = $('#user_password_checked').val();
+                        var form = $('#signupform');
+
+                        if (pwd1 == pwd2) {
+                            alert('회원가입이 성공했습니다');
+                            location.href = "login.html";
+                        } else {
+                            alert('비밀번호가 동일하지 않습니다');
+                            location.href = "signup.html";
+                        }
+                    }
+
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--          하단 회사 안내        -->
+    <div id="footerBack">
+        <footer>
+            <h1>(주)한상차림</h1>
+            <ul class="footerTxt1">
+                <li>서울시 관악구 신림동 000-00</li>
+                <li>사업자등록번호: 000-00-00000</li>
+                <li>통신판매업신고번호: 0000-000-0000</li>
+                <li>대표이사: 김기휘 이사</li>
+                <li>개인정보보호책임자: 이현수 책임</li>
+            </ul>
+            <ul class="footerTxt2">
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="terms.html">이용약관</a></li>
+                <li><a href="policy.html">개인정보처리방침</a></li>
+                <li><a href="return.html">반품 및 환불 규정</a></li>
+            </ul>
+            <ul class="footerTxt3">
+                <li>Copyright 한상차림. COM. ALL RIGHTS RESERVED.</li>
+                <li>상품사진을 포함한 모든 콘텐츠는 저작권법에 의해 보호받고 있습니다.</li>
+            </ul>
+            <ul class="footerSns">
+                <li><img src="images/facebook.png" alt="페이스북"></li>
+                <li><img src="images/instart.png" alt="인스타"></li>
+                <li><img src="images/twitter.png" alt="트위터"></li>
+                <li><img src="images/youtube.png" alt="유튜브"></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

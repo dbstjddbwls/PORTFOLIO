@@ -1,0 +1,288 @@
+        * {
+            outline: none;
+        }
+
+        body {
+            background: #000;
+        }
+
+        #wrap {
+            width: 640px;
+            background-image: url(../images/bg_img.png);
+            margin: auto;
+            position: relative;
+            padding: 68px 72px 60px 72px;
+            height: 1200px;
+            overflow: hidden;
+        }
+
+        #menu {
+            color: #ddd;
+            font-size: 3.8em;
+            padding: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+            display: inline-block;
+            margin-left: -20px;
+
+        }
+
+        @font-face {
+            font-family: 'HS';
+            src: url(font/HS.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMJUA';
+            src: url(font/BMJUA_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMYEON';
+            src: url(font/BMYEONSUNG_ttf.ttf)
+        }
+
+        header {
+            position: relative;
+
+        }
+
+        .neon_box {
+            display: inline-block;
+            position: absolute;
+            width: 140px;
+            top: 0;
+            left: 20%;
+        }
+
+        .neon {
+            display: inline-block;
+        }
+
+        h1 {
+            display: inline-block;
+            font-family: 'HS';
+            font-size: 8.9rem;
+            font-weight: bold;
+            color: #48c59d;
+            padding: 2rem 3rem 2rem 3rem;
+            border: 0.4rem solid #48c59d;
+            border-radius: 2rem;
+            text-transform: uppercase;
+            animation: flicker 1.5s infinite alternate;
+            width: 298px;
+            height: 298px;
+        }
+
+
+
+        h1:focus {
+            outline: none;
+        }
+
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 60px;
+            overflow: hidden;
+            font-family: 'BMJUA'
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a i {
+            margin-right: 20px;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 5em;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+
+
+
+        #content {
+            clear: both;
+            margin-top: 60px;
+            overflow: hidden;
+            position: relative;
+            top: 350px;
+        }
+
+        .post_icon img {
+            width: 250px;
+            height: 318px;
+
+        }
+
+        .post_icon {
+            display: inline-block;
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .post_icon span {
+            color: #444;
+        }
+
+        .icon_name {
+            position: absolute;
+            font-size: 6em;
+            left: 16%;
+            top: 35%;
+            font-weight: 900;
+            font-family: 'Song Myung', serif;
+        }
+
+        .post_icon:nth-child(2n) {
+            float: right;
+            margin-bottom: 59px;
+        }
+
+        .post_icon:nth-child(1) {
+            margin-bottom: 59px;
+        }
+
+        .post_icon:nth-child(1) span {
+            left: 17.5%;
+            font-size: 9em;
+            top: 20%;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .post_icon:nth-child(3) span {
+            top: 19%;
+            left: 19%;
+            line-height: 1.2;
+            font-size: 86px;
+        }
+.post_icon:nth-child(4){
+    position: relative;
+}
+        .post_icon:nth-child(4) span {
+            display: block;
+            position: absolute;
+            top:20%;
+        }
+        
+
+.foodIcon{
+    width: 250px;
+    
+    margin-bottom: 59px;
+}
+.foodIcon button{
+    border: 0;
+    padding: 0;
+    height: 318px;
+    cursor: pointer;
+}
+.foodIcon button span{
+    display: inline-block;
+    padding-left: 14px;
+}
+        .search_box {
+            margin-top: 60px;
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .search {
+            background-color: #eaeaea;
+            font-size: 3em;
+            margin-left: 30px;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            position: relative;
+            top: 8px;
+            color: #afafaf;
+        }
+
+        .search_inp {
+            width: 270px;
+            height: 63px;
+            margin-left: -6px;
+            border: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 2em;
+        }
+
+        #mySidenav p {
+            color: #818181;
+        }
+
+        #mySidenav a {
+            font-size: 3em;
+            margin-bottom: 40px;
+            color: #afafaf;
+        }
+
+        #mySidenav a:hover {
+            color: #f0f0f0
+        }
+
+        #mySidenav a:active {
+            color: #f0f0f0
+        }
+
+        #mySidenav span a {
+            color: #afafaa;
+            font-size: 80px;
+        }
+
+        .store_text {
+            margin-top: 140px;
+            font-size: 2em;
+            border-bottom: 1px solid #afafaf;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            width: 130px;
+            font-weight: bold;
+            margin-left: 32px;
+        }
+
+        .sub_box {
+            margin-left: 32px;
+        }
+
+        .sub_box p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .sub_box p:nth-child(2) {
+            font-size: 1.4em;
+        }

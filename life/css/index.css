@@ -1,0 +1,523 @@
+        /*             배너             */
+        .bannerBox {
+            position: relative;
+        }
+
+        .banner {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 500px;
+            opacity: 0;
+            transition: 0.5s;
+            min-width: 1200px;
+        }
+
+        .banner2 {
+            background-size: cover;
+            background-position: 70% 75%;
+            width: 100%;
+            height: 500px;
+            position: relative;
+        }
+
+        .banner,
+        .banner2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .prev_icon,
+        .next_icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            top: 3px;
+        }
+
+        .prev_icon img,
+        .next_icon img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .prev_icon {
+            padding-right: 10px;
+        }
+
+        .next_icon {
+            padding-left: 10px;
+        }
+
+        .bannerTxt {
+            width: 100%;
+            height: 100%;
+            padding-left: 60px;
+            box-sizing: border-box;
+        }
+
+        .bannerTxt a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding-top: 180px;
+            padding-bottom: 135px;
+            z-index: 100;
+        }
+
+        .bannerTxt p,
+        .bannerTxt span {
+            color: #fff;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        .bDate {
+            font-size: 18px;
+        }
+
+        .bTitle {
+            padding: 25px 0;
+            font-size: 3em;
+        }
+
+        .bTxt {
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+
+        .buttonBox {
+            width: 1200px;
+            position: relative;
+            margin: auto;
+            height: 480px;
+        }
+
+        .prev,
+        .next {
+            z-index: 99;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .prev i,
+        .next i {
+            color: #fff;
+            font-size: 3em;
+            padding: 10px;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .bFirst {
+            opacity: 1;
+        }
+
+
+
+        /*             간편이동             */
+
+        .toolList {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .toolList li {
+            width: 16.66%;
+
+        }
+
+        .toolList li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .toolList li a i {
+            font-size: 3em;
+            padding-bottom: 10px;
+            color: #9599a2;
+            transition: 0.3s;
+
+        }
+
+        .toolList li a:hover i,
+        .toolList li a:hover p {
+            color: #9daef3;
+        }
+
+        .toolList li a p {
+            font-size: 1.2em;
+            color: #9599a2;
+            transition: 0.3s;
+            padding-bottom: 20px;
+            font-weight: 500;
+        }
+
+
+        /*             메인콘텐츠          */
+        #main {
+            clear: both;
+            padding-top: 80px;
+            background-color: #f8f9fa;
+            height: 527px;
+            min-width: 1200px;
+        }
+
+        .mainBox {
+            background-color: #fff;
+            float: left;
+        }
+
+        .mNotice {
+            width: 308px;
+            border: 1px solid #e6e6e6;
+
+        }
+
+        .conTitle {
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-top: 20px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .more {
+            margin-right: 20px;
+            float: right;
+        }
+
+        .newBox {
+            clear: both;
+        }
+
+        .newBox a {
+            width: 100%;
+            height: 100%;
+        }
+
+        .newTitle,
+        .newNews,
+        .newDate {
+            display: inline-block;
+            padding-bottom: 20px;
+        }
+
+        .newTitle {
+            font-weight: 600;
+            padding-left: 20px;
+            padding-right: 44px;
+            padding-top: 20px;
+        }
+
+        .newNews {
+            text-indent: -9999999px;
+            background-image: url(../image/basic/new.png);
+            width: 15px;
+            height: 15px;
+            background-repeat: no-repeat;
+        }
+
+        .newDate {
+            font-size: 12px;
+            padding-right: 20px;
+        }
+
+        .newContent {
+            color: #999;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 0 20px 80px 20px;
+        }
+
+        .mNewsList {
+            padding: 20px;
+            padding-bottom: 5px;
+        }
+
+        .mNewsList li {
+            padding-bottom: 15px;
+        }
+
+        .mNewsList li a {}
+
+        .mNewsList li span {
+            font-weight: 600;
+        }
+
+        .mNewsList li span:first-child {
+            width: 230px;
+            display: inline-block;
+        }
+
+        .mNewsList li .NewsListDate {
+            font-size: 12px;
+            color: #999;
+            font-weight: 300;
+        }
+
+        .mCash {
+            width: 580px;
+            border-top: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .mCash .conTitle,
+        .mCash .conTitle .more i {
+            color: #5353e5;
+        }
+
+        .mCash .conTitle {
+            padding-left: 50px;
+            background-image: url(../image/basic/cash.png);
+            background-repeat: no-repeat;
+            background-position: 20px 23px;
+        }
+
+        .mCashItem {
+            margin-top: 20px;
+            width: 260px;
+            padding-right: 0;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-left: 18px;
+        }
+
+        .mCashImg {
+            width: 100%;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .imgBox {
+            width: 260px;
+            height: 260px;
+            overflow: hidden;
+        }
+
+        .mCashItem a:hover .mCashImg {
+            transform: scale(1.1);
+        }
+
+        .mCashTitle {
+            font-size: 1.1em;
+            padding-top: 8px;
+            color: #5353e5;
+            padding-left: 10px;
+        }
+
+        .mCashName {
+            font-size: 1.3em;
+            padding: 5px 0;
+            font-weight: 600;
+        }
+
+        .mCashPrice {
+            color: #5353e5;
+        }
+
+        .mCashPrice img {
+            position: relative;
+            top: 6px;
+        }
+
+        .login {
+            border: 1px solid #e6e6e6;
+            border-left: 0;
+            width: 308px;
+        }
+
+        .pcoff {
+            padding: 23.5px 20px;
+            background-color: #ced4f4;
+        }
+
+        .pcoff a {
+            font-weight: 600;
+            font-size: 14px;
+            padding-right: 50px;
+
+        }
+
+        .pcoff span {
+            background-color: #bbb;
+            border-radius: 30px;
+            padding: 5px 15px;
+            font-size: 1.1em;
+            color: #fff;
+            font-weight: 900;
+        }
+
+        .loginBox {
+            padding: 60px 0;
+        }
+
+        .loginBox button {
+            display: block;
+            cursor: pointer;
+            width: 220px;
+            margin: auto;
+            padding: 15px 0;
+            margin-bottom: 10px;
+            border: 0;
+            color: #fff;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .btnLogin {
+            background-color: #2678ff;
+        }
+
+        .btnSignup {
+            background-color: #666;
+        }
+
+        .loginBox a {
+            display: block;
+            text-align: center;
+        }
+
+        .btnLogin:hover,
+        .btnSignup:hover {
+            opacity: 0.9;
+        }
+
+        .loginBox a:hover {
+            text-decoration: underline;
+        }
+
+        .gameStart {
+            width: 100%;
+            cursor: pointer;
+            height: 118px;
+            background-image: url(../image/main/start.png), linear-gradient(to right, #0c5ee2, #7196f4);
+            background-repeat: no-repeat;
+            transition: 0.5s;
+            position: relative;
+            overflow: hidden
+        }
+
+        .gameStart::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 8%;
+            left: -8%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            transition: 0.5s;
+            opacity: 0;
+
+        }
+
+        .gameStart:hover {
+            background-image: url(../image/main/start.png), linear-gradient(to right, #5353e5, #3e3ef9);
+            box-shadow: inset 1px -1px 5px purple;
+            box-shadow: inset -1px 1px 5px purple;
+        }
+
+        .gameStart:hover::after {
+            left: 100%;
+            opacity: 1;
+        }
+
+
+        /*             이벤트 안내              */
+        #eventBox {
+            clear: both;
+            padding-top: 80px;
+            padding-bottom: 100px;
+
+        }
+
+        .eventTitle {
+            font-size: 2em;
+            font-weight: 600;
+            display: inline-block;
+            padding-bottom: 20px;
+        }
+
+        .eMore {
+            font-size: 1.3em;
+            float: right;
+        }
+
+        .eventCon {
+            width: 100%;
+            overflow: auto;
+        }
+
+        .eventLink {
+            width: 50%;
+            float: left;
+            overflow: hidden;
+        }
+
+        .con1 {
+            position: relative;
+
+        }
+
+        .con1 img {
+            height: 384px;
+            transition: 0.5s;
+        }
+
+        .con1 a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            height: 384px;
+            overflow: hidden;
+        }
+
+        .con1 a:hover img {
+            transform: scale(1.05);
+        }
+
+        .con1 .eventTxt {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(51, 120, 255, .8);
+            width: 100%;
+        }
+
+        .eventTxt p {
+            color: #fff
+        }
+
+        .eventTxt .eventName {
+            padding-bottom: 20px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .con2 {
+            width: 100%;
+            height: 192px;
+            overflow: hidden;
+        }
+
+        .con2 img {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+
+        .con2:hover img {
+            transform: scale(1.05);
+        }

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Noto+Sans+KR:100,300,400,500,700,900|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eventpage.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>반품 및 환불 규정</title>
+    <style>
+        #title1 {
+            padding-bottom: 80px;
+        }
+
+        #content {
+            padding-bottom: 100px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="headerBack">
+        <header>
+            <img src="images/header_gif.gif" alt="신선하게 직접배송 됩니다. 배송지역을 확인해보세요!" class="headerGif">
+            <a href="index.html">
+                <img src="images/logo.png" alt="한상차림로고" class="headerLogo">
+            </a>
+            <ul class="headerLinkUl">
+                <li><a href="signup.html" class="SignUp">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="service_center.html">고객센터</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="navBack">
+        <nav>
+            <ul class="navUl">
+                <li><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt" autocomplete="off">
+                <label for="searchTxt"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navBack2">
+        <nav>
+            <ul class="navUl">
+                <li onclick="location.href='menu_all.html'"><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt2" autocomplete="off">
+                <label for="searchTxt2"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navCateBack">
+        <div class="navCate">
+            <ul id="navCateUl">
+                <li><a href="menu1.html"><img src="images/navCate1.png" alt="채소"><span>채소</span></a></li>
+                <li><a href="menu2.html"><img src="images/navCate2.png" alt="과일"><span>과일</span></a></li>
+                <li><a href="menu3.html"><img src="images/navCate3.png" alt="육류"><span>육류</span></a></li>
+                <li><a href="menu4.html"><img src="images/navCate4.png" alt="해산물"><span>해산물</span></a></li>
+                <li><a href="menu5.html"><img src="images/navCate5.png" alt="간편식품"><span>간편식품</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--전체카테고리 누르면 카테고리목록 슬라이드 토글-->
+    <script>
+        var allCate = $('#navBack>nav>.navUl>li:eq(0)');
+        var navCate = $('#navCateBack');
+        allCate.click(function() {
+            navCate.slideToggle(300);
+        })
+    </script>
+
+    <div id="content">
+        <div id="title1">
+            <h1>반품 및 환불 규정</h1>
+        </div>
+        <div id="line">
+            <p>
+                <br>
+                <b>1) 배송</b>
+                <br>
+                <br>
+                1-1) 소요기간<br>
+                한상차림 배송 상품의 경우 주문결제 확인일로부터 5일 이내로 제품을 받아보실 수 있으며,
+                업체배송 상품의 경우 제조사에서 직접 발송되어 주문결제 확인일로부터 5~7일 정도의 기간이 소요됩니다.<br>
+                (단, 주문 제작 상품의 경우 상품설명에 별도로 안내된 배송기간이 우선 적용되니 참고해주세요)
+                <br>
+                <br>
+                한상차림 에서는 40,000여종이 넘는 제품을 취급하고 있어, 간혹 제품 공급에 차질이 생길 경우가 있습니다.<br>
+                주문 제작 상품이거나 수입 상품의 공급 상태가 원활하지 못할 경우에는 배송시 다소 시간이 걸릴 수 있습니다.<br>
+                제품수급에 차질이 생겨 배송이 지연되는 경우 미리 연락을 드려 고객님의 불편을 최소화하고자 노력하고 있습니다.
+                <br>
+                <br>
+                1-2) 한상차림 의 배송비용 정책 (2006년 8월 1일 이후 시행)<br>
+                - 한상차림 배송상품<br>
+                한상차림 배송상품 주문 시 총 주문금액이 30,000원 미만인 경우 배송비 2,500원을 부담하셔야 하며,
+                주문금액이 30,000원 이상인 경우에는 배송비를 한상차림 가 부담합니다.
+                <br>
+                <br>
+                - 한상차림 배송상품(무료배송)<br>
+                한상차림 배송이면서 무료배송 아이콘이 붙은 상품은 배송비를 한상차림 가 부담하며
+                이 상품이 포함되어 다른 한상차림 배송상품을 구매할경우 금액과 상관없이 함께 무료배송됩니다.
+                <br>
+                <br>
+                - 업체배송상품<br>
+                한상차림 배송상품과는 별도로 업체에서 배송되며 업체배송상품은 모든상품이 무료배송입니다.
+                <br>
+                <br>
+                - 한상차림 배송상품과 업체배송상품을 같이 구매하는경우<br>
+                각 배송형태의 상품금액의 총합은 서로 포함되지 않습니다.
+                <br>
+                <br>
+                ※ 제품 상세페이지 '배송'부분에서 한상차림 배송상품과 업체배송상품의 여부를 확인하실 수 있습니다.
+                <br>
+                <br>
+                <b>2) 신용카드결제 방법</b>
+                <br>
+                <br>
+                주문서작성시 결제방법을 카드결제로 선택하신 후 마지막 단계에서 카드정보를 빠짐없이 입력하시고
+                결제버튼을 클릭하시면 승인여부를 KCP에서 알려드립니다.
+                <br>
+                저희 한상차림은 KCP에서 결제를 대행하므로 카드명세서에는 구입상점이
+                사이버 페이먼트로 표기됩니다. 이점 유의하시기 바랍니다.
+                <br>
+                국내 외 사용가능한 모든 카드의 결제가 가능합니다.
+                카드회사마다 무이자할부 행사를 주기적으로 시행하고 있습니다.
+                <br>
+                유의사항 - "카드결제 승인이 정상적으로 이루어지지 않았습니다" 라는 메시지가 나오면?
+                카드정보를 잘못 입력하셨을 경우입니다. 다시 한번 입력해 보시고 그래도 승인이 성공되지 않으면
+                고객님께서 사용하시는 카드사에 확인하여 주시기 바랍니다.
+                <br>
+                카드승인이 되지 않아도 주문은 이루어져 주문번호가 생성되고 고객님 메일로 주문내역이 발송됩니다.
+                <br>
+                이렇게 되면 저희 담당자가 보류처리로 넘기게 됩니다.
+                <br>
+                이 점 각별히 유의하시기 바랍니다.
+                <br>
+                <br>
+                <b>3) 실시간 자동이체 방법</b>
+                <br>
+                <br>
+                KCP 계좌이체결제 라는 화면이 나오면 해당 항목을 클릭해주세요.
+                <br>
+                실시간으로 결제가 완료됩니다.
+                <br>
+                단, 실시간 자동이체의 경우 공인인증서를 보유하신 경우에만 가능합니다.
+                <br>
+                <br>
+                <b>4) 무통장입금 방법</b>
+                <br>
+                <br>
+                무통장 입금으로 주문하신 경우 7일이내에 입금확인이 되지 않는 주문건은 자동취소처리 됩니다.
+                <br>
+                주문 후 5일안에 입금확인이 이루어지지 않는 경우, 취소에 대한 문자서비스가 전송됩니다.
+                <br>
+                예금주 : 한상차림(주)
+                <br>
+                우리은행 0000-000-000000<br>
+                농협중앙 000000-00-000000<br>
+                국민은행 000000-00-000000<br>
+
+                입금시 반드시 입금인명과 실제 입금하신 분의 이름이 일치해야 입금확인이 됩니다.
+                부득이한 경우에는 전화(1544-0000) 혹은 1:1 SOS 빠른상담 게시판에 문의하시거나
+                담당자에게 메일(hansang@gmail.com)을 보내주시면 입금확인이 가능합니다.
+                <br>
+                온라인 입금자는 하루 3회 (오전9시, 오후2시, 오후 5시) 한상차림 담당자가 확인하고 있습니다.
+                <br>
+                은행마감(오후 5시)후 입금자는 다음날로 처리됩니다.
+                <br>
+                ※ 2005년 1월 1일부터 현금 영수증 제도가 시행됩니다.
+                <br>
+                @ 현금영수증제도란?
+                입금 완료된 거래에 대해 현금영수증을 발급하고
+                현금결제 건별 내역은 국세청에 통보되는 제도입니다.
+                현금 영수증은 별도로 출력하여 소지 하지 않으셔도
+                국세청내에 거래 정보가 축적되므로 국세청 사이트에서 조회가 가능합니다.
+                <br>
+                @ 현금 영수증 발행 해당 거래
+                <br>
+                5,000원이상의 실시간 자동이체, 무통장 입금 결제 주문건
+                <br>
+                @ 현금 영수증 조회
+                <br>
+                -한상차림 회원: [로그인]->[마이페이지]->[주문/배송 조회]에서 조회
+                -비회원: 고객 센터 -> [주문/배송 조회]에서 조회
+                <br>
+                * 영수증 조회는 입금 확인 후 4일후부터 조회 가능합니다.
+                <br>
+                @ 이용시 혜택:
+                <br>
+                - 근로소득자이거나 근로소득자의 부양가족인 경우에는 총급여액의 10%를 초과하는 현금영수증
+                <br>
+                사용금액의 20%를 연말 정산 시 소득공제 받을 수 있습니다.
+                <br>
+                - 현금영수증복권에 의해 보상금이 지급됩니다.
+                <br>
+                @ 현금영수증 발행은 회원정보의 주민등록번호로만 발행이 가능합니다.(타인 명의로 발행 불가)
+                <br>
+                <br>
+                <b>5) 결제금액 처리사항</b>
+                <br>
+                <br>
+                결제된 사항은 ["주문/배송조회"] 에서 조회하실수 있습니다.
+                <br>
+
+            </p>
+        </div>
+
+
+    </div>
+    <div id="footerBack">
+        <footer>
+            <h1>(주)한상차림</h1>
+            <ul class="footerTxt1">
+                <li>서울시 관악구 신림동 000-00</li>
+                <li>사업자등록번호: 000-00-00000</li>
+                <li>통신판매업신고번호: 0000-000-0000</li>
+                <li>대표이사: 김기휘 이사</li>
+                <li>개인정보보호책임자: 이현수 책임</li>
+            </ul>
+
+            <ul class="footerTxt2">
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="terms.html">이용약관</a></li>
+                <li><a href="policy.html">개인정보처리방침</a></li>
+                <li><a href="return.html">반품 및 환불 규정</a></li>
+            </ul>
+
+            <ul class="footerTxt3">
+                <li>Copyright 한상차림. COM. ALL RIGHTS RESERVED.</li>
+                <li>상품사진을 포함한 모든 콘텐츠는 저작권법에 의해 보호받고 있습니다.</li>
+            </ul>
+
+            <ul class="footerSns">
+                <li><img src="images/facebook.png" alt="페이스북"></li>
+                <li><img src="images/instart.png" alt="인스타"></li>
+                <li><img src="images/twitter.png" alt="트위터"></li>
+                <li><img src="images/youtube.png" alt="유튜브"></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var num = $(this).scrollTop();
+                if (num > 110) {
+                    $("#navBack2").slideDown(0);
+                    $("#navBack").css('opacity', '0');
+                } else {
+                    $("#navBack2").css('display', 'none');
+                    $("#navBack").css('opacity', '1');
+                }
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,140 @@
+        .signTitle {
+            padding-top: 80px;
+            font-size: 2.5em;
+            font-weight: 900;
+            text-align: center;
+            color: #666;
+            padding-bottom: 80px;
+        }
+
+        .signForm {
+            width: 1000px;
+            margin: auto;
+
+        }
+
+        .formTitle {
+            text-align: left;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .starTxt {
+            float: right;
+            font-size: 16px;
+            color: #999;
+        }
+
+        .star {
+            color: #00acee;
+            position: relative;
+            top: 5px;
+        }
+
+        .signList {
+            width: 100%;
+            margin-top: 10px;
+            border-top: 2px solid #333;
+
+        }
+
+        .signList li {
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+            padding-left: 20px;
+        }
+
+        .signName {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .textBar {
+            width: 200px;
+            height: 30px;
+            padding: 0 8px;
+            margin-right: 20px;
+        }
+
+        .idChk {
+            width: 80px;
+            height: 30px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+            color: #666;
+            margin-right: 10px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .idChk:active {
+            background-color: #ddd;
+        }
+
+        .idResult {
+            font-size: 16px;
+            color: #00acee;
+            display: none;
+        }
+
+        .passwordTxt {
+            font-size: 15px;
+            color: #999;
+        }
+
+        .passwordChk {
+            color: #00acee;
+            display: none;
+        }
+
+        .passwordNot {
+            color: red;
+            display: none;
+        }
+
+        .phone {
+            width: 80px;
+            height: 30px;
+        }
+
+        #phone {
+            text-align: center;
+        }
+
+        #mail,
+        #adress {
+            margin-right: 0;
+        }
+
+        #adressList {
+            height: 30px;
+            width: 120px;
+        }
+
+        .sign {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 60px;
+            margin-top: 30px;
+            background-color: #00acee;
+            border: 0;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 100px;
+            cursor: pointer;
+        }
+
+        .introBox {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+            color: #888;
+        }
+
+        .cf {
+            color: #00acee;
+        }

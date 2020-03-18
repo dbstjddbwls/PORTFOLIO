@@ -1,0 +1,87 @@
+        .signTitle{
+            padding-top: 80px;
+            font-size: 2.5em;
+            font-weight: 900;
+            text-align: center;
+            color: #666;
+            padding-bottom: 80px;
+        }
+        
+        .choice{
+            width: 800px;
+            margin: auto;
+            display: flex;
+            padding-top: 80px;
+            border: 1px solid #ccc;
+            margin-bottom: 100px;
+        }
+        .choice>div{
+            width: 50%;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .signLogo{
+            font-size: 2.5em;
+            color: #00acee;
+            background-color: #eee;
+            padding: 30px 35px;
+            border-radius: 55%;
+        }
+        .choiceTitle{
+            padding-top: 60px;
+            font-size: 1.5em;
+            padding-bottom: 10px;
+        }
+        .choiceTxt{
+            font-size: 15px;
+            color: #999;
+            padding-bottom: 40px;
+        }
+        .choice button{
+            background-color: #00acee;
+            color: #fff;
+            border: 0;
+            padding: 25px 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .snsBox{
+            display: flex;
+            justify-content: space-around;
+        }
+        .snsBox a {
+            color: #fff;
+            font-size: 3em;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .snsBox div {
+            width: 80px;
+            height: 80px;
+            border-radius: 55%;
+            text-align: center;
+        }
+
+        .loginForm .snsBox div a:hover {
+            color: #fff;
+        }
+
+        .twitter {
+            background-color: #55acef;
+        }
+
+        .facebook {
+            background-color: #4760b2;
+        }
+
+        .snsBox .twitter i {
+            padding-top: 14px;
+            padding-left: 3px;
+        }
+
+        .google {
+            background-color: #ff7878;
+        }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/basic.css"><script src="javascript/search.js"></script>
+    <link rel="stylesheet" href="css/reservation.css">
+    <style>
+        @font-face {
+            font-family: 'HS';
+            src: url(font/HS.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMJUA';
+            src: url(font/BMJUA_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMYEON';
+            src: url(font/BMYEONSUNG_ttf.ttf)
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNav">
+            <span onclick="openNav()">
+                <i class="fas fa-bars topIcon" id="menu"></i>
+            </span>
+            <script src="javascript/navSub.js"></script>
+            <div class="logo">
+                <a href="index.html"><span>신림주막</span></a>
+            </div>
+            <span class="searchIcon topIcon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></span>
+            <div class="search_box">
+                <i class="fas fa-search search"></i>
+                <input type="text" class="search_inp">
+            </div>
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                메인
+            </a>
+            <a href="seat.html">
+                <i class="fas fa-check"></i>
+                좌석현황
+            </a>
+            <a href="reservation.html">
+                <i class="far fa-calendar-minus"></i>
+                예약
+            </a>
+            <a href="food.html">
+                <i class="fas fa-utensils"></i>
+                메뉴
+            </a>
+            <a href="event.html">
+                <i class="fas fa-calendar-week"></i>
+                행사
+            </a>
+            <a href="complain.html">
+                <i class="fas fa-archive"></i>
+                소리함
+            </a>
+            <a href="map.html">
+                <i class="far fa-map"></i>
+                약도
+            </a>
+            <div class="store_text">
+                <p>가맹문의</p>
+            </div>
+            <div class="sub_box">
+                <p>대표번호 02-2404-9541</p>
+                <p>서울특별시 관악구 신림동 신림로 340</p>
+                <p>Email ceo@shinmack.net</p>
+            </div>
+        </div>
+
+        <div class="store">
+            <ul class="storeList">
+                <li class="active">신림점</li>
+                <li>신촌점</li>
+                <li>강남점</li>
+            </ul>
+            <script src="javascript/navSub.js">
+            </script>
+        </div>
+
+        <div class="reserveBox">
+            <form action="#">
+                <div class="inputBox">
+                    <label for="name">예약자명</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="inputBox">
+                    <label for="date">예약일시</label>
+                    <input type="text" id="datepicker">
+                </div>
+                <div class="inputBox">
+                    <label for="phone">연락처</label>
+                    <select id="phone">
+                        <option value="010" selected>010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                    </select>
+                    -
+                    <input type="text" class="phTxt">
+                    -
+                    <input type="text" class="phTxt">
+                </div>
+                <div class="inputBox">
+                    <label for="count">인원수</label>
+                    <input type="number" id="count">
+                </div>
+                <div class="inputBox">
+                    <label for="etc">특이사항</label>
+                    <textarea name="etc" id="etc" cols="50" rows="5" placeholder="특이사항 및 요청사항을 입력해주세요"></textarea>
+                </div>
+                <button type="button" id="reserve">예약하기</button>
+
+                <p class="subTxt">변경사항이 있을 경우<br>02-000-0000으로 연락해주시길 바랍니다</p>
+            </form>
+        </div>
+
+
+        <div class="alertBox">
+            <div class="alert">
+                <p>예약이 완료되었습니다</p>
+                <button class="submit">확인</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#datepicker").datepicker();
+        
+        $("#reserve").on('click', function() {
+            $(".alertBox").css({
+                "display": "block"
+            });
+        });
+        
+        $(".submit").click(function(){
+            window.location.href="reservation.html";
+        })
+
+    </script>
+</body>
+
+</html>

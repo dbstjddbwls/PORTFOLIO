@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>장바구니</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Noto+Sans+KR:100,300,400,500,700,900|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    </script>
+</head>
+
+
+<body>
+    <div id="headerBack">
+        <header>
+            <img src="images/header_gif.gif" alt="신선하게 직접배송 됩니다. 배송지역을 확인해보세요!" class="headerGif">
+            <a href="index.html">
+                <img src="images/logo.png" alt="한상차림로고" class="headerLogo">
+            </a>
+            <ul class="headerLinkUl">
+                <li><a href="signup.html" class="SignUp">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="service_center.html">고객센터</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="navBack">
+        <nav>
+            <ul class="navUl">
+                <li><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt" autocomplete="off">
+                <label for="searchTxt"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navBack2">
+        <nav>
+            <ul class="navUl">
+                <li onclick="location.href='menu_all.html'"><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt2" autocomplete="off">
+                <label for="searchTxt2"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navCateBack">
+        <div class="navCate">
+            <ul id="navCateUl">
+                <li><a href="menu1.html"><img src="images/navCate1.png" alt="채소"><span>채소</span></a></li>
+                <li><a href="menu2.html"><img src="images/navCate2.png" alt="과일"><span>과일</span></a></li>
+                <li><a href="menu3.html"><img src="images/navCate3.png" alt="육류"><span>육류</span></a></li>
+                <li><a href="menu4.html"><img src="images/navCate4.png" alt="해산물"><span>해산물</span></a></li>
+                <li><a href="menu5.html"><img src="images/navCate5.png" alt="간편식품"><span>간편식품</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--전체카테고리 누르면 카테고리목록 슬라이드 토글-->
+    <script>
+        var allCate = $('#navBack>nav>.navUl>li:eq(0)');
+        var navCate = $('#navCateBack');
+        allCate.click(function() {
+            navCate.slideToggle(300);
+        })
+    </script>
+
+
+    <section id="content">
+       <h2 style="display: none">장바구니</h2>
+        <div class="cart_text">
+            <p>장바구니</p>
+            <p>주문하실 상품명 및 수량을 정확하게 확인해 주세요.</p>
+        </div>
+
+        <div class="cart_item">
+            <ul>
+                <li>
+                    <input type="checkbox" class="cart_check">
+                    <img src="images/product_images/menu1/menu1_2a.png" alt="쪽파">
+                    <a href="product1_2.html"><span class="cart_name">무농약 쪽파 200g</span></a>
+                    <div class="btn_box">
+                        <form>
+                            <button type="button" class="btn down" onclick="down()">-</button>
+                            <input type="number" readonly="readonly" class="inp" value="1" name="inp" id="inp">
+                            <button type="button" class="btn up" onclick="up()">+</button>
+                        </form>
+                    </div>
+                    <span class="cart_price" id="cart_price">2,500 원</span>
+                    <span><img src="images/cancle.png" alt="취소" class="cancle"></span>
+                </li>
+
+                <li>
+                    <input type="checkbox" class="cart_check">
+                    <img src="images/product_images/menu5/menu5_1a.png" alt="[사조대림] 반마리 로스트 치킨">
+                    <a href="product5_1.html"><span class="cart_name">[사조대림] 반마리 로스트 치킨</span>
+                    </a>
+                    <div class="btn_box">
+                        <form>
+                            <button type="button" class="btn down" onclick="down2()">-</button>
+                            <input type="number" readonly="readonly" class="inp" value="1" name="inp" id="inp2">
+                            <button type="button" class="btn up" onclick="up2()">+</button>
+                        </form>
+                    </div>
+                    <span class="cart_price" id="cart_price2">4,980 원</span>
+                    <span><img src="images/cancle.png" alt="취소" class="cancle"></span>
+                </li>
+
+                <li>
+                    <input type="checkbox" class="cart_check">
+                    <img src="images/product_images/menu2/menu2_3a.png" alt="GAP 씻어나온 사과 2종">
+                    <a href="product2_3.html">
+                        <span class="cart_name">GAP 씻어나온 사과 2종</span>
+                    </a>
+                    <div class="btn_box">
+                        <form>
+                            <button type="button" class="btn down" onclick="down3()">-</button>
+                            <input type="number" readonly="readonly" class="inp" value="1" name="inp" id="inp3">
+                            <button type="button" class="btn up" onclick="up3()">+</button>
+                        </form>
+                    </div>
+                    <span class="cart_price" id="cart_price3">1,980 원</span>
+                    <span><img src="images/cancle.png" alt="취소" class="cancle"></span>
+                </li>
+
+                <li>
+                    <input type="checkbox" class="cart_check">
+                    <img src="images/product_images/menu1/menu1_4a.png" alt="양송이버섯 8입">
+                    <a href="product1_4.html">
+                        <span class="cart_name">양송이버섯 8입</span>
+                    </a>
+                    <div class="btn_box">
+                        <form>
+                            <button type="button" class="btn down" onclick="down4()">-</button>
+                            <input type="number" readonly="readonly" class="inp" value="1" name="inp" id="inp4">
+                            <button type="button" class="btn up" onclick="up4()">+</button>
+                        </form>
+                    </div>
+                    <span class="cart_price" id="cart_price4">4,000 원</span>
+                    <span><img src="images/cancle.png" alt="취소" class="cancle"></span>
+                </li>
+            </ul>
+        </div>
+        <script src="javascript/cart.js"></script>
+
+        <div class="bottom_box">
+            <div class="all_cancle">
+                <button type="button" class="select_cancle">선택삭제</button>
+            </div>
+            <div class="total_price">
+                <span class="total_price_text">합계금액:</span>
+                <span class="total_price_num" id="total_price_num">13,460 원</span>
+            </div>
+            <div class="choice">
+                <button type="button" class="choice_button" onclick="plz_login()">주문하기</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="footerBack">
+        <footer>
+            <h1>(주)한상차림</h1>
+            <ul class="footerTxt1">
+                <li>서울시 관악구 신림동 000-00</li>
+                <li>사업자등록번호: 000-00-00000</li>
+                <li>통신판매업신고번호: 0000-000-0000</li>
+                <li>대표이사: 김기휘 이사</li>
+                <li>개인정보보호책임자: 이현수 책임</li>
+            </ul>
+
+            <ul class="footerTxt2">
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="terms.html">이용약관</a></li>
+                <li><a href="policy.html">개인정보처리방침</a></li>
+                <li><a href="return.html">반품 및 환불 규정</a></li>
+            </ul>
+
+            <ul class="footerTxt3">
+                <li>Copyright 한상차림. COM. ALL RIGHTS RESERVED.</li>
+                <li>상품사진을 포함한 모든 콘텐츠는 저작권법에 의해 보호받고 있습니다.</li>
+            </ul>
+
+            <ul class="footerSns">
+                <li><img src="images/facebook.png" alt="페이스북"></li>
+                <li><img src="images/instart.png" alt="인스타"></li>
+                <li><img src="images/twitter.png" alt="트위터"></li>
+                <li><img src="images/youtube.png" alt="유튜브"></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            var num = $(this).scrollTop();
+            if (num > 110) {
+                $("#navBack2").slideDown(0);
+                $("#navBack").css('opacity', '0');
+            } else {
+                $("#navBack2").css('display', 'none');
+                $("#navBack").css('opacity', '1');
+            }
+        });
+    });
+</script>
+</body>
+</html>

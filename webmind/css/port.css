@@ -1,0 +1,99 @@
+        #port .wTitle {
+            background-image: url(../images/port/portB.png);
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #f2f2f2;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            padding: 30px 0;
+
+        }
+
+        .portList li {
+            float: left;
+            width: 25%;
+            position: relative;
+            text-align: center;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .portList li:hover img {}
+
+        .portList li img {
+            width: 100%;
+            height: 300px;
+            z-index: -1;
+        }
+
+        .portList li a {
+            overflow: auto;
+        }
+
+        .portBox {
+            position: absolute;
+            left: calc(50% - 90px);
+            color: #f2f2f2;
+            text-align: center;
+            display: none;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            padding-top: 100px;
+        }
+
+        .portTxt {
+            font-weight: 900;
+            font-size: 2em;
+            line-height: 1.5;
+        }
+
+        .portSub {
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+
+        @media screen and (max-width:1130px) {
+            .portList li {
+                width: 50%;
+            }
+        }
+
+
+        .imgBox {
+            background-image: url(../images/port/portMain.png);
+            background-color: rgba(0, 0, 0, 0.7);
+            clear: both;
+            position: relative;
+        }
+
+        .mainBox {
+            position: absolute;
+            top: 380px;
+            left: calc(50% - 250px);
+            color: #f2f2f2;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .imgTitle {
+            font-weight: 900;
+            font-size: 4em;
+            padding-bottom: 20px;
+        }
+@media screen and (max-width:600px){
+    .imgTitle {
+	font-size: 2em;
+}
+    .imgTxt{
+        width: 300px;
+    }
+    .mainBox{
+        left:calc(50% - 140px);
+    }
+}

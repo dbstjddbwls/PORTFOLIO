@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/basic.css"><script src="javascript/search.js"></script>
+    <style>
+        @font-face {
+            font-family: 'HS';
+            src: url(font/HS.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMJUA';
+            src: url(font/BMJUA_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMYEON';
+            src: url(font/BMYEONSUNG_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'GUK';
+            src: url(font/GUK.ttf);
+        }
+
+        @font-face {
+            font-family: 'GIMJE';
+            src: url(font/GIMJE.TTF)
+        }
+        .map{
+            display: block;
+            margin: auto;
+            height: 600px;
+        }
+        .store1,.store2,.store3{
+            text-align: center;
+            clear: both;
+            padding-top: 20px;
+            font-family: 'BMJUA'
+        }
+        .mapTitle{
+            font-size: 1.8em;
+            padding-top: 20px;
+            color: #454a4c;
+        }
+        .mapSub, a{
+            color: darkgreen;
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: darkgreen;
+        }
+        .subText{
+            font-size: 1.1em;
+            color: #666;
+        }
+        .store2, .store3{
+            display: none;
+        }
+        
+        .logo a span{
+            font-size: 1.8em;
+        }
+        .store{
+            clear: both;
+        }
+        .storeList{
+            margin: 0;
+            overflow: auto;
+        }
+        .storeList li{
+            padding-top: 30px;
+        }
+        .storeList .active{
+            height: 97px;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNav">
+            <span onclick="openNav()">
+                <i class="fas fa-bars topIcon" id="menu"></i>
+            </span>
+            <script src="javascript/navSub.js"></script>
+            <div class="logo">
+                <a href="index.html"><span>신림주막</span></a>
+            </div>
+            <span class="searchIcon topIcon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></span>
+            <div class="search_box">
+                <i class="fas fa-search search"></i>
+                <input type="text" class="search_inp">
+            </div>
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                메인
+            </a>
+            <a href="seat.html">
+                <i class="fas fa-check"></i>
+                좌석현황
+            </a>
+            <a href="reservation.html">
+                <i class="far fa-calendar-minus"></i>
+                예약
+            </a>
+            <a href="food.html">
+                <i class="fas fa-utensils"></i>
+                메뉴
+            </a>
+            <a href="event.html">
+                <i class="fas fa-calendar-week"></i>
+                행사
+            </a>
+            <a href="complain.html">
+                <i class="fas fa-archive"></i>
+                소리함
+            </a>
+            <a href="map.html">
+                <i class="far fa-map"></i>
+                약도
+            </a>
+            <div class="store_text">
+                <p>가맹문의</p>
+            </div>
+            <div class="sub_box">
+                <p>대표번호 02-2404-9541</p>
+                <p>서울특별시 관악구 신림동 신림로 340</p>
+                <p>Email ceo@shinmack.net</p>
+            </div>
+        </div>
+
+        <div class="store">
+            <ul class="storeList">
+                <li class="list1 active">신림점</li>
+                <li class="list2">신촌점</li>
+                <li class="list3">강남점</li>
+            </ul>
+            <script src="javascript/navSub.js">
+            </script>
+            <div class="store1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.4971401711662!2d126.92955432137292!3d37.484596316678505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x51b8e382e32ac5de!2z66W064Sk7IOB7Iqk7Ie87ZWR66qw!5e0!3m2!1sko!2skr!4v1582101019418!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+                <p class="mapTitle">주소</p>
+                <p class="mapSub">서울특별시 관악구 신림로 340 7층</p>
+                <p class="mapTitle">전화번호</p>
+                <p class="mapSub"><a href="tel:02-000-0000">02-000-0000</a></p>
+                <p class="subText">(클릭시 바로 연결됩니다)</p>
+            </div>
+            <div class="store2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.4288179621099!2d126.93805401652345!3d37.55841778438805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c989143ff42ab%3A0x7962c720db86fe35!2z7ISc7Jq47Yq567OE7IucIOyEnOuMgOusuOq1rCDssL3sspzrj5kgNS00OA!5e0!3m2!1sko!2skr!4v1582101780613!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+                <p class="mapTitle">주소</p>
+                <p class="mapSub">서울특별시 서대문구 창천동 우성빌딩 3층</p>
+                <p class="mapTitle">전화번호</p>
+                <p class="mapSub"><a href="tel:02-000-0000">02-000-0000</a></p>
+                <p class="subText">(클릭시 바로 연결됩니다)</p>
+            </div>
+            <div class="store3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.678814021242!2d127.02617777601128!3d37.49948252288303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159b00166ab%3A0xe0e4106c5903c0a4!2z7JWE7IS47JWE67mM65Sp!5e0!3m2!1sko!2skr!4v1582101720187!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+                <p class="mapTitle">주소</p>
+                <p class="mapSub">서울특별시 강남구 역삼동 820 2층</p>
+                <p class="mapTitle">전화번호</p>
+                <p class="mapSub"><a href="tel:02-000-0000">02-000-0000</a></p>
+                <p class="subText">(클릭시 바로 연결됩니다)</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.list1').click(function(){
+            $('.store1').css({"display":"block"});
+            $('.store2').css({"display":"none"});
+            $('.store3').css({"display":"none"});
+        });
+        $('.list2').click(function(){
+            $('.store1').css({"display":"none"});
+            $('.store2').css({"display":"block"});
+            $('.store3').css({"display":"none"});
+        });
+        $('.list3').click(function(){
+            $('.store1').css({"display":"none"});
+            $('.store2').css({"display":"none"});
+            $('.store3').css({"display":"block"});
+        });
+    </script>
+</body>
+
+</html>

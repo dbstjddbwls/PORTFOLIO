@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <title>마음나눔</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/basic.css">
+    <script src="lib/basic.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <script>
+    </script>
+</head>
+<body>
+    <header id="header">
+        
+            <div class="userBox">
+            <div class="wrap">
+            <ul class="userList">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="signup.html">회원가입</a></li>
+                <li><a href="give.html">나의후원</a></li>
+            </ul>
+            </div>
+        </div>
+           <div class="wrap">
+            <div class="topNav">
+                <div class="logo">
+                <h1>
+                    <a href="index.html"><img src="images/public/logo.png" alt="로고"></a>
+                </h1>
+            </div>
+            <ul class="menu">
+                <li><a href="company.html">마음나눔 소개</a></li>            
+                <li><a href="work.html">사업안내</a></li>            
+                <li><a href="partic.html">참여하기</a></li>            
+                <li><a href="notice.html">재단소식</a></li>            
+                <li><a href="give.html">후원하기</a></li> 
+               
+                    <form action="#" class="searchBox">
+                <input type="search" class="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form> 
+                          
+            </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="login">
+        <h2 class="hidd">로그인</h2>
+        
+        <div class="wrap">
+            <p class="title">로그인</p>
+            <form action="#" class="loginForm">
+                <input type="text" id="id"  placeholder="아이디를 입력하세요">
+                <input type="password" id="password"  placeholder="비밀번호를 입력하세요">
+                <button type="submit" class="submit">로그인</button>
+                <input type="checkbox" id="remember">
+                <label for="remember" class="idRe">아이디 저장</label>
+                
+                <a href="#" class="searchIP">아이디/비밀번호찾기</a>
+                <br><br>
+                <p class="signupTxt">아이디가 아직 없으신가요? </p>
+                <a href="signup.html" class="signup">회원가입</a>
+                
+                <div class="snsLogin">
+                   <p>SNS계정으로 간편하게 로그인하세요</p>
+                   
+                    <div class="snsBox">
+                    <div class="twitter">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="google">
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </form>
+            <script>
+                $('.submit').click(function(){
+                    alert('잘못된 회원정보입니다.');
+                    window.location.reload();
+                    return false;
+                })
+            </script>
+        </div>
+        
+    </section>
+   
+   
+    <section id="giveIntro">
+        <h2 class="hidd">기부안내</h2>
+        <div class="wrap">
+            <a href="#">
+            <p class="giveIcon"><i class="fas fa-hands"></i></p>
+            <p class="giveTitle">후원이 처음이신가요?</p>
+            <p class="giveTxt">후원이 처음이셔서 무엇부터 해야할지 고민되신다면 부담없이 연락해주세요</p>
+            <button type="button">온라인상담 신청하기 <i class="fas fa-chevron-right"></i></button>
+        </a>
+        </div>
+    </section>
+        
+    <footer id="footer">
+        <div class="wrap">
+            <div class="fLink">
+                <ul class="fList">
+                    <li><a href="company.html">마음나눔 소개</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용정책</a></li>
+                    <li><a href="#">이메일수신거부</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <select name="family" id="fSite">
+                    <option value="" selected disabled>Family site <i class="fas fa-sort-down"></i> </option>
+                    <option value="unicef">UNICEF KR</option>
+                    <option value="unicef">Renewed</option>
+                    <option value="unicef">UNGEI</option>
+                    <option value="unicef">UNAIDS</option>
+                    <option value="unicef">WHO</option>
+                </select>
+            </div>
+            <div class="companyIntro">
+                <p>
+                    <span>사업자주소: 서울특별시 마포구 성산1동 251-3 성산빌딩 3층</span>
+                    <span>Tel : 02-123-4567</span>
+                    <span>Fax : 02-234-5678</span>
+                </p>
+                <p>
+                    <span>사업자등록번호 : 120-15-15785</span>
+                    <span>대표이사 : 김윤성</span>
+                </p>
+                <p>COPYRIGHT &copy; MAUMNANUM. ALL RIGHT RESERVED</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

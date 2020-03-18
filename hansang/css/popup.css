@@ -1,0 +1,69 @@
+*:focus {
+    outline: none;
+}
+
+.popup_panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+}
+
+.popup_panel div.popup_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.popup_panel div.popup_contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 410px;
+    height: 220px;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0px solid #fff;
+}
+
+.popup_contents {
+    text-align: center;
+
+}
+
+.popup_contents p {
+    margin: auto;
+    padding-top: 40px;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.popup_contents button {
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 0;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+.popup_contents #btn_popup_close {
+    margin-right: 30px;
+    background-color: white;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.popup_contents #btn_cart {
+    background-color: #D9322E;
+    border: 1px solid #D9322E;
+    color: white;
+    cursor: pointer;
+}

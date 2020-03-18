@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>카카오뱅크</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="basic.css">
+    <style>
+        .mainTxt {
+            font-size: 20px;
+            font-weight: lighter;
+            padding-top: 40px;
+        }
+
+        .subTxt {
+            font-size: 12px;
+            font-weight: lighter;
+            padding-bottom: 40px;
+        }
+        .bannerBox{
+            position: relative;
+            overflow: hidden;
+            
+        }
+        .bannerBox .wrap {
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .bannerList li {
+            float: left;
+        }
+        .bannerList li img{
+            
+        }
+        .bannerList {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .bannerList li {
+            width: 25%;
+            height: 400px;
+        }
+        
+        .bannerList li img{
+            
+        }
+        
+        @media screen and (max-width:1000px){
+            .bannerList li img{
+                width: 1000px;
+            }
+            .bannerList li{
+                height: 350px;
+            }
+        }
+        
+         @media screen and (max-width:800px){
+            .bannerList li img{
+                width: 800px;
+            }
+            .bannerList li{
+                height: 250px;
+            }
+        }
+        
+        #prev, #next{
+            position: absolute;
+            background-image: url(images/kabang.png);
+            top: calc(50% - 25px);
+            width: 30px;
+            height: 50px;
+        }
+        
+        #prev{
+            display: inline-block;
+            cursor: pointer;
+            background-position: -80px -110px;
+            margin-left: 30px;
+            
+        }
+        #next{
+            display: inline-block;
+            cursor: pointer;
+            background-position: -52px -110px;
+            right: 30px;
+            width: 28.4px;
+            
+        }
+        .bannerTxt {
+	        position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+        }
+        .bannerTxt img{
+            width: 100px;
+            height: 100px;
+            border-radius: 55%;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .bannerTxt p{
+            text-align: center;
+            font-size: 1.5em;
+            color: white;
+        }
+        
+        
+        .history{
+            clear: both;
+            background-color: #fafafa;
+        }
+        .graph{
+            height: 90px;
+            border-bottom: 2px solid #e6e6e6;
+            width: 100%;
+            
+        }
+        .activeGraph {
+	        height: 90px;
+            border-bottom: 2px solid black;
+            width: 50%;
+            position: relative;
+            
+        }
+        .circle1, .circle2{
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 55%;
+            position: absolute;
+            bottom: -7.5px;
+        }
+        .circle1{
+            left: 20%;
+            border: 2px solid black;
+            background-color: white;
+        }
+        .circle2{
+            right: 0;
+        }
+        .date{
+            display: inline-block;
+            position: absolute;
+            top: -40px;
+            left: -35px;
+        }
+        
+        .graphTitle{
+            font-size: 1.5em;
+            font-weight: lighter;
+            padding-top: 40px;
+            margin: 0;
+        }
+        .graphDate{
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .graphSub{
+            padding-bottom: 55px;
+        }
+        .brand{
+            text-align: center;
+        }
+        .brandTitle, .biTitle{
+            padding-top: 50px;
+            padding-bottom: 15px;
+            font-size: 20px;
+        }
+        .brandLine, .biLine{
+            width:30px;
+            height: 1px;
+            background-color: black;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .brandSlide{
+            overflow: auto;
+            width: 90%;
+            margin: auto;
+        }
+        .slider{
+            text-align: center;
+            float: left;
+            width: 33.333%;
+        }
+        .slider a{
+            width: 300px;
+            height: 162px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        
+        .slider a img{
+            width: 100%;
+        }
+        .brandText{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .brandSub{
+            width: 260px;
+            margin: auto;
+            font-weight: 100;
+            margin-bottom: 35px;
+        }
+        
+        @media screen and (max-width: 1010px){
+            .slider{
+                width: 100%;
+            }
+            .slider a{
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        
+        .bi{
+            background-color: #fafafa;
+            text-align: center;
+        }
+        .biBox{
+            border-bottom: 2px solid #e6e6e6;
+        }
+        .biImg{
+            padding-top: 30px;
+            padding-bottom: 25px;
+        }
+        .biSub{
+            padding-bottom: 40px;
+            margin: 0;
+        }
+        .kbImg{
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        
+        
+        footer{
+            background-color: #f0f0f0;
+        }
+        
+        .snsBox{
+            overflow: auto;
+            width: 200px;
+            margin: auto;
+            padding:20px 0;
+        }
+        
+        .snsIcon{
+            width: 50px;
+            float: left;
+            padding: 20px;
+            /*border-right: 2px solid #d6d6d6;*/
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+        }
+        .snsIcon::after{
+            content: '';
+            width: 1px;
+            height: 15px;
+            background-color: #d6d6d6;
+            display: block;
+            position: relative;
+            bottom: 10px;
+            left: -20px;
+        }
+        .snsIcon:first-child::after{
+            width: 0;
+        }
+        .icon{
+            background-image: url(images/kabang.png);
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 30px;
+            position: absolute;
+            bottom: 1px;
+            left: 40%;
+        }
+        .facebook {
+            background-position: 0px -140px;
+        }
+        .blog{
+            background-position: -15px -140px;
+        }
+        .naver{
+            left: 40%;
+            width: 30px;
+            background-position: -118px -140px;
+        }
+        .youtube{
+            left: 40%;
+            width: 30px;
+            background-position: -30px -140px;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="mainLogo">
+            <a href="index.html"><span>Yun<b>bank</b></span></a>
+        </div>
+        <div class="topNav">
+            <span class="cancle">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="navLogo">
+                <span>Yun<b>bank</b></span>
+            </div>
+            <div class="navBox">
+                <ul>
+                    <li class="navList"><a href="intro.html">카카오뱅크 소개</a></li>
+                    <li class="navList"><a href="event.html">공지</a></li>
+                </ul>
+            </div>
+            <div class="subNav">
+                <ul>
+                    <li><a href="#">모바일뱅킹 서비스 이용약관</a></li>
+                    <li><a href="#">전자금융거래약관</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                </ul>
+                <br>
+                <span class="navCopy">copylight &copy; KaKaoBank of Korea Corp.</span>
+                <button type="button">PC버전</button>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        $('.menu').on('click', function() {
+            $('.topNav').slideToggle();
+        });
+
+        $('.cancle').on('click', function() {
+            $('.topNav').slideToggle();
+        });
+
+    </script>
+    <div class="title">
+            <h1 class="hidden">카카오뱅크 소개</h1>
+            카카오뱅크 소개
+    </div>
+    <div class="introTxt">
+        <div class="wrap">
+            <p class="mainTxt">일상에서 더 쉽게, 더 자주 이용하는 나만의 은행</p>
+            <p class="subTxt">
+                카카오뱅크는 사람과 은행의 만남이 더 쉽게, 더 자주 일어나야
+                한다고 믿습니다. 사용자 중심의 혁신적인 기술을 통해 일상 속 어떤 순간에서도
+                유용한 나만의 은행, 카카오뱅크는 또 하나의 은행이 아닌 '은행의 새로운 시작'입니다
+            </p>
+        </div>
+    </div>
+    <div class="bannerBox">
+        
+            <ul class="bannerList">
+                <li><img src="images/img_1.jpg" alt="배너" class="banner"></li>
+                <li><img src="images/img_2.jpg" alt="배너" class="banner"></li>
+                <li><img src="images/img_3.jpg" alt="배너" class="banner"></li>
+                <li><img src="images/img_4.jpg" alt="배너" class="banner"></li>
+            </ul>
+            
+            <span id="prev"></span>
+            <span id="next"></span>
+            
+            <div class="bannerTxt">
+                <img src="images/bi1.png" alt="배너아이콘">
+                <p>가장 유용한</p>
+            </div>
+        
+    </div>
+    <script>
+        $(function() {      
+            $('.bannerList').css({'width':$('.banner').width() * $('.banner').length + 'px'});
+            
+            setInterval(function() {
+                $('.bannerList').animate({"left": '-' + $('.banner').width() + 'px'}, 1000, function() {
+                    $('.bannerList').css({'width':$('.banner').width() * $('.banner').length + 'px'});
+                    $('.bannerList').append("<li>" + $('.bannerList').find('li:first').html() + "</li>");
+                    $('.bannerList').find("li:first").remove();
+                    $('.bannerList').css({
+                        "left": "0px"
+                    });
+                });
+
+            }, 5000);
+            
+            $('#prev').click(function(){
+                $('.bannerList').prepend("<li>" + $('.bannerList').find('li:last').html() + "</li>");
+                $('.bannerList').find("li:last").remove();
+                $('.bannerList').css({'width':$('.banner').width() * $('.banner').length + 'px'});
+                
+                $('.bannerList').animate({'left':'0'},1000,function(){
+                    $('.bannerList').css({'width':$('.banner').width() * $('.banner').length + 'px'});
+                    
+                });
+            });
+        });
+        
+        $('#next').click(function(){
+                $('.bannerList').append("<li>" + $('.bannerList').find('li:first').html() + "</li>");
+                $('.bannerList').find("li:last").remove();
+            
+                $('.bannerList').animate({'left':-$('.banner').width()},1000,function(){
+                    $('.bannerList').css({
+                        "left": '-' + $('.banner').width()
+                    });
+                    $('.bannerList').css({'width':$('.banner').width() * $('.banner').length + 'px'});
+                });
+            });
+
+    </script>
+    
+    <div class="history">
+        <div class="wrap">
+            <div class="graph">
+                <div class="activeGraph">
+                    <div class="circle1">
+                        <span class="date">2017.04.05</span>
+                    </div>
+                    
+                    <div class="circle2">
+                        <span class="date">2017.07.05</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="graphText">
+                <p class="graphTitle">카카오뱅크 영업 개시</p>
+                <p class="graphDate">2017.07.27</p>
+                <p class="graphSub">'더 쉽게, 더 자주, 만나는 은행'을 목표로 수신, 여신, 체크카드, 외화송금 등 모바일을 통한 대고객 은행서비스 시작</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="brand">
+        <p class="brandTitle">브랜드영상</p>
+        <div class="brandLine"></div>
+        
+        <div class="brandSlide">
+            <div class="slider">
+                <a href="#"><img src="images/video1.png" alt="영상"></a>
+                <p class="brandText">#Kakaobank 브랜드 영상</p>
+                <p class="brandSub">은행을 의마하는 B, 그리고 은행의 중심에 서있는 나(I) 카카오뱅크의 심볼을 통해 내가 중심이 되는 "은행의 새로운 시작"을 이야기합니다.</p>
+            </div>
+            
+            <div class="slider">
+                <a href="#"><img src="images/video2.png" alt="영상"></a>
+                <p class="brandText">#People in kakaobank</p>
+                <p class="brandSub">권위적이지 않고 누구나 쉽게 이용할 수 있는 은행<br>카카오뱅크 사람들은 세상에 없던 은행을 만들어 나갑니다.</p>
+            </div>
+            
+            <div class="slider">
+                <a href="#"><img src="images/video3.png" alt="영상"></a>
+                <p class="brandText">#아무때나 계좌개설 가능</p>
+                <p class="brandSub">24시간 365일 계좌개설이 가능합니다. 기능은 같지만 다른 은행보다 간편하게 빠릅니다.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bi">
+        <p class="biTitle">BI소개</p>
+        <div class="biLine"></div>
+        <div class="biBox">
+        <img src="images/bi1.png" alt="BI로고" class="biImg">
+        <p>Symbol</p>
+        <p class="biSub">내가 (I) 중심이 되는 (B)를 형상화한 심볼</p>
+        </div>
+        <div>
+            <img src="images/bi2.png" alt="KakaoBank로고" class="kbImg">
+            <p>Wordmark</p>
+            <p class="biSub">카카오뱅크 고객중심 DNA를 반영한 워드마크</p>
+        </div>
+        
+    </div>
+    
+    <footer>
+       <div class="snsBox">
+        <div class="snsIcon"><div class="icon facebook"></div></div>
+        <div class="snsIcon"><div class="icon blog"></div></div>
+        <div class="snsIcon"><div class="icon naver"></div></div>
+        <div class="snsIcon"><div class="icon youtube"></div></div>
+        </div>
+    </footer>
+</body>
+
+</html>

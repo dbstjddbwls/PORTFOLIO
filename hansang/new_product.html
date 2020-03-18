@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Noto+Sans+KR:100,300,400,500,700,900|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/menu-retake.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>신상품</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="headerBack">
+        <header>
+            <img src="images/header_gif.gif" alt="신선하게 직접배송 됩니다. 배송지역을 확인해보세요!" class="headerGif">
+            <a href="index.html">
+                <img src="images/logo.png" alt="한상차림로고" class="headerLogo">
+            </a>
+            <ul class="headerLinkUl">
+                <li><a href="signup.html" class="SignUp">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="service_center.html">고객센터</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="navBack">
+        <nav>
+            <ul class="navUl">
+                <li><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt" autocomplete="off">
+                <label for="searchTxt"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navBack2">
+        <nav>
+            <ul class="navUl">
+                <li onclick="location.href='menu_all.html'"><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt2" autocomplete="off">
+                <label for="searchTxt2"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navCateBack">
+        <div class="navCate">
+            <ul id="navCateUl">
+                <li><a href="menu1.html"><img src="images/navCate1.png" alt="채소"><span>채소</span></a></li>
+                <li><a href="menu2.html"><img src="images/navCate2.png" alt="과일"><span>과일</span></a></li>
+                <li><a href="menu3.html"><img src="images/navCate3.png" alt="육류"><span>육류</span></a></li>
+                <li><a href="menu4.html"><img src="images/navCate4.png" alt="해산물"><span>해산물</span></a></li>
+                <li><a href="menu5.html"><img src="images/navCate5.png" alt="간편식품"><span>간편식품</span></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--전체카테고리 누르면 카테고리목록 슬라이드 토글-->
+    <script>
+        var allCate = $('#navBack>nav>.navUl>li:eq(0)');
+        var navCate = $('#navCateBack');
+        allCate.click(function() {
+            navCate.slideToggle(300);
+        })
+
+    </script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var num = $(this).scrollTop();
+                if (num > 110) {
+                    $("#navBack2").slideDown(0);
+                    $("#navBack").css('opacity', '0');
+                } else {
+                    $("#navBack2").css('display', 'none');
+                    $("#navBack").css('opacity', '1');
+                }
+            });
+        });
+
+    </script>
+
+
+
+    <div id="content">
+        <div id="top_category">
+            <a href="new_product.html" class="active"><span class="first_tab">신상품</span></a>
+        </div>
+
+        <div id="menu_list">
+            <!--         스크롤 Top         -->
+            <button type="button" id="goTop" onclick="TopScroll()">TOP</button>
+            <!--         최근 본 이미지 가져오기         -->
+            <div class="view_item">
+                <div id="view_img">
+                    <p>최근 본 상품</p>
+
+                </div>
+            </div>
+            <script src="javascript/topscroll_view_item_short.js"></script>
+            
+            <table class="menu_table">
+                <tr class="menu_col">
+                    <td class="menu_row">
+                        <a href="product1_3.html">
+                          <img src="images/new.png" alt="신상품" class="SaleMark">
+                           <div>
+                            <img src="images/product_images/menu1/menu1_3a.png" alt="한끼 채소 맑은국용 120g">
+                            </div>
+                            <p class="menu_name">한끼 채소 맑은국용 120g</p>
+                            <p class="menu_price">2,200 원</p>
+                            <p class="menu_text">무가 들어간 시원한 국물용 채소(1팩/120g)</p>
+                        </a>
+                        <button class="shopbag"><img src="images/shopping.png" class="btn_popup_open" alt="장바구니 담기"></button>
+                    </td>
+                    <td class="menu_row">
+                        <a href="product2_2.html">
+                          <img src="images/new.png" alt="신상품" class="SaleMark">
+                           <div>
+                            <img src="images/product_images/menu2/menu2_2a.png" alt="[퓨어스펙] 블랙라벨 오렌지 4입">
+                            </div>
+                            <p class="menu_name">[퓨어스펙] 블랙라벨 오렌지 4입</p>
+                            <p class="menu_price">9,900 원</p>
+                            <p class="menu_text">한 번만 먹어도 반하는 특대 사이즈 오렌지 4입</p>
+                        </a>
+                        <button class="shopbag"><img src="images/shopping.png" class="btn_popup_open" alt="장바구니 담기"></button>
+                    </td>
+                    <td class="menu_row">
+                        <a href="product3_3.html">
+                          <img src="images/new.png" alt="신상품" class="SaleMark">
+                           <div>
+                            <img src="images/product_images/menu3/menu3_3a.png" alt="궁궐우리맛닭(토종닭) 10호">
+                            </div>
+                            <p class="menu_name">궁궐우리맛닭(토종닭) 10호</p>
+                            <p class="menu_price">10,800 원</p>
+                            <p class="menu_text">쫄깃한 식감이 일품인 우리맛닭!</p>
+                        </a>
+                        <button class="shopbag"><img src="images/shopping.png" class="btn_popup_open" alt="장바구니 담기"></button>
+                    </td>
+                </tr>
+                <tr class="menu_col">
+                    <td class="menu_row">
+                        <a href="product4_4.html">
+                          <img src="images/new.png" alt="신상품" class="SaleMark">
+                           <div>
+                            <img src="images/product_images/menu4/menu4_4a.png" alt="[삼삼해물] 왕 바지락">
+                            </div>
+                            <p class="menu_name">[삼삼해물] 왕 바지락</p>
+                            <p class="menu_price">8,200원</p>
+                            <p class="menu_text">껍질부터 우월한 거제도 조개</p>
+                        </a>
+                        <button class="shopbag"><img src="images/shopping.png" class="btn_popup_open" alt="장바구니 담기"></button>
+                    </td>
+                    <td class="menu_row">
+                        <a href="product5_4.html">
+                          <img src="images/new.png" alt="신상품" class="SaleMark">
+                           <div>
+                            <img src="images/product_images/menu5/menu5_4a.png" alt="[맛의고수] 닭치고 밀떡볶이 2종">
+                            </div>
+                            <p class="menu_name">[맛의고수] 닭치고 밀떡볶이 2종</p>
+                            <p class="menu_price">6,900원</p>
+                            <p class="menu_text">닭육수로 감칠맛을 더한</p>
+                        </a>
+                        <button class="shopbag"><img src="images/shopping.png" class="btn_popup_open" alt="장바구니 담기"></button>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="popup_panel">
+                <div class="popup_bg"></div>
+                <div class="popup_contents">
+                    <p>장바구니에 추가되었습니다</p>
+                    <button id="btn_popup_close">쇼핑계속하기</button>
+                    <button id="btn_cart" onclick="go_cart()">장바구니가기</button>
+                </div>
+            </div>
+            <script src="javascript/popup_menu.js"></script>
+        </div>
+
+        <div class="page_link">
+            <span class="first_page"></span>
+            <span class="prev_page"></span>
+            <span>
+                <span class="num_page num_active">1</span>
+            </span>
+            <span class="next_page"></span>
+            <span class="last_page"></span>
+        </div>
+    </div>
+
+
+
+
+
+    <!--          하단 회사 안내        -->
+    <div id="footerBack">
+        <footer>
+            <h1>(주)한상차림</h1>
+            <ul class="footerTxt1">
+                <li>서울시 관악구 신림동 000-00</li>
+                <li>사업자등록번호: 000-00-00000</li>
+                <li>통신판매업신고번호: 0000-000-0000</li>
+                <li>대표이사: 김기휘 이사</li>
+                <li>개인정보보호책임자: 이현수 책임</li>
+            </ul>
+
+            <ul class="footerTxt2">
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="terms.html">이용약관</a></li>
+                <li><a href="policy.html">개인정보처리방침</a></li>
+                <li><a href="return.html">반품 및 환불 규정</a></li>
+            </ul>
+
+            <ul class="footerTxt3">
+                <li>Copyright 한상차림. COM. ALL RIGHTS RESERVED.</li>
+                <li>상품사진을 포함한 모든 콘텐츠는 저작권법에 의해 보호받고 있습니다.</li>
+            </ul>
+
+            <ul class="footerSns">
+                <li><img src="images/facebook.png" alt="페이스북"></li>
+                <li><img src="images/instart.png" alt="인스타"></li>
+                <li><img src="images/twitter.png" alt="트위터"></li>
+                <li><img src="images/youtube.png" alt="유튜브"></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

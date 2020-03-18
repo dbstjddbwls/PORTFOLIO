@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <title>마음나눔</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/basic.css">
+    <script src="lib/basic.js"></script>
+    <link rel="stylesheet" href="css/signForm.css">
+    <script src="lib/sign.js"></script>
+</head>
+<body>
+    <header id="header">
+        
+            <div class="userBox">
+            <div class="wrap">
+            <ul class="userList">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="signup.html">회원가입</a></li>
+                <li><a href="give.html">나의후원</a></li>
+            </ul>
+            </div>
+        </div>
+           <div class="wrap">
+            <div class="topNav">
+                <div class="logo">
+                <h1>
+                    <a href="index.html"><img src="images/public/logo.png" alt="로고"></a>
+                </h1>
+            </div>
+            <ul class="menu">
+                <li><a href="company.html">마음나눔 소개</a></li>            
+                <li><a href="work.html">사업안내</a></li>            
+                <li><a href="partic.html">참여하기</a></li>            
+                <li><a href="notice.html">재단소식</a></li>            
+                <li><a href="give.html">후원하기</a></li> 
+                <form action="#" class="searchBox">
+                <input type="search" class="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>           
+            </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="signup">
+       <h2 class="hidd">회원가입</h2>
+        <div class="wrap">
+            <p class="signTitle">간편 회원가입</p>
+        
+        <form action="#" class="signForm">
+           <span class="formTitle">정보입력</span>
+           <span class="starTxt"><span class="star">*</span>는 필수 입력 항목입니다.</span>
+            <ul class="signList">
+                <li>
+                    <span class="star">*</span>
+                    <span class="signName">아이디</span>
+                    <input type="text" id="id" class="textBar">
+                    <button type="button" class="idChk">중복검사</button>
+                    <span class="idResult">사용하실 수 있는 아이디입니다.</span>
+                </li>
+                <li>
+                    <span class="star">*</span>
+                    <span class="signName">비밀번호</span>
+                    <input type="password" id="password" class="textBar">
+                    <span class="passwordTxt">8~16자로 영문 및 숫자를 포함해야 합니다.</span>
+                </li>
+                <li>
+                    <span class="star">*</span>
+                    <span class="signName">비밀번호 확인</span>
+                    <input type="password" id="passwordChk" class="textBar">
+                    <span class="passwordChk">사용 가능한 비밀번호 입니다.</span>
+                    <span class="passwordNot">비밀번호가 일치하지 않습니다.</span>
+                </li>
+                <li>
+                    <span class="star">*</span>
+                    <span class="signName">성명/단체명</span>
+                    <input type="text" id="name" class="textBar">
+                </li>
+                <li>
+                    <span class="star">*</span>
+                    <span class="signName">휴대폰번호</span>
+                    <select name="phone" id="phone" class="phone">
+                        <option value="010" selected>010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                    </select> - 
+                    <input type="text" class="phone"> - 
+                    <input type="text" class="phone">
+                </li>
+                <li>
+                    <span class="star">*</span>
+                    <span class="signName">이메일</span>
+                    <input type="text" id="mail" class="textBar"> @ 
+                    <input type="text" id="adress" class="textBar">
+                    <select name="adress" id="adressList">
+                        <option value="naver.com" class="pageAdress">naver.com</option>
+                        <option value="dreamwiz.com" class="pageAdress">dreamwiz.com</option>
+                        <option value="gmail.com" class="pageAdress">gmail.com</option>
+                        <option value="hanmail.net" class="pageAdress">hanmail.net</option>
+                        <option value="hotmail.com" class="pageAdress">hotmail.com</option>
+                        <option value="" selected class="pageAdress">직접입력</option>
+                    </select>
+                </li>
+                <div class="introBox">
+                    <p>
+                    <span class="star">*</span>
+                    마음나눔은 2018년 2월 18일부터 <span class="cf">정보통신망 이용 촉진 및 정보보호등에 
+                    관한 법률 제 23조 조항에 의거, 홈페이지의 웹회원 가입 시 주민등록번호나 주소 
+                    등의 개인정보를 수집하지 않습니다.</span>
+                    </p>
+                    <p>
+                    <span class="star">*</span>
+                    아이디/비밀번호 분실 시 이를 다시 발급 받으려면 본인 확인절차를 거쳐야 하므로 <span class="cf">
+                        실명과 실제 사용하는 연락처를 입력해주세요.</span>
+                    </p>
+                    <p>
+                    <span class="star">*</span>
+                    허위정보 입력 시 위 서비스는 제공할 수 없으며, 타인 명의로 가입하실 경우 법적 처벌을 받을 수 있습니다.
+                    </p>
+                    <p>
+                    <span class="star">*</span>
+                    웹회원 가입과 별도로 후원회원으로 가입하시는 경우 기부금 영수증 발행 및 국세청 기부금소득공제 
+                    등록을 위해 개인정보(주민등록번호, 주소, 연락처)를 요청할 수 있습니다.
+                    </p>
+                </div>
+                <button type="button" class="sign">가입하기</button>
+            </ul>
+        </form>
+        </div>
+    </section>
+
+    <section id="giveIntro">
+        <h2 class="hidd">기부안내</h2>
+        <a href="#">
+            <p class="giveIcon"><i class="fas fa-hands"></i></p>
+            <p class="giveTitle">후원이 처음이신가요?</p>
+            <p class="giveTxt">후원이 처음이셔서 무엇부터 해야할지 고민되신다면 부담없이 연락해주세요</p>
+            <button type="button">온라인상담 신청하기 <i class="fas fa-chevron-right"></i></button>
+        </a>
+    </section>
+        
+    <footer id="footer">
+        <div class="wrap">
+            <div class="fLink">
+                <ul class="fList">
+                    <li><a href="company.html">마음나눔 소개</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용정책</a></li>
+                    <li><a href="#">이메일수신거부</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <select name="family" id="fSite">
+                    <option value="" selected disabled>Family site <i class="fas fa-sort-down"></i> </option>
+                    <option value="unicef">UNICEF KR</option>
+                    <option value="unicef">Renewed</option>
+                    <option value="unicef">UNGEI</option>
+                    <option value="unicef">UNAIDS</option>
+                    <option value="unicef">WHO</option>
+                </select>
+            </div>
+            <div class="companyIntro">
+                <p>
+                    <span>사업자주소: 서울특별시 마포구 성산1동 251-3 성산빌딩 3층</span>
+                    <span>Tel : 02-123-4567</span>
+                    <span>Fax : 02-234-5678</span>
+                </p>
+                <p>
+                    <span>사업자등록번호 : 120-15-15785</span>
+                    <span>대표이사 : 김윤성</span>
+                </p>
+                <p>COPYRIGHT &copy; MAUMNANUM. ALL RIGHT RESERVED</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

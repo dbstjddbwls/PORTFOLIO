@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Noto+Sans+KR:100,300,400,500,700,900|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/eventpage.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>회사소개</title>
+    <style>
+        .company_box{
+            margin: auto;
+            text-align: center;
+        }
+        .company_img{
+            width: 1070px;
+        }
+        .company_title{
+            font-size: 2em;
+            font-weight: bold;
+            color: #495057;
+            margin: 60px 0;
+            
+        }
+        .intro_text{
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 28px;
+            text-align: justify;
+            width: 800px;
+            margin: auto;
+            padding-bottom: 100px;
+        }
+        .company_sub{
+            width: 1070px;
+            height: 300px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="headerBack">
+        <header>
+            <img src="images/header_gif.gif" alt="신선하게 직접배송 됩니다. 배송지역을 확인해보세요!" class="headerGif">
+            <a href="index.html">
+                <img src="images/logo.png" alt="한상차림로고" class="headerLogo">
+            </a>
+            <ul class="headerLinkUl">
+                <li><a href="signup.html" class="SignUp">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="service_center.html">고객센터</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="navBack">
+        <nav>
+            <ul class="navUl">
+                <li><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt" autocomplete="off">
+                <label for="searchTxt"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navBack2">
+        <nav>
+            <ul class="navUl">
+                <li onclick="location.href='menu_all.html'"><img src="images/listbtn.png" alt="카테고리 열기" class="listBtn">전체카테고리</li>
+                <li><a href="new_product.html">신상품</a></li>
+                <li><a href="timesale.html">타임세일</a></li>
+                <li><a href="eventpage.html">이벤트</a></li>
+            </ul>
+            <form>
+                <input type="text" class="searchTxt" id="searchTxt2" autocomplete="off">
+                <label for="searchTxt2"></label>
+            </form>
+            <a href="search.html"><img src="images/search.png" alt="검색"></a>
+            <div class="cart">
+                <a href="cart.html" class="cartLink"><img src="images/shopbag.png" alt="장바구니" class="cartBag"></a>
+                <div class="cartCount">
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="navCateBack">
+        <div class="navCate">
+            <ul id="navCateUl">
+                <li><a href="menu1.html"><img src="images/navCate1.png" alt="채소"><span>채소</span></a></li>
+                <li><a href="menu2.html"><img src="images/navCate2.png" alt="과일"><span>과일</span></a></li>
+                <li><a href="menu3.html"><img src="images/navCate3.png" alt="육류"><span>육류</span></a></li>
+                <li><a href="menu4.html"><img src="images/navCate4.png" alt="해산물"><span>해산물</span></a></li>
+                <li><a href="menu5.html"><img src="images/navCate5.png" alt="간편식품"><span>간편식품</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--전체카테고리 누르면 카테고리목록 슬라이드 토글-->
+    <script>
+        var allCate = $('#navBack>nav>.navUl>li:eq(0)');
+        var navCate = $('#navCateBack');
+        allCate.click(function() {
+            navCate.slideToggle(300);
+        })
+    </script>
+
+    <div id="content">
+        <div class="company_box">
+            <img src="images/company/company_main.jpg" alt="메인슬로건" class="company_img">
+            <p class="company_title">한 상안에 자연을 담다</p>
+        </div>
+        <div class="intro_box">
+            <p class="intro_text">
+                1인가구의 시대가 늘면서 가장 큰 고민 중 하나는 단연 식(食)일 것입니다. 근처에서 장을 보자니 큰 마켓이 없을 수 있고, 푸드마켓을 이용하려니 소량주문이 되지않아 쌓아두다가 결국 버리는 일도 많았죠. 혼자 먹기에 좋은, 단순히 완제품만이 아닌 집밥을 먹고싶지만 너무 많이 시키는 것이 골치아픈, 이런 고민 속에서 한상차림이 시작되었습니다.
+                <br>
+                <br>
+                
+                혼자 살게되면 음식을 만들고 싶어도 남는 재료 관리에 장보러 마트에 가는 것도 힘든 법이죠. 생선을 한마리를 다 사도 못먹게 되는 일도 있고, 반찬을 만들어도 밖에서 먹을 때가 많아 많이 만들어두면 금방 상하기도 합니다. 한상차림은 이러한 고민을 도와드리고 싶었고, 혼자서 먹기 좋은 적당량과 음식들을 준비하기 시작했습니다. 값 싼 재료가 아닌 자연 그대로를 식탁에 담는 것을 첫 목표로 하였고 그 활로를 연 뒤 여러분의 식탁까지 제공하는 것을 보람으로 삼으며 살고있습니다. 
+                <br>
+                <br>
+                TV에서 본 맛있는 요리를 하고싶어도 재료가 늘 남아 처치곤란하고 그렇다고 다시 요리하자니 또 재료를 사야하는 딜레마에서 고객 여러분들이 고민하지 않고 다양한 요리를 시도하고, 자연을 맛보고, 고민하지 않고 지낼 수 있게하기 위해 한상차림은 늘 여러분 곁에 있을 것입니다.
+            </p>
+        </div>
+        <div class="company_box">
+            <img src="images/company/company_sub.jpg" alt="메인슬로건" class="company_sub">
+            <p class="company_title">신뢰와 가치</p>
+        </div>
+        <div class="intro_box">
+            <p class="intro_text">
+                첫 스타트는 좋았으니 난관은 많았습니다. 개개인이 아닌 많은 고객들에게 오랫동안 사랑받을 수 있는 서비스를 제공하고자 했기에, 직원이 아닌 고객의 입장에서 첫 발을 내딛었습니다. 상품을 검수할 때에는 '이것이 잘 팔릴까' 보단 '고객의 입장에서 이 제품이 사고싶은가'를 생각하였고, '많이 팔려야할텐데'보단 '오랫동안 이용하며 많이 사고싶어지게'를 목표로 하였습니다.
+                <br>
+                <br>
+                이 과정에서 저희 한상차림이 꼭 지키고자 했던 가치를 알려드리려합니다. 바로 '옳은 것' 입니다. 장인 분들이나 농민 분들에게 값을 깍아 이윤을 많이 남기는 것이 아닌, 유통업계의 권리라며 가격을 폭등시켜 고객에게 판매하여 배를 불리는 것이 아닌, 단기적으로 한 두번 이용하는 것보단, 장기적으로 판매자와 소비자를 넘어 사람 대 사람으로 옳바른 일을 하기위해 한상차림은 지금도 노력하고 있습니다. 
+            </p>
+        </div>
+    </div>
+    <div id="footerBack">
+        <footer>
+            <h1>(주)한상차림</h1>
+            <ul class="footerTxt1">
+                <li>서울시 관악구 신림동 000-00</li>
+                <li>사업자등록번호: 000-00-00000</li>
+                <li>통신판매업신고번호: 0000-000-0000</li>
+                <li>대표이사: 김기휘 이사</li>
+                <li>개인정보보호책임자: 이현수 책임</li>
+            </ul>
+
+            <ul class="footerTxt2">
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="terms.html">이용약관</a></li>
+                <li><a href="policy.html">개인정보처리방침</a></li>
+                <li><a href="return.html">반품 및 환불 규정</a></li>
+            </ul>
+
+            <ul class="footerTxt3">
+                <li>Copyright 한상차림. COM. ALL RIGHTS RESERVED.</li>
+                <li>상품사진을 포함한 모든 콘텐츠는 저작권법에 의해 보호받고 있습니다.</li>
+            </ul>
+
+            <ul class="footerSns">
+                <li><img src="images/facebook.png" alt="페이스북"></li>
+                <li><img src="images/instart.png" alt="인스타"></li>
+                <li><img src="images/twitter.png" alt="트위터"></li>
+                <li><img src="images/youtube.png" alt="유튜브"></li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            var num = $(this).scrollTop();
+            if (num > 110) {
+                $("#navBack2").slideDown(0);
+                $("#navBack").css('opacity', '0');
+            } else {
+                $("#navBack2").css('display', 'none');
+                $("#navBack").css('opacity', '1');
+            }
+        });
+    });
+</script>
+</body>
+</html>

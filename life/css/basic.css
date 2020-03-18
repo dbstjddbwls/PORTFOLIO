@@ -1,0 +1,274 @@
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+            min-width: 1200px;
+        }
+
+        .hidd {
+            display: none;
+        }
+
+        @font-face {
+            font-family: 'NanumGothic';
+            src: url(../font/NanumGothic.ttf);
+        }
+
+        body {
+            font-family: 'NanumGothic';
+            font-size: 14px;
+        }
+
+
+
+        /*             상단 네비게이션             */
+
+        #header {
+            width: 100%;
+            min-width: 1200px;
+        }
+
+        .userBox {
+            height: 40px;
+            z-index: 9999;
+            position: relative;
+            background-color: #fff;
+            box-shadow: -1px 0px 3px #000;
+            width: 100%;
+        }
+
+        .logo {
+            display: inline-block;
+        }
+
+        .userList {
+            float: right;
+            height: 40px;
+        }
+
+        .userList li {
+            float: left;
+            padding: 10px 0;
+        }
+
+        .userList li a {
+            display: inline-block;
+            border-right: 1px solid #333;
+            padding: 0 10px;
+        }
+
+        .userList li:last-child {
+            padding-top: 3px;
+        }
+
+        .userList li:last-child a {
+            padding-right: 0;
+            border: 0;
+        }
+
+        .userList li:last-child img {
+            position: relative;
+            top: 4px;
+            left: -4px;
+        }
+
+        .userList li a:hover {
+            color: #5353e5;
+            text-decoration: underline;
+        }
+
+        .topNav {
+            background-color: transparent;
+            position: fixed;
+            width: 100%;
+            transition: 0.3s;
+            height: 84px;
+            z-index: 100;
+            margin: auto;
+            min-width: 1200px;
+
+        }
+
+        .topNav:hover {
+            background-color: #000;
+            height: 270px;
+        }
+
+        .mainList {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .mainList > li {
+            width: 13.5%;
+        }
+
+        .mainList > li:last-child {
+            width: 20%;
+        }
+
+        .mainList > li > a {
+            color: #eee;
+            display: inline-block;
+            padding: 30px 0;
+            font-size: 1.5em;
+        }
+
+        .mainList > li > a::after {
+            content: "";
+            display: block;
+            width: 100%;
+            margin-top: 8px;
+            height: 2px;
+            background-color: #5353e5;
+            transform: scale(0);
+            transition: 0.3s;
+        }
+
+        .mainList > li:last-child > a {
+            background: linear-gradient(to right, #139dba, #6d6df7);
+            color: #fff;
+            font-weight: 600;
+            transition: 0.5s;
+            width: 100%;
+        }
+
+        .mainList > li:last-child a:hover {
+            background: linear-gradient(to right, #5353e5, #8124ed);
+            text-shadow: 2px 2px 5px purple;
+        }
+
+        .mainList > li:hover > a {
+            color: #fff;
+        }
+
+        .mainList > li:last-child a::after {
+            display: none;
+        }
+
+        .mainList li:hover a::after {
+            transform: scale(1);
+        }
+
+        .subList {
+            padding-bottom: 30px;
+            display: none;
+            position: relative;
+            z-index: 100;
+        }
+
+        .subList li {}
+
+        .subList li a {
+            color: #999;
+            padding: 15px 0;
+            display: block;
+            width: 100%;
+            position: relative;
+            font-size: 1.1em;
+        }
+
+        .subList li a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 1px solid #5353e5;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+
+        .subList li a:hover {
+            color: #fff;
+        }
+
+        .subList li a:hover::before {
+            transform: scale(1);
+        }
+
+
+        /*             푸터             */
+        #footer {
+            background-color: #fff;
+        }
+
+        .fLink {
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+            min-width: 1200px;
+        }
+
+        .fList {
+            padding: 10px 0;
+            overflow: auto;
+        }
+
+        .fList li {
+            float: left;
+            border-right: 1px solid #b5b5b5;
+        }
+
+        .fList li:first-child a {
+            margin-left: 0;
+        }
+
+        .fList li:last-child {
+            border: 0;
+        }
+
+        .fList li a {
+            font-size: 1.1em;
+            margin: 0 20px;
+        }
+
+        .fList li a:hover {
+            text-decoration: underline;
+        }
+
+        .company {
+            clear: both;
+            padding-top: 40px;
+            padding-bottom: 200px;
+        }
+
+        .fLogo {
+            display: inline-block;
+            padding-right: 30px;
+        }
+
+        .fTxt {
+            display: inline-block;
+        }
+
+        .fTxt p {
+            padding: 0px 10px 5px 10px;
+        }
+
+        .fTxt p span {
+            border-right: 1px solid #b5b5b5;
+            padding: 0 10px;
+        }
+
+        .fTxt p span:first-child {
+            padding-left: 0;
+        }
+
+        .fTxt p span:last-child {
+            border: 0;
+        }

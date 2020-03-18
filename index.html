@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hello, Everybody!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="lib/index.js"></script>
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+   <div class="popup">
+       <div class="popTxt">
+           <p class="pop1">Hello</p>
+       <p class="pop2">World!</p>
+       </div>
+   </div>
+   
+    <header id="header">
+        <h2 class="hidd">배너</h2>
+        <div class="topNav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <ul class="topList">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="subList">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+
+        <div class="type-block top_text">
+            <div class="type-ani top_text_box">
+                <!-- type 라이브러리 구조 -->
+                <h2 class="mainTxt">Are you Looking for a <span class="typed-words"></span></h2>
+            </div>
+            <script src="typed.js"></script>
+            <script>
+                var typed = new Typed('.typed-words', {
+                    strings: ["Front Developer?", "Web Publisher?", "UI/UX Designer?"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: 3,
+                    showCursor: true
+                });
+
+            </script>
+        </div>
+
+        <div class="scroll">
+            <i class="fas fa-caret-down"></i>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="hidd">About</h2>
+        <p class="portTitle">ABOUT</p>
+
+        <div class="portani">
+            <p class="aboutTitle">Hello, World!</p>
+            <p class="aboutTxt">이 페이지를 보고 계신다면 아마 웹디자이너나 프론트 개발자를 구하려는 목적이실 것입니다.
+                만약 제가 여러분이 원하는 일을 할 수 있다면 연락해주시길 바랍니다.</p>
+        </div>
+
+        <div class="aboutBox">
+            <div class="profile">
+                <div class="wrap">
+                    <p class="subTitle">Profile</p>
+
+                    <div>
+                        <p class="proName">Name</p>
+                        <p class="proTxt">김윤성</p>
+                    </div>
+                    <div>
+                        <p class="proName">Age</p>
+                        <p class="proTxt">25</p>
+                    </div>
+                    <div>
+                        <p class="proName">Adress</p>
+                        <p class="proTxt">서울시 관악구 신원동</p>
+                    </div>
+                    <div>
+                        <p class="proName">Tel</p>
+                        <p class="proTxt">010-5028-3987</p>
+                    </div>
+                    <div>
+                        <p class="proName">E-Mail</p>
+                        <p class="proTxt">dbstjddbwls1@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="wrap">
+                    <p class="subTitle">Comment</p>
+
+                    <p class="commentTxt">
+                        <span class="commentTitle">살아가며 사람들은 많은 것을 알게 됩니다.</span> <br>
+
+                        어릴때 걷는 법부터 말하는 법, 공부하는 법, 원하는 꿈을 찾는 법, 그리고 나아가는 법. <br><br>
+                        현재에 안주하기보단 어제보다 오늘이, 오늘보다 내일 더 나은
+                        사람이 되고싶습니다. <br><br>
+                        경력만 쌓는 개발자가 되기보단 꾸준히 발전하고 나아가며 잘하는 개발자를 목표로
+                        하겠습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="wrap">
+                    <p class="subTitle">Skill</p>
+                    <div class="skillList">
+                        <span class="skillName">HTML</span>
+                        <div class="skillBar">
+                            <div class="skillColor htmlS">90%</div>
+                        </div>
+                    </div>
+                    <div class="skillList">
+                        <span class="skillName">CSS</span>
+                        <div class="skillBar">
+                            <div class="skillColor htmlC">90%</div>
+                        </div>
+                    </div>
+                    <div class="skillList">
+                        <span class="skillName">Js</span>
+                        <div class="skillBar">
+                            <div class="skillColor htmlJ">80%</div>
+                        </div>
+                    </div>
+                    <div class="skillList">
+                        <span class="skillName">Jquery</span>
+                        <div class="skillBar">
+                            <div class="skillColor htmlJ">80%</div>
+                        </div>
+                    </div>
+                    <div class="skillList">
+                        <span class="skillName">UI/UX</span>
+                        <div class="skillBar">
+                            <div class="skillColor htmlU">65%</div>
+                        </div>
+                    </div>
+                    <div class="skillList">
+                        <span class="skillName">Ps</span>
+                        <div class="skillBar">
+                            <div class="skillColor htmlP">65%</div>
+                        </div>
+                    </div>
+                    <div class="skillList learnBox">
+                        <span class="learnTxt">Learning</span>
+                        <img src="images/github.png" alt="깃허브" class="learn">
+                        <img src="images/node.png" alt="노드" class="learn">
+                        <img src="images/react.png" alt="리액트" class="learn">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="hidd">Portfolio</h2>
+        <p class="portTitle">PORTFOLIO</p>
+        <div class="filterBox">
+            <div class="filter fWeb active">WEB</div>
+            <div class="filter fDesign">DESIGN</div>
+        </div>
+        <div class="gallery">
+
+            <div class="gBox web">
+                <img src="images/port/hansang.png" alt="한상차림">
+                <div class="gTxt">
+                    <p class="gTitle">한상차림</p>
+                    <p class="gSub">요식업 / 배송업</p>
+                    <a href="http://frontdev.co.kr/hansang" target="_blank">
+                        <p class="more">VIEW MORE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="gBox web">
+                <img src="images/port/webmind.png" alt="웹마인드">
+                <div class="gTxt">
+                    <p class="gTitle">웹마인드</p>
+                    <p class="gSub">웹제작 / 에이전시</p>
+                    <a href="http://frontdev.co.kr/webmind" target="_blank">
+                        <p class="more">VIEW MORE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="gBox web">
+                <img src="images/port/mana.png" alt="마음나눔">
+                <div class="gTxt">
+                    <p class="gTitle">마음나눔</p>
+                    <p class="gSub">봉사단체 / 법인</p>
+                    <a href="http://frontdev.co.kr/mana" target="_blank">
+                        <p class="more">VIEW MORE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="gBox web">
+                <img src="images/port/ymall.png" alt="Y몰">
+                <div class="gTxt">
+                    <p class="gTitle">Y Mall</p>
+                    <p class="gSub">쇼핑몰 / 악세사리</p>
+                    <a href="http://dbstjddbwls.cafe24.com" target="_blank">
+                        <p class="more">VIEW MORE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="gBox web">
+                <img src="images/port/SH.png" alt="신림주막">
+                <div class="gTxt">
+                    <p class="gTitle">신림주막</p>
+                    <p class="gSub">요식업 / App</p>
+                    <a href="http://frontdev.co.kr/SH" target="_blank">
+                        <p class="more">VIEW MORE</p>
+                    </a>
+                </div>
+            </div>
+            <div class="gBox web">
+                <img src="images/port/life.png" alt="더라이프">
+                <div class="gTxt">
+                    <p class="gTitle winter">더 라이프</p>
+                    <p class="gSub">미완성 / 온라인게임</p>
+                    <a href="http://frontdev.co.kr/life" target="_blank">
+                        <p class="more">VIEW MORE</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="design">
+                <ul class="center">
+                    <li>
+                        <a href="images/port/bannerB.png">
+                            <img src="images/port/banner.png" alt="배너">
+                            <div class="slideTxt">
+                                <p class="slideTitle">광고배너 제작</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/port/bUi.JPG">
+                            <img src="images/port/blackvelvet.jpg" alt="페이지안내">
+                            <div class="slideTxt">
+                                <p class="slideTitle">쇼핑몰 페이지 디자인</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/port/bEvent1.png">
+                            <img src="images/port/event1.png" alt="이벤트">
+                            <div class="slideTxt">
+                                <p class="slideTitle">카페 상반기메뉴 이벤트</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/port/bEvent2.png">
+                            <img src="images/port/event2.png" alt="이벤트">
+                            <div class="slideTxt">
+                                <p class="slideTitle">카페 하반기메뉴 이벤트</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/port/bMenu.png">
+                            <img src="images/port/menu1.png" alt="메뉴판">
+                            <div class="slideTxt">
+                                <p class="slideTitle">와인바 메뉴 디자인</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="hidd">contact</h2>
+        <p class="portTitle">CONTACT</p>
+
+        <div class="conBox">
+            <p>
+                <span class="conName">Tel</span>
+                <span class="conTxt">010 - 5028 - 3987</span>
+            </p>
+            <p>
+                <span class="conName">E-Mail</span>
+                <span class="conTxt">dbstjddbwls1@gmail.com</span>
+            </p>
+            <p>
+                <span class="conName">Kakao</span>
+                <span class="conTxt">kys8389976</span>
+            </p>
+        </div>
+    </section>
+
+    <div class="top">
+
+    </div>
+
+    
+</body>
+
+</html>

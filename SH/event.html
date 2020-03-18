@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/basic.css"><script src="javascript/search.js"></script>
+    <link rel="stylesheet" href="css/event.css">
+    <style>
+        @font-face {
+            font-family: 'HS';
+            src: url(font/HS.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMJUA';
+            src: url(font/BMJUA_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMYEON';
+            src: url(font/BMYEONSUNG_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'GUK';
+            src: url(font/GUK.ttf);
+        }
+
+        @font-face {
+            font-family: 'GIMJE';
+            src: url(font/GIMJE.TTF)
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNav">
+            <span onclick="openNav()">
+                <i class="fas fa-bars topIcon" id="menu"></i>
+            </span>
+            <script src="javascript/navSub.js"></script>
+            <div class="logo">
+                <a href="index.html"><span>신림주막</span></a>
+            </div>
+            <span class="searchIcon topIcon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></span>
+            <div class="search_box">
+                <i class="fas fa-search search"></i>
+                <input type="text" class="search_inp">
+            </div>
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                메인
+            </a>
+            <a href="seat.html">
+                <i class="fas fa-check"></i>
+                좌석현황
+            </a>
+            <a href="reservation.html">
+                <i class="far fa-calendar-minus"></i>
+                예약
+            </a>
+            <a href="food.html">
+                <i class="fas fa-utensils"></i>
+                메뉴
+            </a>
+            <a href="event.html">
+                <i class="fas fa-calendar-week"></i>
+                행사
+            </a>
+            <a href="complain.html">
+                <i class="fas fa-archive"></i>
+                소리함
+            </a>
+            <a href="map.html">
+                <i class="far fa-map"></i>
+                약도
+            </a>
+            <div class="store_text">
+                <p>가맹문의</p>
+            </div>
+            <div class="sub_box">
+                <p>대표번호 02-2404-9541</p>
+                <p>서울특별시 관악구 신림동 신림로 340</p>
+                <p>Email ceo@shinmack.net</p>
+            </div>
+        </div>
+        <div class="bg">
+        <div class="eventBox">
+            <div class="liveBox">
+               <p class="eventTxt">진행 중인 이벤트</p>
+                <img src="images/evB02.png" alt="이벤트" class="event">
+            </div>
+        </div>
+        
+        <div class="endBox">
+            <p class="eventTxt">종료된 이벤트</p>
+            <p class="endSub">종료된 이벤트는 안내를 위해 <br>종료 일자부터2주 뒤에 삭제됩니다</p>
+            <img src="images/evB01.png" alt="이벤트" class="event">
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>

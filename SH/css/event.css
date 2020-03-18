@@ -1,0 +1,46 @@
+        .container {
+            overflow: auto;
+            background-image: none;
+            background-size: auto;
+        }
+
+        .eventBox {
+            clear: both;
+            padding: 40px 0;
+        }
+
+        .liveBox,
+        .endBox {
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .liveBox img {
+            cursor: pointer;
+        }
+
+        .eventTxt {
+            font-size: 2.3em;
+            font-family: "BMJUA";
+            color: #545a4c;
+            margin: 0;
+        }
+
+        .endBox .endSub {
+            font-size: 1.1em;
+            line-height: 1.5;
+            font-family: "BMJUA";
+            color: #777;
+            padding-bottom: 10px;
+            ;
+        }
+
+        .topNav {
+            background-image: url(../images/bgHeader.png);
+            height: 110px;
+        }
+
+        .bg {
+            background-image: url(../images/backGround.png);
+        }

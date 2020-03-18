@@ -1,0 +1,477 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Lato', 'Noto Sans KR';
+            color: #666;
+        }
+
+        a {
+            outline: none;
+            color: #666;
+        }
+
+        a:link,
+        a:visited {
+            color: #666;
+        }
+
+        .wrap {}
+
+
+        /*      상단 네비게이션        */
+
+        #header {
+            height: 85px;
+            background-color: #121213;
+            padding: 0 80px;
+            position: fixed;
+            z-index: 9999;
+            width: 100%;
+        }
+
+        .headerBox {
+            position: relative;
+
+        }
+
+        #topNav h1 {
+            float: left;
+            font-size: 0;
+            margin-top: 20px;
+        }
+
+        #topNav h1 a {
+            display: inline-block;
+            font-size: 0;
+            width: 166px;
+            height: 48px;
+            background-image: url(../images/main/logoW.png);
+            background-repeat: no-repeat;
+        }
+
+        #gnb ul {
+            float: right;
+        }
+
+        #gnb ul li {
+            float: left;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+
+        #gnb ul li a {
+            font-weight: 900;
+            font-size: 1.3em;
+            color: #ddd;
+        }
+
+        #gnb ul li a:hover {
+            color: #fff;
+        }
+
+
+        /*      배너이미지       */
+
+        .headerBox {
+            position: relative;
+        }
+
+        .imgBox {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 1000px;
+            overflow: hidden;
+        }
+
+        .imgBox ul li {
+            position: absolute;
+            width: 100%;
+            color: #fff;
+            opacity: 1;
+            display: none;
+        }
+
+        .imgBox ul li img {
+            width: 100%;
+            height: 1130px;
+        }
+
+        .imgBox ul li .title {
+            font-family: 'Black Han Sans';
+            position: absolute;
+            top: 400px;
+            font-size: 100px;
+            font-style: italic;
+            left: 20%;
+            line-height: 1em;
+        }
+
+        .bLine {
+            width: 80px;
+            height: 3px;
+            position: absolute;
+            top: 510px;
+            left: 20%;
+            margin-left: 10px;
+            background-color: #fff;
+        }
+
+        .imgBox ul li .subTitle {
+            font-family: 'Nanum Gothic';
+            position: absolute;
+            top: 530px;
+            font-size: 30px;
+            left: 20.5%;
+        }
+
+        .imgBox ul .firstB {
+            opacity: 1;
+            display: block;
+        }
+
+        .scrollB {
+            position: absolute;
+            bottom: 60px;
+            width: 100px;
+            height: 80px;
+            margin: auto;
+            color: white;
+            left: calc(50% - 25px);
+            font-size: 4em;
+            animation-name: arrow;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes arrow {
+            0% {
+                bottom: 60px;
+            }
+
+            50% {
+                bottom: 20px;
+            }
+
+            100% {
+                bottom: 60px;
+            }
+        }
+
+
+        /*      WORK        */
+
+        #work {}
+
+        .wBox {
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .wTitle {
+            font-size: 3em;
+            text-align: center;
+            width: 100%;
+            padding: 40px;
+            background-image: url(../images/main/workB.png);
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #f2f2f2;
+        }
+
+        .wList li {
+            float: left;
+            width: 50%;
+            font-family: 'Black Han Sans';
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 5em;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.8);
+            background-repeat: no-repeat;
+            text-align: center;
+            height: 500px;
+            cursor: pointer;
+        }
+
+        .wList li a {
+            color: #f2f2f2;
+            overflow: auto;
+        }
+
+        .wList li .wName {
+            position: absolute;
+            top: 8%;
+            left: 5%;
+            font-style: italic;
+        }
+
+        .wList li img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .wSubTxt {
+            font-family: 'Nanum Gothic';
+            font-size: 20px;
+        }
+
+        .wTxtbox {
+            width:100%;
+            top: 0;
+            height: 100%;
+            line-height: 1.3;
+            text-align: center;
+            position: absolute;
+            display: none;
+            background-color: rgba(0,0,0,0.5);
+            padding-top: 200px;
+        }
+
+        /*        포트폴리오        */
+        #port .wTitle {
+            background-image: url(../images/main/portB.png);
+        }
+
+        .portList li {
+            float: left;
+            width: 25%;
+            position: relative;
+            text-align: center;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .portList li:hover img {}
+
+        .portList li img {
+            width: 100%;
+            height: 300px;
+            z-index: -1;
+        }
+
+        .portList li a {
+            overflow: auto;
+        }
+
+        .portBox {
+            position: absolute;
+            left: calc(50% - 90px);
+            color: #f2f2f2;
+            text-align: center;
+            display: none;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);
+            height: 100%;
+            padding-top: 100px;
+        }
+
+        .portTxt {
+            font-weight: 900;
+            font-size: 2em;
+            line-height: 1.5;
+        }
+
+        .portSub {
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+
+
+
+
+        #req {
+            clear: both;
+        }
+
+        #req .wTitle {
+            background-image: url(../images/main/reqB.png);
+            background-color: rgba(0, 0, 0, 0.5);
+            background-size: cover;
+        }
+
+        .request {
+            width: 100%;
+            background-image: url(../images/main/request.png);
+            background-color: rgba(0, 0, 0, 1);
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .reqBox {
+            margin: auto;
+            text-align: center;
+            color: #f2f2f2;
+            padding-top: 80px;
+        }
+
+        .reqBox p {
+            font-size: 1.5em;
+            padding-bottom: 30px;
+        }
+
+        .reqBox button {
+            border: 2px solid #f2f2f2;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #f2f2f2;
+            font-size: 1.5em;
+            padding: 20px 70px;
+            cursor: pointer;
+        }
+
+        .reqBox button:hover {
+            transform: scale(1.03);
+            transition: 0.5s;
+        }
+
+        .reqBox .b {
+            font-family: 'Black Han Sans';
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        footer {
+            background-color: #35373a;
+        }
+        .fList li {
+            float: left;
+            width: 19%;
+            text-align: center;
+            color: #696b70;
+            padding: 80px 10px;
+        }
+
+        .fList li i {
+            font-size: 3em;
+            width: 50px;
+            height: 50px;
+        }
+
+        .fList li p {
+            padding-top: 10px;
+            color: #c9cacb;
+        }
+
+        .copy {
+            clear: both;
+            text-align: center;
+            background-color: #000;
+            color: #f2f2f2;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .sideBar {
+            color: #f2f2f2;
+            display: inline-block;
+            float: right;
+            font-size: 2.5em;
+            margin-top: 15px;
+            cursor: pointer;
+            display: none;
+
+        }
+
+        .sideMenu {
+            position: absolute;
+            top: 85px;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            display: none;
+        }
+
+        .sideList li:hover,
+        .sideList li:active {
+            background-color: #666;
+        }
+
+        .sideList li {
+            float: left;
+            width: 25%;
+            text-align: center;
+            background-color: #121213
+        }
+
+        .sideList li a {
+            color: #f2f2f2;
+            display: block;
+            padding: 20px 40px;
+        }
+
+
+        @media screen and (max-width:1130px) {
+            #header{
+                padding: 0 20px;
+            }
+            #gnb {
+                display: none;
+            }
+            .sideList li a{
+	        font-size: 1.2em;
+}
+            .sideBar {
+                display: block;
+            }
+
+            .wList li {
+                width: 100%;
+            }
+
+            .portList li {
+                width: 50%;
+            }
+            .sideList li{
+        float: none;
+        width: 100%;
+    }
+        }
+@media screen and (max-width:800px){
+    .title{
+        font-size: 3.3em!important;
+    }
+    .imgBox ul li .title{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bLine{
+        display: none;
+    }
+    .imgBox ul li .subTitle{
+        top: 480px;
+    }
+    .wList li .wName{
+        font-size: 50px;
+    }
+    
+    .fList li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            color: #696b70;
+            padding:20px 10px;
+        }
+    .fList li:last-child{
+        width: 100%;
+    }
+    .wList li{
+        height: 300px;
+    }
+    .wTxtbox{
+        padding-top: 80px;
+    }
+    .wWeb a img{
+        height: 300px;
+    }
+}

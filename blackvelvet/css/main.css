@@ -1,0 +1,389 @@
+/*--------배너 관련--------*/
+
+.main_banner {
+    clear: both;
+    overflow: hidden;
+}
+
+.banner_ul {
+    width: 300%;
+    margin: 0;
+    -webkit-animation: 8s slidy ease-in-out infinite;
+    animation: 8s slidy ease-in-out infinite;
+}
+
+.banner_li {
+    list-style: none;
+    width: 33.3333%;
+    float: left;
+}
+
+.banner {
+    width: 100%;
+}
+
+@keyframes slidy {
+    0% {
+        margin-left: 0;
+    }
+    /* 0 ~ 10  : 정지 */
+    10% {
+        margin-left: 0;
+    }
+    /* 10 ~ 25 : 변이 */
+    25% {
+        margin-left: -100%;
+    }
+    /* 25 ~ 35 : 정지 */
+    35% {
+        margin-left: -100%;
+    }
+    /* 35 ~ 50 : 변이 */
+    50% {
+        margin-left: -200%;
+    }
+    /*0 10 35 55 75 100 으로하면 처음으로 바로바뀜*/
+    60% {
+        margin-left: -200%;
+    }
+}
+
+
+/*--------업데이트--------*/
+.main_update{
+    clear: both;
+    z-index: 10;
+}
+.main_update_nav {
+    padding-top: 10px;
+}
+
+.main_bold_text {
+    font-weight: 900;
+    font-size: 24px;
+    float: left;
+    padding-left: 6px;
+}
+.main_update .slick-track{
+    margin-left: -20%
+}
+.main_item_more {
+    font-size: 14px;
+    color: gray;
+    float: right;
+    padding-right: 30px;
+    padding-top: 6px;
+}
+
+.main_item_list {
+    list-style: none;
+    width: 130px;
+    float: left;
+    margin-right: 5px;
+    box-shadow: 0px 1px 3px 0px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 6px;
+    margin-bottom: 3px;
+}
+
+.main_item {
+    width: 100%;
+    height: 125%;
+}
+
+.main_item_ul {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 500%;
+}
+
+.main_item_name {
+    font-size: 14px;
+    padding-left: 5px;
+    display:inline-block;
+    padding-top: 6px;
+}
+
+.main_item_price {
+    font-size: 12px;
+    padding-left: 8px;
+    font-weight: 700;
+}
+.slider {
+    width: 100%;
+    display: block;
+    border: 1px solid transparent;
+}
+
+
+/*--------트렌드이슈--------*/
+.main_trends {
+    clear: both;
+    list-style: none;
+    margin: 8px;
+}
+
+.main_trends_nav {
+    padding-top: 10px;
+}
+
+.main_trend_more {
+    font-size: 14px;
+    color: gray;
+    float: right;
+    padding-right: 30px;
+    padding-top: 6px;
+}
+
+/*slick 충돌 오류*/
+/*.main_trend_ul {
+    padding: 0px;
+    width: 1000%;
+}*/
+/*
+.main_trends_list {
+    float: left;
+    margin: 5px;
+    width: 300px;
+    list-style: none;
+    overflow: hidden;
+}*/
+
+.main_trends_pic {
+    width: 300px;
+    border-radius: 6px;
+}
+
+.main_trend_name {
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 4px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+
+/*--------베스트--------*/
+.main_best {
+    clear: both;
+}
+
+.main_best_nav {
+    margin-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.main_best_more {
+    font-size: 14px;
+    color: gray;
+    float: right;
+    padding-right: 30px;
+    padding-top: 6px;
+}
+
+.main_best_chart {
+    width: 93%;
+    
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+.best_none_sel {
+    color: #bbb;
+}
+
+th {
+    border: 1px solid #bbb;
+    padding: 10px;
+}
+td {
+    padding-top: 10px;
+    padding-left: 10px
+}
+
+.main_best_ul {
+    padding: 0px;
+    width: 500%;
+}
+
+.best_clothes {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.best_clothes_list {
+    float: left;
+    width: 240px;
+    margin-right: 10px;
+}
+/*dot 표시*/
+/*.main_clothes_dot{
+    text-align: center;
+}
+.clothes_dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+} dot more */
+.clothes_frm {
+    width: 100%;
+    height: 390px;
+    border: 0;
+}
+
+/*--------입점브랜드--------*/
+.main_brand {
+    clear: both;
+}
+
+.main_brand_nav {
+    margin-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.main_brand_more {
+    font-size: 14px;
+    color: gray;
+    float: right;
+    padding-right: 30px;
+    padding-top: 6px;
+}
+
+.main_brand_logo {
+    background-color: lightgray;
+    margin-left: 18px;
+    padding: 5px;
+    width: 80px;
+    float: left;
+}
+
+.main_brand_text {
+    padding-right: 30px;
+    margin-left: 110px;
+}
+
+.main_brand_subj {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.main_brand_cont {
+    color: gray;
+    font-size: 12px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    display: -webkit-box;
+    line-height: 1.5;
+    height: 3.3em;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
+.main_brand_li {
+    margin-bottom: 30px;
+}
+
+
+/*--------기획전--------*/
+.main_exh {
+    clear: both;
+}
+
+.main_exh_nav {
+    margin-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+/*slick 충돌 오류*/
+/*.main_trend_ul {
+    padding: 0px;
+    width: 1000%;
+}*/
+/*
+.main_trends_list {
+    float: left;
+    margin: 5px;
+    width: 300px;
+    list-style: none;
+    overflow: hidden;
+}*/
+
+.main_exh_pic {
+    width: 100%;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    margin-bottom: 6px;
+
+}
+
+.main_exh_text {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.main_exh_date {
+    font-size: 14px;
+    color: gray;
+}
+
+.main_exh_li:first-child {
+    padding-bottom: 10px;
+}
+
+
+/*--------하단 안내페이지--------*/
+.main_bottom {
+    clear: both;
+    background-color: #dddddd;
+    margin-bottom: 40px;
+}
+
+.bt_text {
+    margin-top: 12px;
+    margin-left: 8px;
+}
+
+.call {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.call_tel {
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.return {
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.return_adress {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+.bt_line_bottom {
+    margin-bottom: 0px;
+}

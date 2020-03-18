@@ -1,0 +1,177 @@
+       #partic {
+           border-top: 3px solid #21b000;
+           width: 100%;
+           padding: 80px 0;
+       }
+
+       .partBox {
+           width: 600px;
+           margin: auto;
+           border: 1px solid #21b000;
+           overflow: auto;
+           text-align: center;
+       }
+
+       .donate,
+       .volun {
+           float: left;
+           width: 50%;
+           border: 1px solid #21b000;
+           height: 100%;
+           padding: 10px 0;
+           cursor: pointer;
+           font-size: 1.1em;
+       }
+
+       .select {
+           background-color: #21b000;
+           color: #fff;
+       }
+
+       .partTitle {
+           padding-top: 80px;
+           text-align: center;
+           font-weight: 900;
+           color: #666;
+           font-size: 2.5em;
+           padding-bottom: 50px;
+       }
+
+       .donateImg {
+           width: 100%;
+           height: 400px;
+           background-image: url(../images/part/donate.jpg);
+       }
+
+       .partSub {
+           text-align: center;
+           width: 880px;
+           margin: auto;
+           padding: 30px 0;
+           font-size: 1.3em;
+           line-height: 2;
+           font-weight: 500;
+       }
+
+       .partList {
+           padding: 10px 0 30px 30px;
+           overflow: auto;
+           border-bottom: 2px dashed #21b000;
+       }
+
+       .partList img {
+           float: left;
+           width: 200px;
+           padding-top: 30px;
+           padding-right: 30px;
+
+       }
+
+       .partIntro {
+           padding-top: 35px;
+
+       }
+
+       .introTitle {
+           font-size: 1.2em;
+           font-weight: bold;
+           color: #21b000;
+           padding-bottom: 10px;
+       }
+
+       .introTxt {
+           width: 1050px;
+       }
+
+       .first {
+           border-top: 2px solid #21b000;
+       }
+
+       .donateCheck {
+           border: 1px solid #666;
+           width: 800px;
+           overflow: auto;
+           margin: auto;
+           margin-top: 60px;
+       }
+
+       .checkTitle {
+           width: 20%;
+           float: left;
+           background-color: #f0f0f0;
+           text-align: center;
+           padding: 20px 5px;
+           border-right: 1px solid #666;
+
+       }
+
+       .checkTxt {
+           float: left;
+           padding: 8px 30px;
+       }
+
+       .volunPart {
+           display: none;
+       }
+
+       .volunImg {
+           width: 100%;
+           height: 400px;
+           background-image: url(../images/part/volun.jpg);
+       }
+
+       .volList {
+           padding: 10px 0 30px 30px;
+           overflow: auto;
+           border-bottom: 2px dashed #21b000;
+           text-align: center;
+       }
+
+       .volList img {
+           width: 1100px;
+           height: 400px;
+           padding-top: 50px;
+           padding-right: 30px;
+       }
+
+       .volTitle {
+           text-align: center;
+           font-size: 1.4em;
+           font-weight: bold;
+           color: #21b000;
+           padding: 5px 0 20px 0;
+       }
+
+       .volTxt {
+           width: 900px;
+           margin: auto;
+           padding-bottom: 50px;
+       }
+
+       .volList table {
+           border: 0;
+           border-top: 2px solid #666;
+           border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+           width: 900px;
+           margin: auto;
+           border-collapse: collapse;
+           margin-bottom: 30px;
+       }
+
+       .volList table tr td {
+           padding: 10px 0;
+           border-bottom: 1px solid lightgray
+       }
+
+       .volList table tr td:first-child {
+           width: 200px;
+       }
+
+       .volList table tr td:last-child {
+           text-align: left;
+           font-size: 14px;
+       }
+
+       .volList table tr:last-child td {
+           border: 0;
+       }

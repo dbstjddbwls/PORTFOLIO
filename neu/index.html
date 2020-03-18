@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>기획서</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,
+        p,
+        input,
+        select,
+        textarea,
+        button {
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.2px;
+            font-size: 2em;
+        }
+
+        div,
+        p {
+            color: #BABECC;
+            text-shadow: 1px 1px 1px #FFF;
+        }
+        a{
+            text-decoration: none;
+            color: #babecc;
+            text-shadow: 1px 1px 1px #fff;
+            font-size: 18px
+        }
+        .title{
+            text-align: center;
+            padding: 20px 0;
+        }
+        #wrap{
+            width: 780px;
+            margin: auto;
+            background-color: #EBECF0;
+        }
+        
+        .iconBox{
+            padding: 40px 0;
+            overflow: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .icon{
+            width: 100px;
+            height: 100px;
+            border-radius: 19px;
+            background: #ffffff;
+            box-shadow:  5px 5px 25px #bababa, -5px -5px 25px #ffffff;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .icon:hover{
+            transform: scale(1.1);
+        }
+        .icon a{
+            width: 100%;
+            display: block;
+            height: 100%;
+        }
+        .icon i{
+            font-size: 2.5em;
+            padding-top: 25px;
+        }
+        .iconTxt{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 40px;
+        }
+        .iconTxt span{
+            padding-left: 25px;
+        }
+        .icon:hover a{
+            color:  #646B8C;
+        }
+        .icon:hover{
+            background-color: #f2f2f2;
+        }
+        .iconTxt span:nth-child(2){
+            padding-left: 40px;
+        }
+        
+        #design{
+            clear: both;
+            text-align: center;
+        }
+        #design ul{
+            padding: 20px 100px;
+            overflow: auto;
+        }
+        #design li{
+            color:  #646B8C;
+            font-weight: 600;
+            width: 50%;
+            float: left;
+            list-style: none;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .subTitle{
+            padding: 30px; 0
+        }
+        
+        #design p{
+            font-size: 1em;
+            color: #666;
+        }
+        
+        #content{
+            padding: 20px 0;
+        }
+        #content ul{
+            list-style: none;
+            text-align: center;
+        }
+        #content ul li{
+            padding-bottom: 20px;
+            font-size: 28px;
+        }
+        #content ul li:hover{
+            color: #646b8c;
+        }
+        #reference{
+            text-align: center;
+        }
+        #reference img{
+            width: 80%;
+            border-radius: 30px;
+            box-shadow: 5px 5px 25px #bababa, -5px -5px 25px #ffffff;
+            transition: 0.5s;
+            margin-bottom: 10px;
+        }
+        #reference img:hover{
+            transform: scale(1.03);
+        }
+        #reference p{
+            padding-bottom: 60px;
+            font-size: 40px;
+        }
+        .text{
+            padding: 20px 0;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+       <div id="wrap">
+        <div class="title">
+            <h1>우리동네 맛집지도</h1>
+        </div>
+        
+        <div class="iconBox">
+            <div class="icon">
+                <a href="#design">
+                    <i class="fas fa-palette"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#content">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="#reference">
+                    <i class="far fa-clone"></i>
+                </a>
+            </div>
+        </div>
+        <div class="iconTxt">
+            <span>Design</span>
+            <span>Content</span>
+            <span>Reference</span>
+        </div>
+        
+        <div class="title">
+            <h1>Design</h1>
+        </div>
+        <div id="design">
+            <ul>
+                <li>뉴모피즘</li>
+                <li>어플리케이션</li>
+                <li>타블렛 지원 X</li>
+                <li>안드로이드 기반</li>
+            </ul>
+            
+            <h2 class="subTitle">color</h2>
+            
+            <p>Font : #BABECC</p>
+            <p>BG : #BECF0</p>
+            <p>Sub : #646B8C</p>
+        </div>
+        
+        <div id="content">
+            <div class="title">
+                <h1>Content</h1>
+            </div>
+            
+            <ul>
+                <li>맛집리스트 작성</li>
+                <li>앱 내부 또는 SNS로 공유 가능</li>
+                <li>지역, 상호, 사진, 소개글 작성 가능</li>
+                <li>추천을 다수 받은 글은 메인페이지에 기재</li>
+                <li>운영진 추천목록 기능(광고료를 받고 기재 가능)</li>
+            </ul>
+        </div>
+        
+        <div id="reference">
+            <div class="title">
+                <h1>Reference</h1>
+            </div>
+            <div class="text">
+                <img src="neu/pic.PNG" alt="사진" class="pic1 pic">
+                <p>Card App</p>
+            </div>
+            <div class="text">
+                <img src="neu/pic1.PNG" alt="사진" class="pic2 pic">
+                <p>Music App</p>
+            </div>
+            <div class="text">
+                <img src="neu/pic2.PNG" alt="사진" class="pic3 pic">
+                <p>AirBnB</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

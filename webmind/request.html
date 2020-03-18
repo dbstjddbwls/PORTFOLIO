@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>홈페이지 제작의 마음 (주)홈마인드</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="lib/slideBar.js"></script>
+    <link rel="stylesheet" href="css/basic.css">
+    <style>
+        .imgBox {
+            background-image: url(images/req/mainB.png);
+            background-color: rgba(0, 0, 0, 0.7);
+            clear: both;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .mainBox {
+            position: absolute;
+            top: 100px;
+            left: calc(50% - 250px);
+            color: #f2f2f2;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        form {
+            height: 730px;
+            position: relative;
+        }
+
+        .imgTitle {
+            font-weight: 900;
+            font-size: 3em;
+            padding-bottom: 10px;
+        }
+
+        .reqBox {
+            position: absolute;
+            top: 260px;
+            left: 3%;
+            width: 100%;
+        }
+
+        .reqBox input {
+            display: block;
+            padding: 20px 20px;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            width: 40%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #666;
+            border-radius: 10px;
+            color: #f2f2f2;
+        }
+
+        .reqBox input:focus,
+        .reqBox input:active {
+            outline: none;
+        }
+
+        #pay {
+            padding: 20px 20px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            width: 40%;
+            height: 70px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #666;
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        option {
+            color: #666;
+        }
+
+        .reqBox input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .reqBox .num {
+            display: inline-block;
+            width: 12.9%;
+
+        }
+
+        textarea {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 6%;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #666;
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            font-size: 1.5em;
+            width: 50%;
+        }
+
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .req {
+            position: absolute;
+            right: 6%;
+            padding: 20px 40px;
+            border: 2px solid #fff;
+            color: #eee;
+            font-size: 1.2em;
+            font-weight: 900;
+            background-color: #2f8fd9;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .req:hover,
+        .req:active {
+            background-color: dodgerblue;
+        }
+
+        @media screen and (max-width:1300px) {
+            .reqBox input {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width:1130px) {
+                .reqBox input {
+                font-size: 14px;
+            }
+        }
+        
+        @media screen and (max-width:500px){
+            .mainBox{
+                left: calc(50% - 180px);
+            }
+            .imgTxt {
+	            font-size: 18px;
+                }
+            .reqBox input{
+                width: 90%;
+            }
+            textarea{
+                display: none;
+            }
+            .reqBox .num{
+                width: 28%;
+            }
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="headerBox">
+        <header id="header">
+            <div id="topNav">
+                <h1>
+                    <a href="index.html">홈마인드</a>
+                </h1>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="request.html">REQUEST</a></li>
+                    </ul>
+                </nav>
+                <span class="sideBar"><i class="fas fa-bars"></i></span>
+                <nav class="sideMenu">
+                    <ul class="sideList">
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li><a href="work.html">WORK</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="request.html">REQUEST</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="imgBox">
+        <div class="mainBox">
+            <p class="imgTitle">REQUEST</p>
+            <p class="imgTxt">문의를 남겨주시면 확인 후 바로 연락드리겠습니다</p>
+        </div>
+
+        <div class="reqBox">
+            <form action="#">
+                <input type="text" placeholder="회사명">
+                <input type="text" placeholder="성함">
+                <input type="text" placeholder="연락처" class="num"> -
+                <input type="text" class="num"> -
+                <input type="text" class="num">
+                <input type="text" placeholder="이메일">
+                <input type="text" placeholder="기존 가지고계신 홈페이지가 있다면 주소를 입력해주세요">
+                <input type="text" placeholder="참고 홈페이지가 있다면 알려주세요">
+                <input type="text" placeholder="참고 홈페이지가 있다면 알려주세요">
+                <input type="text" placeholder="참고 홈페이지가 있다면 알려주세요">
+                <select name="pay" id="pay">
+                    <option value="" selected disabled> - 예산을 선택하세요 - </option>
+                    <option value="500만원 미만">500만원 미만</option>
+                    <option value="500만원 ~ 1000만원">500만원 ~ 1000만원</option>
+                    <option value="1000만원 ~ 1500만원">1000만원 ~ 1500만원</option>
+                    <option value="1500만원 ~ 2000만원">1500만원 ~ 2000만원</option>
+                    <option value="2000만원 ~ 3000만원">2000만원 ~ 3000만원</option>
+                    <option value="3000만원 이상">3000만원 이상</option>
+                </select>
+                <textarea name="etc" id="etc" cols="30" rows="22" placeholder="내용을 입력해주세요"></textarea>
+
+                <button type="button" class="req">견적문의하기</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <ul class="fList">
+            <li>
+                <i class="far fa-building"></i>
+                <p>(주)홈마인드</p>
+                <p>대표:김윤성</p>
+            </li>
+            <li>
+                <i class="far fa-copy"></i>
+                <p>사업자등록번호: 134-76-65112</p>
+                <p>개인정보책임자:이승택</p>
+            </li>
+            <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>경기도 성남시 분당구 삼평동 91-2</p>
+                <p>JS타워 6층</p>
+            </li>
+            <li>
+                <i class="fas fa-phone"></i>
+                <p>TEL 031-861-0027</p>
+                <p>FAX 031-7712-8530</p>
+            </li>
+            <li>
+                <i class="far fa-envelope"></i>
+                <p>E-Mail</p>
+                <p>dbstjddbwls1 @ gmail.com</p>
+            </li>
+        </ul>
+
+        <div class="copy">
+            Copyright 2020 © Homemind Co., Ltd. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

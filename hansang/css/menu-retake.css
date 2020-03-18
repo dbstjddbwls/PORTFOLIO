@@ -1,0 +1,236 @@
+*:focus{
+    outline: none;
+}
+
+#content {
+    width: 1070px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    font-family: NotoSansKR;
+    position: relative;
+}
+
+#goTop {
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    right: -140px;
+    top: 340px;
+    border: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    transition: 1s;
+    width: 102px;
+    height: 40px;
+    background-color: #a2a1ab;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#view_img {
+    position: absolute;
+    margin: auto;
+    right: -140px;
+    top: 200px;
+    width: 100px;
+    height: 140px;
+    transition: 1s;
+    background-color: #fbfbfb;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+#view_img p {
+    padding: 20px 15px 18px;
+    font-size: 12px;
+}
+
+#view_img img {
+    border: 1px solid #e8e8e8;
+    width: 70px;
+
+}
+
+#top_category {
+    text-align: left;
+    width: 570px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#top_category a {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0px 5px;
+    color: darkgray;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkgray;
+    float: left;
+}
+
+#top_category>a>span:hover {
+    color: #D9322E;
+    font-weight: 400;
+}
+
+#top_category .first_tab {
+    margin-left: 2px;
+}
+
+#top_category>.active {
+    font-weight: 400;
+    color: #d9322e;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #d9322e;
+}
+
+#menu_list {
+    clear: both;
+    padding-top: 20px;
+}
+
+.menu_table .menu_col {}
+
+.menu_table .menu_col .menu_row {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    padding-right: 30px;
+    overflow: hidden;
+    
+}
+
+.menu_row>a>.SaleMark{
+    padding-right: 30px;
+}
+
+.menu_table .menu_col .menu_row .shopbag {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    background-color: transparent;
+    z-index: 200;
+    top: 240px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.menu_table .menu_col .menu_row .shopbag img {
+    width: 100%;
+    height: 70px;
+}
+
+.menu_table .menu_col .menu_row>a>div>img {
+    width: 334px;
+    height: 334px;
+    padding-bottom: 16px;
+    transform: scale(1.00);
+    transition: all 0.5s ease-in-out;
+}
+.menu_table .menu_col .menu_row >a> div {
+    width: 334px;
+    height: 334px;
+    overflow: hidden;
+}
+
+.menu_table .menu_col .menu_row>a>div>img:hover{
+    transform: scale(1.04);
+    transition: all 0.5s ease-in-out;
+}
+.menu_table .menu_col .menu_row .menu_name {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.menu_table .menu_col .menu_row .menu_price {
+    font-size: 20px;
+    font-weight: 500;
+    color: #d9322e;
+    display: block;
+    margin-top: 6px;
+}
+
+.menu_table .menu_col .menu_row .menu_text {
+    display: block;
+    margin-bottom: 100px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #868e96;
+}
+
+.menu_table .menu_col .menu_row .cancel_text {
+    display: block;
+    margin-bottom: 100px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #868e96;
+    text-decoration: line-through;
+}
+
+.page_link {
+    margin-left: 45%;
+    margin-bottom: 120px;
+}
+
+.page_link a, .page_link span {
+    float: left;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.first_page {
+    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-first.png );
+    border: 1px solid #d8d8d8;
+}
+
+.prev_page {
+    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-prev.png);
+    border: 1px solid #d8d8d8;
+    border-left: 0;
+    border-right: 0;
+}
+
+.num_page {
+    position: relative;
+    bottom: 10px;
+    border: 1px solid #d8d8d8;
+    border-right: 0;
+    position: relative;
+    top: 0;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+.num_active {
+    background-color: #d8d8d8;
+}
+
+.next_page {
+    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-next.png);
+    border: 1px solid #d8d8d8;
+}
+
+.last_page {
+    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-last.png);
+    border: 1px solid #d8d8d8;
+    border-left: 0;
+}
+
+.page_link span {
+    cursor: pointer
+}

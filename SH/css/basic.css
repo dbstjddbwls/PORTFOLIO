@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'HS';
+    src: url(font/HS.ttf)
+}
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url(font/BMJUA_ttf.ttf)
+}
+
+@font-face {
+    font-family: 'BMYEON';
+    src: url(font/BMYEONSUNG_ttf.ttf)
+}
+a:hover{
+    text-decoration: none;
+}
+.container {
+    background-image: url(../images/sub_bg_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1136px;
+    width: 640px;
+    position: relative;
+    padding: 0;
+}
+
+.topNav {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.topIcon {
+    color: #555;
+    font-size: 3.8em;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 80px;
+    color: #545a4c;
+}
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    width: 130px;
+    margin-left: 160px;
+    position: relative;
+    bottom: 10px;
+}
+
+.logo span {
+    color: #3d5638;
+    font-family: 'HS';
+    font-size: 2.2em;
+}
+
+.searchIcon {
+    float: right;
+    margin-top: 0;
+}
+
+.searchIcon a{
+    color: #545a4c;
+}
+
+.sidenav {
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding-top: 10px;
+    overflow: hidden;
+    font-family: 'BMJUA';
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a i {
+    margin-right: 20px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#mySidenav p {
+    color: #818181;
+}
+
+#mySidenav a {
+    font-size: 2.3em;
+    margin-bottom: 15px;
+    color: #818181;
+}
+
+#mySidenav a:hover {
+    color: #555;
+}
+
+#mySidenav a:active {
+    color: #555;
+}
+
+#mySidenav span a {
+    color: #afafaa;
+    font-size: 50px;
+}
+
+.store_text {
+    font-size: 2em;
+    border-bottom: 1px solid #818181;
+    width: 130px;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 32px;
+}
+
+.sub_box {
+    margin-left: 32px;
+}
+
+.sub_box p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.sub_box p:nth-child(2) {
+    font-size: 1.2em;
+}
+
+.search_box {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.search {
+    background-color: #eaeaea;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    top: 2px;
+    padding: 10px;
+    color: #afafaf;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.search_inp {
+    width: 250px;
+    height: 44px;
+    margin-left: -6px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 2em;
+    padding-left: 10px;
+    border: 2px solid #eaeaea;
+    border-left: 0;
+}
+
+.store {}
+
+.storeList {
+    width: 100%;
+
+}
+
+.storeList li {
+    padding: 15px 20px;
+    color: #545a4c;
+    font-size: 2em;
+    font-family: 'BMJUA';
+    float: left;
+    width: 33.333%;
+    border-bottom: 3px solid #96a691;
+    text-align: center;
+    cursor: pointer;
+}
+
+.storeList .active {
+    height: 82px;
+    border-bottom: 5px solid #545a4c;
+    z-index: 100;
+}

@@ -1,0 +1,84 @@
+.menuBox .banner {
+    width: 100%;
+}
+
+.menuList {
+    width: 100%;
+
+}
+
+.menuList li {
+
+    color: #545a4c;
+    font-size: 2em;
+    font-family: 'BMJUA';
+    float: left;
+    width: 33.333%;
+    border-bottom: 3px solid #96a691;
+    text-align: center;
+    cursor: pointer;
+    height: 71px;
+    padding-top: 4px;
+
+}
+
+.menuList li span {
+    padding: 10px 78px;
+    border-left: 2px solid #96a691;
+    border-right: 2px solid #96a691;
+
+}
+
+.menuList .active {
+    height: 72px;
+    border-bottom: 5px solid #545a4c;
+    z-index: 100;
+}
+
+
+.foodBox,
+.DrinkBox,
+.setBox {
+    clear: both;
+    padding: 30px 30px;
+}
+
+.foodList li,
+.DrinkList li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.foodList li img,
+.DrinkList li img {
+    width: 60%;
+}
+
+.foodName,
+.DrinkName {
+    font-family: 'BMJUA';
+    font-size: 1.8em;
+    padding-top: 5px;
+    color: #545a4c;
+    margin: 0;
+}
+
+.foodPrice,
+.DrinkPrice {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555
+}
+
+.setList li {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.setBox,
+.DrinkBox {
+    display: none;
+}

@@ -1,0 +1,865 @@
+a:link {
+    color: #495057;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #495057;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #495057;
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+* {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans KR';
+}
+
+.ProName {
+    font-size: 20px;
+    font-weight: 300;
+    color: #495057;
+    margin-top: 4px;
+}
+
+.ProPrice {
+    font-size: 20px;
+    font-weight: 500;
+    color: #d9322e;
+    margin-top: 2px;
+}
+
+.ProPrice2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #adb5bd;
+    margin-top: 2px;
+    text-decoration: line-through;
+}
+
+.ProImg:hover {
+    transform: scale(1.04);
+    transition: all 0.5s ease-in-out;
+}
+
+.ProImg {
+    transform: scale(1.00);
+    transition: all 0.5s ease-in-out;
+}
+
+.SaleMark {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    z-index: 100;
+}
+
+#headerBack {
+    width: 100%;
+    min-width: 1090px;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;
+    z-index: 300;
+}
+
+header {
+    height: 110px;
+    margin: 0 auto;
+    width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+header > .headerGif {
+    width: 180px;
+    position: absolute;
+    top: 10px;
+}
+
+header > a > .headerLogo {
+    width: 213px;
+    margin-top: 48px;
+    margin-left: 429px;
+}
+
+header > .headerLinkUl {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+header > .headerLinkUl > li {
+    float: left;
+    margin-left: 30px;
+}
+
+header > .headerLinkUl > li > a {
+    width: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #495057;
+}
+
+header > .headerLinkUl > li > .SignUp {
+    font-weight: 500;
+    color: #d9322e;
+}
+
+#navBack {
+    width: 100%;
+    min-width: 1090px;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;
+    z-index: 400;
+    box-shadow: 0px 5px 5px 0.5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#navBack2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    min-width: 1090px;
+    overflow-x: hidden;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    z-index: 400;
+    box-shadow: 0px 5px 5px 0.5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: none;
+}
+
+#navBack2>nav>ul>li:first-child{
+    cursor: pointer;
+}
+
+nav {
+    height: 50px;
+    margin: 0 auto;
+    width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+nav > .navUl > li > .listBtn {
+    float: left;
+    width: 24px;
+    margin-top: 3px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+}
+
+nav > .navUl > li {
+    float: left;
+    width: 120px;
+    height: 18px;
+    margin-right: 60px;
+    margin-top: 11px;
+    text-align: center;
+}
+
+nav > .navUl > li:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    color: #495057;
+    cursor: pointer;
+    width: 150px;
+}
+
+nav > .navUl > li > a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #495057;
+}
+
+nav > .navUl > li > a:hover {
+    font-size: 18px;
+    font-weight: 500;
+    color: #D9322E;
+}
+
+nav > .navUl > li:first-child {
+    margin-left: 20px;
+}
+
+nav > .navUl > li:first-child:hover {
+    color: #D9322E;
+}
+
+nav > form > .searchTxt {
+    width: 238px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    bottom: 7px;
+    right: 101px;
+    border-bottom: 4px solid #f2a099;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-left: 2px;
+}
+
+nav > form > a > img {
+    width: 36px;
+    position: absolute;
+    right: 60px;
+    top: 8px;
+}
+
+nav > a > img {
+    width: 36px;
+    position: absolute;
+    right: 60px;
+    top: 8px;
+}
+
+nav > .searchBtn {
+    position: absolute;
+    right: 56px;
+    bottom: 7px;
+    width: 36px;
+    height: 36px;
+}
+
+nav > .cart > .cartLink {
+    width: 36px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    bottom: 6px;
+    top: 10px;
+}
+
+nav > .cart > .cartLink > .cartBag {
+    width: 36px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+}
+
+#navCateBack {
+    width: 100%;
+    min-width: 1090px;
+    overflow-x: hidden;
+    margin: auto;
+    position: absolute;
+    z-index: 100;
+    height: 230px;
+    display: none;
+}
+
+.navCate {
+    margin: 0 auto;
+    width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#navCateUl {
+    float: left;
+    background-color: #fff;
+    width: 180px;
+    height: 226px;
+    opacity: 0.9;
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+#navCateUl > li {
+    margin-left: 20px;
+}
+
+#navCateUl > li > a > img {
+    width: 32px;
+    margin-top: 10px;
+}
+
+#navCateUl > li:nth-child(1) > a > img {
+    width: 26px;
+}
+
+
+
+#navCateUl > li > a > span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #495057;
+    position: relative;
+}
+#navCateUl > li > a > span:hover {
+    color: #D9322E;
+}
+
+#navCateUl > li:nth-child(1) > a > span {
+    position: absolute;
+    top: 12px;
+    padding-left: 6px
+}
+
+#navCateUl > li:nth-child(2) > a > span {
+    position: absolute;
+    top: 60px;
+
+}
+
+#navCateUl > li:nth-child(3) > a > span {
+    position: absolute;
+    top: 102px;
+
+}
+
+#navCateUl > li:nth-child(4) > a > span {
+    position: absolute;
+    top: 140px;
+
+}
+
+#navCateUl > li:nth-child(5) > a > span {
+    position: absolute;
+    top: 180px;
+
+}
+
+#bannerBack {
+    width: 100%;
+    min-width: 1090px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0 auto;
+    position: relative;
+    height: 360px;
+}
+
+.bannerUl {
+    height: 360px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.bannerUl > li {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 360px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.thumbUl {
+    height: 67.5px;
+    margin: 0 auto;
+    width: 640px;
+    padding-left: 225px;
+    padding-right: 225px;
+    position: relative;
+    top: -330px;
+    z-index: 2;
+}
+
+.thumbUl > li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: opacity 1s ease;
+    opacity: 0.5;
+    display: none;
+
+}
+
+.thumbUl > li:first-child {
+    margin-left: 0px;
+}
+
+.thumbUl > li:nth-child(6) {
+    margin-right: 0px;
+}
+
+.thumbUl > li:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    border: none;
+}
+
+.thumbUl > li > img {
+    width: 90px;
+    height: 67.5px;
+    cursor: pointer;
+    transform: scale(1.00);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+
+.barUl {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 660px;
+    padding-left: 205px;
+    padding-right: 205px;
+    position: relative;
+    top: -420px;
+    z-index: 1;
+}
+
+.barUl > li {
+    position: absolute;
+    width: 660px;
+    height: 6px;
+
+}
+
+.activeBar {
+    z-index: 2;
+}
+
+.activeBanner {
+    z-index: 1;
+}
+
+#timeSaleBar {
+    width: 100%;
+    min-width: 1090px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#timeSaleBar > #timeSaleDate {
+    margin: 0 auto;
+    width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    left: 390px;
+    top: 14px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#timeSale {
+    height: 554px;
+    margin: 0 auto;
+    width: 1070px;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+#timeSale > .timeSaleTitle {
+    width: 500px;
+    height: 100px;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 1.6;
+    text-align: left;
+    color: #fff;
+}
+
+#timeSale > .timeSaleTitle span:first-child {
+    font-weight: 400;
+}
+
+#timeSale > .timeSaleTxt1 {
+    margin-top: 74px;
+    width: 330px;
+    height: 38px;
+    font-size: 38px;
+    color: #495057;
+}
+
+#timeSale > .timeSaleTxt2 {
+    margin-top: 16px;
+    width: 330px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #adb5bd;
+}
+
+#timeSale > .timeSaleLink > p {
+    margin-top: 112px;
+    margin-right: 12px;
+    width: 100px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #495057;
+}
+
+#timeSale > .timeSaleLink > img {
+    position: absolute;
+    top: 365px;
+    left: 100px;
+    margin-left: 10px;
+    width: 10px;
+    height: 20px;
+}
+
+#timeSale > .timeProUl {
+    position: absolute;
+    top: 56px;
+    right: 10px;
+
+}
+
+#timeSale > .timeProUl > .timeProLi {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+#timeSale > .timeProUl > .timeProLi > a > .ProImgHover {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+}
+
+#timeSale > .timeProUl > .timeProLi > a > .ProImgHover > .ProImg {
+    width: 330px;
+
+}
+
+#recoBack {
+    clear: both;
+    width: 100%;
+    background-color: #f8f9fa;
+    height: 546px;
+    min-width: 1090px;
+}
+
+#reco {
+    width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    position: relative;
+}
+
+#reco > h1 {
+    width: 100%;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    color: #495057;
+    margin: 0 auto;
+}
+
+#reco > .recoUl {
+    position: absolute;
+    top: 160px;
+}
+
+#reco > .recoUl > .recoLi {
+    float: left;
+    position: relative;
+    margin-left: 30px;
+}
+
+#reco > .recoUl > .recoLi:first-child {
+    margin-left: 0px;
+}
+
+#reco > .recoUl > .recoLi > a > .ProImgHover {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+}
+
+#reco > .recoUl > .recoLi > a > .ProImgHover > .ProImg {
+    width: 240px;
+}
+
+#toDayBack {
+    width: 100%;
+    min-width: 1090px;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;
+}
+
+#toDay {
+    clear: both;
+    width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    position: relative;
+    height: 546px;
+}
+
+#toDay > a > .toDayPro > li > .ProImgHover {
+    width: 690px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#toDay > a > .toDayPro > li > .ProImgHover > .ProImg {
+    width: 690px;
+}
+
+#toDay > a {
+    position: absolute;
+    top: 82px;
+    right: 10px;
+
+}
+
+#toDay > a > .toDayPro > li > p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: normal;
+    height: 24px;
+    color: #495057;
+}
+
+#toDay > a > .toDayPro > li > p:nth-child(3) {
+    color: #adb5bd
+}
+
+#toDay > a > .toDayPri {
+    position: absolute;
+    top: 344px;
+    right: 0px;
+    float: left;
+}
+
+#toDay > a > .toDayPri > li {
+    float: left;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    height: 24px;
+    margin-left: 20px;
+    color: #d9322e;
+}
+
+#toDay > a > .toDayPri > li:nth-child(1) {
+    color: #adb5bd;
+    text-decoration: line-through;
+}
+
+#toDay > .toDayTxt1 {
+    width: 330px;
+    height: 38px;
+    font-size: 38px;
+    color: #495057;
+    position: absolute;
+    top: 216px;
+    left: 10px;
+}
+
+#toDay > .toDayTxt2 {
+    width: 330px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #adb5bd;
+    position: absolute;
+    top: 268px;
+    left: 10px;
+}
+
+#recoMdBack {
+    clear: both;
+    width: 100%;
+    background-color: #f8f9fa;
+    height: 546px;
+    min-width: 1090px;
+}
+
+#recoMd {
+    width: 1050px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#recoMd > h1 {
+    width: 100%;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    color: #495057;
+    margin: 0 auto;
+}
+
+#recoMd > .recoCateUl {
+    position: absolute;
+    top: 160px;
+    left: 50px;
+}
+
+#recoMd > .recoCateUl > li {
+    width: 120px;
+    height: 30px;
+    border-radius: 25px;
+    border: solid 3px #adb5bd;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #adb5bd;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#recoMd > .recoCateUl > li:hover{
+    color: #d9322e;
+    border: 3px solid #d9322e;
+}
+
+#recoMd > .recoCateUl > .recoCateActive {
+    border: solid 3px #d9322e;
+    color: #fff;
+    background-color: #d9322e;
+}
+
+#recoMd > .recoCateUl > .recoCateActive:hover{
+    color: white;
+}
+
+#recoMd > .ProList > ul {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+    opacity: 0;
+}
+
+#recoMd > .ProList > ul > li {
+    float: left;
+    margin-left: 30px;
+}
+
+#recoMd > .ProList > ul > li > a > .ProImgHover {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+}
+
+#recoMd > .ProList > ul > li > a > .ProImgHover > img {
+    width: 240px;
+    height: 240px;
+}
+
+#recoMd > .ProList > .recoProActive {
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+}
+
+#footerBack {
+    clear: both;
+    width: 100%;
+    background-color: #dee2e6;
+    height: 400px;
+    min-width: 1090px;
+}
+
+footer {
+    width: 914px;
+    height: 220px;
+    margin: auto;
+    position: relative;
+    top: 90px;
+}
+
+footer > h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #868e96;
+}
+
+footer li {
+    font-size: 14px;
+    font-weight: 300;
+    color: #868e96;
+}
+
+footer > .footerTxt1 {
+    position: absolute;
+    top: 4px;
+    left: 182px;
+}
+
+footer > .footerTxt1 > li {
+    margin-bottom: 5.2px;
+}
+
+footer > .footerTxt2 {
+    position: absolute;
+    top: 4px;
+    left: 662px;
+}
+
+footer > .footerTxt2 > li {
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+footer > .footerTxt3 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+footer > .footerTxt3 > li:nth-child(2) {
+    font-size: 12px;
+}
+
+footer > .footerSns {
+    position: absolute;
+    right: 16px;
+    bottom: 0px;
+}
+
+footer > .footerSns > li {
+    float: left;
+    margin-left: 12px;
+}
+
+footer > .footerSns > li > img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}

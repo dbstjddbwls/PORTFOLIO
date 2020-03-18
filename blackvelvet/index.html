@@ -1,0 +1,439 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>메인페이지</title>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!--    폰트    -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!--    slick link    -->
+    <link rel="stylesheet" href="jquery/slick/slick.css">
+    <link rel="stylesheet" href="jquery/slick/slick-theme.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+    <script src="jquery/slick/slick.js"></script>
+
+    <!--    slick query(업데이트)    -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.main_item_ul').slick({
+                slidesToShow: 2.5,
+                slidesToScroll: 2
+            });
+
+            /*slick query(트렌드이슈)*/
+            $('.main_trend_ul').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                variableWidth: true
+            });
+            $('.main_exh_ul').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                variableWidth: true
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!--상단 로고-->
+
+    <div class="wrap">
+        <div class="header">
+            <div class="top_logo_icon">
+                <i class="fas fa-bars hambugermenu"></i>
+                <img src="image/logo.svg" alt="logo" class="logo">
+                <i class="fas fa-search search"></i>
+            </div>
+            <!--상단 카테고리-->
+
+            <div class="section_bar">
+                <div class="top_menu_bar">
+                    <ul class="top_menu_list">
+                        <li class="top_button">
+                            <a href="index.html" class="btn_text">홈</a>
+                        </li>
+                        <li class="top_button">
+                            <a href="#" class="btn_text">베스트</a>
+                        </li>
+                        <li class="top_button">
+                            <a href="#" class="btn_text">카테고리</a>
+                        </li>
+                        <li class="top_button">
+                            <a href="#" class="btn_text">브랜드</a>
+                        </li>
+                        <li class="top_button">
+                            <a href="#" class="btn_text">이벤트</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--배너-->
+            <div class="main_banner">
+                <ul class="banner_ul">
+                    <li class="banner_li">
+                        <img src="image/banner_open.jpg" alt="오픈 배너" class="banner">
+
+                    </li>
+                    <li class="banner_li">
+                        <img src="image/banner_bed.jpg" alt="프리미엄침대 배너" class="banner">
+                    </li>
+                    <li class="banner_li">
+                        <img src="image/banner-blackfriday.jpg" alt="블랙프라이데이 배너" class="banner">
+                    </li>
+                </ul>
+            </div>
+
+            <!--업데이트-->
+            <div class="main_update">
+                <div class="main_update_nav">
+                    <span class="main_bold_text">업데이트</span>
+                    <a href="#">
+                        <span class="main_item_more">전체보기</span>
+                    </a>
+                </div>
+                <br>
+                <br>
+                <div class="main_update_clothes">
+                    <ul class="main_item_ul vertical slider">
+                        <li class="main_item_list">
+                            <img src="image/black_long.jpg" alt="블랙롱가디건" class="main_item">
+
+                            <span class="main_item_name">빈티지 롱 가디건</span>
+                            <br>
+                            <span class="main_item_price">44,900</span>
+                        </li>
+                        <li class="main_item_list">
+                            <img src="image/black_denim.jpg" alt="블랙데님셔츠" class="main_item">
+
+                            <span class="main_item_name">블랙 데님셔츠</span>
+                            <br>
+                            <span class="main_item_price">38,500</span>
+                        </li>
+                        <li class="main_item_list">
+                            <img src="image/minimul_log_coat.jpg" alt="미니멀 롱 코트" class="main_item">
+
+                            <span class="main_item_name">미니멀 롱 코트</span>
+                            <br>
+                            <span class="main_item_price">68,900</span>
+                        </li>
+                        <li class="main_item_list">
+                            <img src="image/four-button_jacket.jpg" alt="포버튼자켓" class="main_item">
+
+                            <span class="main_item_name">포 버튼 자켓</span>
+                            <br>
+                            <span class="main_item_price">51,000</span>
+                        </li>
+                        <li class="main_item_list">
+                            <img src="image/way_jacket.jpg" alt="웨이자켓" class="main_item">
+
+                            <span class="main_item_name">블랙 웨이 자켓</span>
+                            <br>
+                            <span class="main_item_price">39,000</span>
+                        </li>
+                        <li class="main_item_list">
+                            <img src="image/long_padding.jpg" alt="류승범롱패딩" class="main_item">
+
+                            <span class="main_item_name">올드아웃 롱패딩</span>
+                            <br>
+                            <span class="main_item_price">97,000</span>
+                        </li>
+                        <li class="main_item_list">
+                            <img src="image/coat.jpg" alt="류승범코드" class="main_item">
+
+                            <span class="main_item_name">트렌치 베이코트</span>
+                            <br>
+                            <span class="main_item_price">77,000</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <!--트렌드이슈-->
+            <div class="main_trends">
+                <div class="main_trends_nav">
+                    <span class="main_bold_text">트렌드이슈</span>
+                    <a href="#">
+                        <span class="main_trend_more">전체보기</span>
+                    </a>
+                </div>
+                <br>
+                <br>
+                <div class="main_trends_news">
+                    <ul class="main_trend_ul vertical slider">
+                        <li class="main_trends_list">
+                            <img src="image/main_trend_FW.jpg" alt="F/W 트렌드" class="main_trends_pic">
+
+                            <span class="main_trend_name">2019 F/W 코트 런어웨이</span>
+                        </li>
+
+                        <li class="main_trends_list">
+                            <img src="image/main_trend_model.jpg" alt="F/W 트렌드" class="main_trends_pic">
+
+                            <span class="main_trend_name">모델 김정우의 겨울 코디</span>
+                        </li>
+
+                        <li class="main_trends_list">
+                            <img src="image/main_trend01.jpg" alt="패션쇼" class="main_trends_pic">
+
+                            <span class="main_trend_name">내년 주목해야할 패션 브랜드</span>
+                        </li>
+
+                        <li class="main_trends_list">
+                            <img src="image/main_trend02.jpg" alt="복고" class="main_trends_pic">
+
+                            <span class="main_trend_name">차가운 바람에도 꺽이지않는 복고열풍!</span>
+                        </li>
+
+                        <li class="main_trends_list">
+                            <img src="image/main_trend03.jpg" alt="패션디자이너" class="main_trends_pic">
+
+                            <span class="main_trend_name">올 한해 주목받았던 패션 디자이너</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--베스트-->
+            <div class="main_best">
+                <div class="main_best_nav">
+                    <span class="main_bold_text">베스트</span>
+                    <a href="#">
+                        <span class="main_best_more">전체보기</span>
+                    </a>
+                </div>
+                <br>
+                <br>
+                <div class="main_best_clothes">
+                    <table class="main_best_chart">
+                        <thead class="best_thead">
+                            <tr class="main_best_category">
+                                <th class="best_sel">Top</th>
+                                <th class="best_none_sel">Pants</th>
+                                <th class="best_none_sel">Outer</th>
+                                <th class="best_none_sel">Shoes</th>
+                                <th class="best_none_sel">Cap</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td colspan="5" class="main_best_pic">
+                                <iframe src="main_clothes_top.html" class="clothes_frm">
+
+                                </iframe>
+                            </td>
+
+                        </tbody>
+
+                    </table>
+                    <!--              
+                                  -more dot-
+                       <div class="main_clothes_dot">
+                        <span class="clothes_dot"></span>
+                        <span class="clothes_dot"></span>
+                        <span class="clothes_dot"></span>
+                        </div>
+                    -->
+                </div>
+            </div>
+
+            <!--신규 브랜드-->
+            <div class="main_brand">
+                <div class="main_brand_nav">
+                    <span class="main_bold_text">신규브랜드</span>
+                    <a href="#">
+                        <span class="main_brand_more">전체보기</span>
+                    </a>
+                </div>
+                <br>
+                <br>
+                <div class="main_brand_ex">
+                    <ul class="main_brand_ul">
+                        <li class="main_brand_li">
+                            <img src="svg/angrycreative_logo.svg" alt="앵그리크리에이티브" class="main_brand_logo">
+                            <div class="main_brand_text">
+                                <span class="main_brand_subj">ANGRY CREATIVE</span>
+                                <br>
+                                <span class="main_brand_cont">앵그리 크리에이티브는 지속적인 놈코어와 뉴트로 트렌드에서 영감을 얻고 소재에서 편안함을 강조한 캐주얼 트렌티 스타일 브랜드 입니다. 주 상품은 악세서리 종류이며 가방이나 구두 등 주로 여성 상품 위주로 판매하고 있습니다</span>
+                            </div>
+                        </li>
+                        <li class="main_brand_li">
+                            <img src="svg/buy-n-large_logo.svg" alt="바이앤라지" class="main_brand_logo">
+                            <div class="main_brand_text">
+                                <span class="main_brand_subj">BUY N LARGE</span>
+                                <br>
+                                <span class="main_brand_cont">바이 앤 라지는 빅 사이즈 전문 쇼핑몰로 XXL과 XXL, XXXL까지 보유하고있는 쇼핑몰입니다.오프라인 매장은 이태원에 위치하고 있으며, 빅 사이즈는 밋밋하다란 편견을 깨는 디자인과 실용성 둘</span>
+                            </div>
+                        </li>
+                        <li class="main_brand_li">
+                            <img src="svg/multysqure_logo.svg" alt="멀티스퀘어" class="main_brand_logo">
+                            <div class="main_brand_text">
+                                <span class="main_brand_subj">MULTY SQURE</span>
+                                <br>
+                                <span class="main_brand_cont">멀티스퀘어(MULTYSQURE)는 음악과 다양한 예술 장르에 새로운 상상력을 더하여 컨텐츠로 만드는 브랜드로, 의류외에도 악세사리나 신발 등 많은 종류의 상품을 보유하고 있는 브랜드입니다</span>
+                            </div>
+                        </li>
+                        <li class="main_brand_li">
+                            <img src="svg/DIN_CLUB_logo.svg" alt="딘클럽" class="main_brand_logo">
+                            <div class="main_brand_text">
+                                <span class="main_brand_subj">딘 클럽</span>
+                                <br>
+                                <span class="main_brand_cont">힙합가수 딘딘이 운영하는 쇼핑몰로, 딘딘 본인이 직접 모델로나서 여러 분위기와 콘셉트의 코디를 알려주고 의상을 판매하는 브랜드이다. 주 상품은 아우터와 상의, 모자, 악세사리 전반이며</span>
+                            </div>
+                        </li>
+                        <li class="main_brand_li">
+                            <img src="svg/ALABYU_logo.svg" alt="알라뷰" class="main_brand_logo">
+                            <div class="main_brand_text">
+                                <span class="main_brand_subj">알라뷰</span>
+                                <br>
+                                <span class="main_brand_cont">알라뷰(ALABYU)는 블랙 컬러 컨셉의 여성 쇼핑몰로 '나 스스로를 사랑할 수 있는 브랜드'를 슬로건으로 내세운 브랜드입니다. 블랙 컬러 한가지만을 취급하면서도 세련된 코디방법과 옷을 판매하</span>
+                            </div>
+                        </li>
+                        <li class="main_brand_li">
+                            <img src="svg/NEXTORY_logo.svg" alt="넥스트로이" class="main_brand_logo">
+                            <div class="main_brand_text">
+                                <span class="main_brand_subj">NEXTORY</span>
+                                <br>
+                                <span class="main_brand_cont">넥스트로이는 이탈리아 명품 글로벌 브랜드입니다. 세심한 원재료의 선정과 제조 공정의 장인 정신, 제품의 부드러움, 편안함, 우아함, 정교함 등을 겸비한 명품 브랜드이며, 최근은 저가시장을 저</span>
+                            </div>
+                        </li>
+                        <li class="main_brand_li">
+                            <img src="svg/HSH_logo.svg" alt="에이치에스에이치" class="main_brand_logo">
+                            <div class="main_brand_text">
+                                <span class="main_brand_subj">에이치에스에이치</span>
+                                <br>
+                                <span class="main_brand_cont">에이치에스에이치(HSH)는 디자이너가 평소에 보고 영감을 얻는 것들을 활용하여 패션에 접목시킨 아티스트 브랜드입니다. 현대적이지만 뻔하지는 않은 독창적인 디자인이 유명하며, 디테일 또한 정</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--기획전-->
+            <div class="main_exh">
+                <div class="main_exh_nav">
+                    <span class="main_bold_text">기획전</span>
+                    <a href="#">
+                        <span class="main_brand_more">전체보기</span>
+                    </a>
+                    <br>
+                    <br>
+                    <div class="main_exh_ex">
+                        <ul class="main_exh_ul vertical slider">
+                            <li class="main_exh_li">
+                                <img src="svg/exh_man.svg" alt="넥스트로이" class="main_exh_pic">
+                                <span class="main_exh_text">NEXTORY 2019 연말 시즌오프</span>
+                                <br>
+                                <span class="main_exh_date">2019.12.01 ~ 2020.01.02</span>
+                            </li>
+
+                            <li class="main_exh_li">
+                                <img src="svg/exh_woman.jpg" alt="여성아우터" class="main_exh_pic">
+                                <span class="main_exh_text">여성 아우터 특가세일</span>
+                                <br>
+                                <span class="main_exh_date">2019.11.01 ~ 2019.12.26</span>
+
+                            </li>
+
+                            <li class="main_exh_li">
+                                <img src="svg/exh_trench.svg" alt="트렌치코트" class="main_exh_pic">
+                                <span class="main_exh_text">트렌치코트 1+1 기획전</span>
+                                <br>
+                                <span class="main_exh_date">2019.12.01 ~ 2019.12.31</span>
+
+                            </li>
+
+                            <li class="main_exh_li">
+                                <img src="svg/exh_winter.svg" alt="겨울 롱패딩" class="main_exh_pic">
+                                <span class="main_exh_text">롱패딩 UP TO 50%</span>
+                                <br>
+                                <span class="main_exh_date">2019.12.12 ~ 2020.02.11</span>
+                            </li>
+
+                            <li class="main_exh_li">
+                                <img src="svg/exh_alabyu.svg" alt="알라뷰" class="main_exh_pic">
+                                <span class="main_exh_text">알라뷰 시즌오프 기획전</span>
+                                <br>
+                                <span class="main_exh_date">2019.11.17 ~ 2019.12.31</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--앱 하단 안내-->
+
+            <div class="main_bottom">
+                <hr class="bt_line_top">
+
+                <div class="bt_text">
+                    <span class="call">고객센터</span>
+                    <span class="call_tel">1544-9876</span>
+                    <span class="return">블랙벨벳 제품 반송 주소</span>
+                    <span class="return_adress">(12345)대전 중구 대종로480번길 15</span>
+                </div>
+                <hr class="bt_line_bottom">
+
+            </div>
+
+
+            <!--앱 최하단 네비게이션-->
+        </div>
+        <div class="main_bottom_nav">
+            <ul class="main_bt_ul">
+                <li class="main_bt_li">
+                    <a href="index.html">
+                        <img src="svg/main.svg" alt="메인페이지">
+                    </a>
+                </li>
+
+                <li class="main_bt_li">
+                    <a href="#">
+                        <img src="svg/heart.svg" alt="최근본목록">
+                    </a>
+                </li>
+
+                <li class="main_bt_li">
+                    <a href="#">
+                        <img src="svg/shopping-cart.svg" alt="장바구니">
+                    </a>
+                </li>
+
+                <li class="main_bt_li">
+                    <a href="#">
+                        <img src="svg/history.svg" alt="최근본목록">
+                    </a>
+                </li>
+
+                <li class="main_bt_li">
+                    <a href="#">
+                        <img src="svg/user.svg" alt="마이페이지">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

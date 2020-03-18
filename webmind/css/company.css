@@ -1,0 +1,254 @@
+.imgBox {
+    background-image: url(../images/company/main.png);
+}
+
+.logo {
+    position: absolute;
+    top: 350px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 100px;
+    display: block;
+}
+
+.imgTxt {
+    position: absolute;
+    top: 500px;
+    left: calc(50% - 250px);
+    color: #f2f2f2;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+
+/*        서비스안내        */
+
+#service {}
+
+#service .serviceList {
+    width: 100%;
+}
+
+.serviceList li {
+    width: 25%;
+    float: left;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.serviceList li img {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.serviceBox {
+    position: absolute;
+    /*top: 150px;*/
+    top: 200px;
+    left: calc(50% - 190px);
+    text-align: center;
+    color: #f2f2f2;
+    margin: auto;
+}
+
+.serviceBox i {
+    font-size: 8em;
+    padding-bottom: 10px;
+}
+
+.serviceBox p {
+    width: 380px;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.serviceList li img {
+    transition: 1s;
+}
+
+.serviceList li:hover img {
+    transform: scale(1.15);
+    background-color: rgba(156, 133, 121, 0.7);
+    transition-timing-function: ease-in-out;
+}
+
+.serviceList li:hover {
+    border: 6px solid #f2f2f2;
+}
+
+.serviceBox .sTxt {
+    display: none;
+    font-size: 1.3em;
+    color: #fff
+}
+
+#produre {
+    clear: both;
+    background-color: #1f2022;
+    text-align: center;
+}
+
+.pTitle {
+    display: block;
+    padding: 40px 0;
+    font-size: 2em;
+    font-family: 'Black Han Sans';
+    letter-spacing: 1px;
+    color: #f2f2f2;
+}
+
+#produre img {
+    padding-bottom: 80px;
+    ;
+}
+
+@media screen and (max-width:1300px) {
+    .serviceBox .sTxt {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    .serviceBox .sTxt {
+        font-size: 1.3em;
+    }
+
+    .serviceList li {
+        width: 50%;
+        height: 400px;
+    }
+
+    #etc .hire,
+    #etc .location {
+        width: 100%;
+    }
+
+    #produre img {
+        width: 100%;
+    }
+    .serviceBox{
+        top:100px;
+    }
+}
+@media screen and (max-width:600px) {
+    .serviceBox .sTxt {
+        font-size: 1.2em;
+        width: 200px;
+        margin-left: 90px;
+        font-weight: bold;
+        color: #fff;
+    }
+    #etc>div{
+        height: 500px;
+    }
+    #etc>div img{
+        height: 500px;
+    }
+    .hire .mainIntro, .location .mainIntro{
+        font-size: 1.5em!important;
+    }
+    .hTxt{
+        width: 390px;
+        margin: auto;
+    }
+    .location .hTxt{
+        width: 380px;
+    }
+}
+/*        구인공고, 약도        */
+
+#etc {
+    clear: both;
+}
+
+.hire {
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hire p,
+.location p {
+    color: #f2f2f2;
+}
+
+.location {
+    width: 50%;
+    position: relative;
+    float: right;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hire img,
+.location img {
+    width: 100%;
+}
+
+.hBox {
+    position: absolute;
+    width: 600px;
+    font-size: 1.5em;
+    top: calc(50% - 170px);
+    left: calc(50% - 300px);
+
+}
+
+.hTitle {
+    padding-bottom: 20px;
+}
+
+.hire .mainIntro,
+.location .mainIntro {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #ffdc1a;
+    padding-bottom: 20px;
+}
+
+.hire .hTxt,
+.location .hTxt {}
+
+.hire img,
+.location img {
+    transition: 1s;
+}
+
+.hire:hover img,
+.location:hover img {
+    transform: scale(1.2);
+}
+
+.hire:hover button,
+.location:hover button {
+    transform: scale(1.1);
+}
+
+.eBtn {
+    color: #ffdc1a;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    border: 3px solid #ffdc1a;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.eBtn i {
+    padding-left: 5px;
+}
+
+
+@media screen and (max-width:700px){
+    .imgTxt{
+        left: calc(50% - 170px);
+        font-size: 2em;
+    }
+}

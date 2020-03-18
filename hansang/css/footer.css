@@ -1,0 +1,85 @@
+#footer {
+    height: 500px;
+    background-color: #dee2e6;
+    text-align: center;
+    margin: auto;
+}
+
+.company_text {
+    margin: auto;
+    padding-top: 99px;
+}
+
+.company_text .company_logo {
+    display: inline-block;
+    color: #868e96;
+    font-size: 26px;
+    font-weight: bold;
+    height: 154px;
+    vertical-align: top;
+
+}
+
+.company_text .company_info {
+    display: inline-block;
+    color: #868e96;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 180px;
+    height: 154px;
+    vertical-align: top;
+}
+
+.company_text .company_info p {
+    height: 20%;
+}
+
+.company_text .company_submenu {
+    height: 154px;
+    display: inline-block;
+    color: #868e96;
+    font-size: 18px;
+    text-align: left;
+}
+
+.company_text .company_submenu p {
+    height: 25%;
+}
+
+.company_block {
+    display: block;
+    height: 5px;
+}
+
+.company_copy {
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    margin: auto;
+    padding-top: 50px;
+    width: 482px;
+    text-align: left;
+}
+
+.company_copy .company_copytext1 {
+    display: block;
+    font-size: 18px;
+    color: #868e96;
+}
+
+.company_copy .company_copytext2 {
+    font-size: 14px;
+    color: #868e96;
+}
+
+.company_icon {
+    display: inline-block;
+    position: relative;
+    left: 155px;
+}
+
+.company_icon a {
+    display: inline-block;
+    margin-right: 10px;
+}

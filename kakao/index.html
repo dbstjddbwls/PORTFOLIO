@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>카카오뱅크</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            margin: auto;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        header {
+            background-image: url(images/bg_main_3.jpg);
+            color: white;
+            width: 100%;
+            height: 410px;
+            background-size: cover;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .topWrap {
+            margin: auto;
+            width: 340px;
+        }
+
+        .wrap {
+            width: 360px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .topTxtBox {
+            padding-top: 80px;
+            font-size: 2em;
+            padding-bottom: 35px;
+        }
+
+        .appBtn {
+            float: left;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            display: inline-block;
+            border-radius: 5px;
+            width: 160px;
+            padding: 15px 15px 15px 20px
+        }
+
+        .firstBtn {
+            cursor: pointer;
+        }
+
+        .lastBtn {
+            float: right;
+            cursor: pointer;
+        }
+
+        .appBox1 {
+            background: url(images/kabang.png);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 19px;
+            background-position: 5px -120px;
+            display: inline-block;
+            position: relative;
+            top: 5px;
+        }
+
+        .appBox2 {
+            background: url(images/kabang.png);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 19px;
+            background-position: -16px -120px;
+            display: inline-block;
+            position: relative;
+            top: 5px;
+        }
+
+        .mainTitle {
+            margin-top: 67px;
+            font-size: 2em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .mainTxt {
+            font-size: 1.1em;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .wrap img {
+            width: 100%;
+        }
+
+        .send img {
+            margin-top: 35px;
+            margin-bottom: 70px;
+            width: 100%;
+        }
+
+        .global {
+            background-color: #f7f7f7;
+            position: relative;
+        }
+
+        .global .wrap {
+            height: 950px;
+        }
+
+        .global .mainTxt {
+            margin-bottom: 73px;
+        }
+
+        .graphKakao {
+            margin-top: 37px;
+        }
+
+        .graphKakao span {
+            display: inline-block;
+            width: 134px;
+            color: #15689f;
+            font-weight: bold;
+        }
+
+        .graphKakao .graph {
+            display: inline-block;
+            width: 85px;
+            height: 5px;
+            background-color: #15689f;
+            position: relative;
+            top: -3px;
+        }
+
+        .graphKakao .subTxt {
+            color: #15689f;
+            margin-left: 136px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        .graphAbank span {
+            display: inline-block;
+            color: #808080;
+            font-weight: bold;
+        }
+
+        .graphAbank .mini {
+            font-weight: 500;
+            display: inline-block;
+            width: 88px;
+        }
+
+        .graphAbank .graph {
+            display: inline-block;
+            width: 255px;
+            height: 5px;
+            background-color: #d5d8da;
+            position: relative;
+            top: -3px;
+        }
+
+        .graphAbank .subTxt {
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 140px;
+            color: darkgray;
+        }
+
+        .global img {
+            margin-top: 60px;
+        }
+
+        .global button {
+            border: 1px solid #dfdfdf;
+            background-color: white;
+            color: #1568b8;
+            padding: 15px 30px;
+            border-radius: 40px;
+            font-weight: bold;
+            position: relative;
+            bottom: 100px;
+            margin-left: 85px;
+        }
+
+        .global .mainTxt {
+            margin: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 37px;
+        }
+
+        .keep .keepImg {
+            margin-top: 40px;
+            margin-bottom: 67px;
+        }
+
+        .keep .imgG {
+            z-index: 10;
+            position: relative;
+            bottom: 40px;
+        }
+
+        .loan {
+            background-color: #559cde;
+            color: white;
+            text-align: center;
+            height: 740px;
+            position: relative;
+
+        }
+
+        .loan .mainTxt {
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        .loanCircle {
+            width: 65px;
+            height: 65px;
+            background-color: yellow;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            border-radius: 55%;
+        }
+
+        .card {
+            text-align: center;
+            border: 0;
+        }
+
+        .card img {
+            margin-top: 45px;
+            margin-bottom: 50px;
+        }
+
+        .card button {
+            margin-bottom: 30px;
+            padding: 20px 20px;
+            border: 2px solid #e6e6e6;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        .cardBg {
+            background: url(images/kabang.png);
+            background-repeat: no-repeat;
+            background-position: -100px -18px;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            top: 7px;
+            left: 4px;
+        }
+
+        .it {
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .itLine {
+            width: 90px;
+            height: 1px;
+            background-color: black;
+            margin: auto;
+        }
+
+        .itList {
+            margin-top: 60px;
+            padding-bottom: 55px;
+            border-bottom: 2px solid #e6e6e6;
+        }
+
+        .itList img {
+            width: 100px;
+            margin-bottom: 25px;
+        }
+
+        .itTitle {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #454545;
+        }
+
+        .itTxt {
+            color: #666666;
+        }
+
+        .mainLogo {
+            font-size: 1.5em;
+            display: inline-block;
+            padding-top: 25px;
+        }
+
+        .menu {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 40px;
+            font-size: 2.5em;
+            cursor: pointer;
+        }
+        header{
+            position: relative;
+        }
+        .topNav{
+            width: 100%;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 0;
+            text-align: left;
+            z-index: 100;
+        }
+        .topNav .cancle{
+            font-weight: 900;
+            font-size: 2.5em;
+            cursor: pointer;
+            margin-left: 25px;
+            padding: 10px 20px;
+            position: relative;
+            top: 10px;
+        }
+        .topNav .navLogo{
+            font-size: 1.5em;
+            text-align: center;
+            display: block;
+            margin: auto;
+            margin-top: -44px;
+            margin-bottom: 40px;
+            padding-top: 10px;
+        }
+        .topNav .navBox ul{
+            margin: 0;
+        }
+        .topNav .navBox ul li{
+            margin-left: 10px;
+            margin-right: 10px;
+            border-bottom: 1px solid #e6e6e6;
+            margin-left: 30px;
+            margin-right: 30px;
+            
+                
+        }
+        .topNav .navBox ul li:last-child{
+            border: 0;
+        }
+        .topNav .navBox ul li a{
+            color: black;
+            display: block;
+            padding: 15px 0;
+        }
+        .topNav .navBox ul li a:hover{
+            text-decoration: none;
+        }
+        .subNav{
+            background-color: #e6e6e6;
+            padding: 20px 10px;
+        }
+        .subNav ul li{
+            float: left;
+            
+        }
+        .subNav ul li a{
+            color: dimgray;
+            font-size: 12px;
+            padding-right: 10px;
+            border-right: 1px solid dimgray;
+            margin-left: 10px;
+        }
+        .subNav ul li:first-child a{
+            margin-left: 0;
+        }
+        .subNav ul li:last-child a{
+            border: 0;
+        }
+        .subNav {
+	padding-left: 32px;
+        }
+        .subNav .navCopy{
+            clear: both;
+            color: dimgray;
+            font-size: 12px;
+        }
+        .subNav button{
+            color: dimgray;
+            width: 60px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .topNav {
+            display: none;
+        }
+        .mainLogo a{
+	    color: #fff;
+        }
+        .mainLogo a:visited, .mainLogo a:hover{
+        text-decoration: none;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="mainLogo">
+            <a href="index.html"><span>Yun<b>bank</b></span></a>
+        </div>
+        <div class="topNav">
+            <span class="cancle">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="navLogo">
+                <span>Yun<b>bank</b></span>
+            </div>
+            <div class="navBox">
+                <ul>
+                    <li class="navList"><a href="intro.html">카카오뱅크 소개</a></li>
+                    <li class="navList"><a href="event.html">공지</a></li>
+                </ul>
+            </div>
+            <div class="subNav">
+                <ul>
+                    <li><a href="#">모바일뱅킹 서비스 이용약관</a></li>
+                    <li><a href="#">전자금융거래약관</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                </ul>
+                <br>
+                <span class="navCopy">copylight &copy; KaKaoBank of Korea Corp.</span>
+                <button type="button">PC버전</button>
+            </div>
+        </div>
+        <div class="topWrap">
+            <div class="top_menu">
+            </div>
+            <div class="logoBox">
+
+            </div>
+            <div class="topTxtBox">
+                같지만 다른 은행<br>
+                카카오뱅크
+            </div>
+            <div class="appBtn firstBtn">
+                <div class="appBox1">
+                </div>
+                Google Play
+            </div>
+            <div class="appBtn lastBtn">
+                <div class="appBox2">
+                </div>
+                App Store
+            </div>
+        </div>
+    </header>
+   
+    <script>
+        $('.menu').on('click',function(){
+            $('.topNav').slideToggle();
+        });
+        
+        $('.cancle').on('click',function(){
+            $('.topNav').slideToggle();
+        });
+    </script>
+
+   
+    <section class="content send">
+        <div class="wrap">
+            <div class="mainTitle">
+                모바일로 더 손쉬운<br>
+                계좌개설, 간편한 이체
+            </div>
+            <div class="mainTxt">
+                공인인증서,OTP 없이 계좌 개설이 간편합니다.<br>
+                여러 건의 이체도 몇 번의 터치로 손쉽게 보낼 수 있습니다.
+            </div>
+            <img src="images/mweb-phone-1@2x-20170821.png" alt="메인이미지">
+        </div>
+    </section>
+
+    <section class="content global">
+        <div class="wrap">
+            <div class="mainTitle">
+                간편 해외송금,<br>
+                파격적인 수수료
+            </div>
+            <div class="mainTxt">
+                미국 유럽을 포함하여 총 22개국에<br>
+                국내 최저 수준의 수수료로 해외송금이 가능합니다
+            </div>
+            <div class="graphKakao">
+                <span>카카오뱅크</span>
+                <div class="graph"></div>
+                <div class="subTxt">
+                    (송금비용 5,000원)
+                </div>
+            </div>
+            <div class="graphAbank">
+                <span>A은행 <span class="mini">(영업점)</span></span>
+                <div class="graph"></div>
+                <div class="subTxt">
+                    (송금수수료+전신료+중개수수료+수취수수료)
+                </div>
+            </div>
+            <img src="images/mweb-phone-2-190122@2x.png" alt="메인이미지">
+            <button type="button">해외 송금수수료 더보기 +</button>
+        </div>
+    </section>
+
+    <section class="content keep">
+        <div class="wrap">
+            <div class="mainTitle">
+                우대조건 없이<br>
+                합리적인 예금과 적금
+            </div>
+            <div class="mainTxt">
+                기대했던 금리와 다르게 복잡한 우대조건에 실망한
+                적이 있었나요? 카카오뱅크의 예금, 적금은 숨겨진
+                우대조건 없이 누구에게나 편하고 합리적입니다.
+            </div>
+            <img src="images/mweb-money-2@2x.png" alt="예금적금이미지" class="keepImg">
+            <img src="images/detail-01-img-phone-8-1@2x.png" alt="예금적금이미지">
+            <img src="images/detail-01-img-phone-gradient-gray@2x.png" alt="예금적금그라이언트" class="imgG">
+        </div>
+    </section>
+
+    <section class="content loan">
+        <div class="wrap">
+            <div class="mainTitle">
+                서류 제출 없는 대출,<br>
+                내가 원하는 시간에
+            </div>
+            <div class="mainTxt">
+                급할땐 언제라도 휴대폰 본인 인증으로<br>
+                비상금을 충전할 수 있습니다
+            </div>
+            <img src="images/mweb-phone-4-181015@2x.png" alt="메인이미지">
+        </div>
+        <div class="loanCircle"></div>
+    </section>
+
+    <section class="content card">
+        <div class="wrap">
+            <div class="mainTitle">
+                프렌즈 체크카드,<br>
+                내가 고르는 선택의 즐거움
+            </div>
+            <div class="mainTxt">
+                프렌즈 디자인부터 멋스러운 블랙 컬러 카드까지<br>
+                비원하는 디자인과 기능을 선택 할 수 있습니다
+            </div>
+            <img src="images/mweb-card@2x.png" alt="메인이미지">
+            <button class="cardMore">
+                자주 이용하는 곳에서 더 특별한 혜택
+                <div class="cardBg">
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <section class="content it">
+        <div class="wrap">
+            <div class="mainTitle">
+                IT 기술로 카카오뱅크를<br>
+                만들어갑니다
+            </div>
+            <div class="itLine">
+
+            </div>
+            <div class="itBox">
+                <div class="itList">
+                    <img src="images/mweb-ico-1@2x.png" alt="아이콘">
+                    <p class="itTitle">간결하고, 유려하게</p>
+                    <p class="itTxt">
+                        작은 모바일 화면에 적합하도록<br>
+                        복잡함을 덜어낸 유려하고 친화적인 UX
+                    </p>
+                </div>
+                <div class="itList">
+                    <img src="images/mweb-ico-2@2x.png" alt="아이콘">
+                    <p class="itTitle">간편한 인증, 철저한 보안</p>
+                    <p class="itTxt">
+                        지문, 비밀번호로 간편한 인증<br>
+                        IT 기술의 강력한 보안 검증과 데이터 암호화
+                    </p>
+                </div>
+                <div class="itList">
+                    <img src="images/mweb-ico-3@2x.png" alt="아이콘">
+                    <p class="itTitle">Mobile First, One App</p>
+                    <p class="itTxt">
+                        모바일에서 뱅킹이 더 쉽고 편리하게<br>
+                        여러 앱을 설치할 필요 없이 하나의 앱으로
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body></html>

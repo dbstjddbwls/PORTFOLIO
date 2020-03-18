@@ -1,0 +1,200 @@
+.headerBox {
+    overflow: auto;
+}
+
+.imgBox {
+    background-image: url(../images/work/mainB.png);
+    background-color: rgba(0, 0, 0, 0.7);
+    clear: both;
+    position: relative;
+}
+
+.mainBox {
+    position: absolute;
+    top: 380px;
+    left: calc(50% - 350px);
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.imgTitle {
+    font-weight: 900;
+    font-size: 4em;
+    padding-bottom: 20px;
+}
+
+.workBox {
+    width: 100%;
+    height: 400px;
+}
+
+#workList .leftBox {
+    color: #666;
+    background-color: #fff;
+}
+
+#workList .rightBox {
+    background-color: #4f5257;
+    color: #f2f2f2;
+}
+
+.workImg {
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.workImg img {
+    width: 90%;
+    height: 100%;
+}
+
+.leftBox .workImg {
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding-left: 100px;
+}
+
+.rightBox .workImg {
+    width: 30%;
+    height: 100%;
+    float: right;
+    padding-right: 100px;
+}
+
+
+.leftBox .workTxt {
+    float: left;
+    padding-left: 50px;
+}
+
+.rightBox .workTxt {
+    float: right;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.workTitle {
+    font-size: 3em;
+    font-weight: 900;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.workMain {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.workSub {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:1300px) {
+    .leftBox .workImg {
+        padding-left: 50px;
+        width: 50%;
+    }
+
+    .rightBox .workImg {
+        padding-right: 50px;
+        width: 50%;
+    }
+
+    .workTxt {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    .leftBox .workImg {
+        float: none;
+        height: 400px;
+        padding-top: 20px;
+        overflow: inherit;
+        width: 100%;
+        text-align: center;
+    }
+    .rightBox .workTxt{
+        padding: 0 30px;
+    }
+    .leftBox .workImg img {
+        width: 50%;
+    }
+
+    .leftBox .workTxt {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .workImg img {
+        height: 400px;
+    }
+
+    .workBox {
+        height: 700px;
+
+    }
+
+    .workTitle {
+        padding-top: 40px;
+    }
+
+    .rightBox .workImg {
+        float: none;
+        height: 400px;
+        padding-top: 20px;
+        overflow: inherit;
+    }
+
+    .rightBox .workTxt {
+        float: none;
+        width: 100%;
+        clear: both;
+        text-align: center;
+
+    }
+
+    .rightBox .workImg {
+        float: right;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightBox .workImg img {
+        width: 50%;
+    }
+}
+
+
+
+    @media screen and (max-width:720px){
+    .mainBox{
+        left: 20px;
+    }
+   .imgTitle, .imgTxt{
+        width: 65%;
+        margin: auto; 
+    }
+    .leftBox .workTxt{
+        padding-left: 0;
+        padding: 0 50px!important;
+    }
+     .rightBox .workTxt{
+        padding-left: 0;
+        padding: 0 55px!important;
+    }
+    .rightBox .workImg{
+        padding: 0 40px!important;
+    }
+    .leftBox .workImg img{
+        width: 100%!important;
+    }
+    .rightBox .workImg img{
+        width: 100%!important;
+    }
+}

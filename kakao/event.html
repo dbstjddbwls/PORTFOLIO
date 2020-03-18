@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>카카오뱅크</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="basic.css">
+    <style>
+        .choiceBox{
+            overflow: auto;
+        }
+        .check{
+            text-align: center;
+            width: 50%;
+            float: left;
+            padding: 20px;
+            position: relative;
+            border-bottom: 1px solid lightgray;
+            cursor: pointer;
+        }
+        .mainTable{
+            clear: both;
+        }
+        .active{
+            border-bottom: 3px solid #666;
+            top: -1px;
+        }
+        .txtBox{
+            padding-top: 20px;
+            border-bottom: 1px solid lightgray;
+            position: relative;
+            cursor: pointer;
+        }
+        .txtBox p{
+            padding: 0 18px;
+        }
+        .txtBox .cName{
+            width: 330px;
+        }
+        .cDate{
+            color: lightgray;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .txtBox .cArrow{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3em;
+        }
+        
+        .eventTable{
+            display: none;
+        }
+        .eventTable .txtBox{
+            overflow: auto;
+            padding-bottom: 20px;
+            vertical-align: middle;
+        }
+        .eventTable .txtBox .cName{
+            padding-top: 20px;
+        }
+        .eventTable .txtBox img{
+            float: left;
+            padding: 0 30px 0 18px;
+        }
+        .eventTable .txtBox .cArrow {
+	    top: 50%;
+            transform: translateY(-50%);
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="mainLogo">
+            <a href="index.html"><span>Yun<b>bank</b></span></a>
+        </div>
+        <div class="topNav">
+            <span class="cancle">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="navLogo">
+                <span>Yun<b>bank</b></span>
+            </div>
+            <div class="navBox">
+                <ul>
+                    <li class="navList"><a href="intro.html">카카오뱅크 소개</a></li>
+                    <li class="navList"><a href="event.html">공지</a></li>
+                </ul>
+            </div>
+            <div class="subNav">
+                <ul>
+                    <li><a href="#">모바일뱅킹 서비스 이용약관</a></li>
+                    <li><a href="#">전자금융거래약관</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                </ul>
+                <br>
+                <span class="navCopy">copylight &copy; KaKaoBank of Korea Corp.</span>
+                <button type="button">PC버전</button>
+            </div>
+        </div>
+    </header>
+   
+    <script src="basic.js"></script>
+    <div class="title">
+           <h1 class="hidden">공지/이벤트</h1>
+            공지/이벤트
+        </div>
+        <div class="choiceBox">
+            <div class="check active" id="gong">공지</div>
+            <div class="check" id="event">이벤트</div>
+        </div>
+        
+        <div class="mainTable">
+            <div class="txtBox">
+                <p class="cName">마이너스통장/신용대출 서류제출 서비스 정상화 안내</p>
+                <p class="cDate">2018.04.03</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">카카오뱅크 전월세보증금 대출 1,000억원 판매달성</p>
+                <p class="cDate">2018.03.15</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">PAYCO 계좌연결 오픈 안내</p>
+                <p class="cDate">2018.03.05</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">[당첨자 발표]'황금개의 해 이벤트' 4주차 당첨 안내</p>
+                <p class="cDate">2018.02.20</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">[당첨자 발표]'황금개의 해 이벤트' 3주차 당첨 안내</p>
+                <p class="cDate">2018.02.08</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">[당첨자 발표]'황금개의 해 이벤트' 2주차 당첨 안내</p>
+                <p class="cDate">2018.02.02</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">[당첨자 발표]'황금개의 해 이벤트' 1주차 당첨 안내</p>
+                <p class="cDate">2018.01.26</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">전월세보증금 대출 신규상품 출시 안내</p>
+                <p class="cDate">2018.01.23</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">카카오페이 계좌연결 오픈 안내</p>
+                <p class="cDate">2018.01.23</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+        </div>
+        
+        <div class="eventTable">
+            <div class="txtBox">
+               <img src="images/sub02%20(1).png" alt="이벤트이미지">
+                <p class="cName">카카오뱅크 고객님께 드리는 신라면세점 특별 혜택</p>
+                <p class="cDate">2018.02.09</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(2).png" alt="이벤트이미지">
+                <p class="cName">카카오뱅크 프렌즈 체크카드 캐시백 프로모션 시즌2</p>
+                <p class="cDate">2018.02.01</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(3).png" alt="이벤트이미지">
+                <p class="cName">[종료] 카카오뱅크 ATM출금 이벤트</p>
+                <p class="cDate">2018.01.29</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(4).png" alt="이벤트이미지">
+                <p class="cName">[종료] 황금개의 해 기념 카카오뱅크 간편이체 이벤트</p>
+                <p class="cDate">2018.01.18</p>
+            </div>
+            <div class="txtBox">
+                <p class="cName">[당첨자발표] ATM수수료 무료 연장기념 신규 가입
+                고객 이모티콘 증정 이벤트</p>
+                <p class="cDate">2018.02.09</p>
+                <p class="cArrow">&rsaquo;</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(5).png" alt="이벤트이미지">
+                <p class="cName">[종료] 카카오뱅크 체크카드 해외결제 이벤트</p>
+                <p class="cDate">2017.12.28</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(6).png" alt="이벤트이미지">
+                <p class="cName">[종료] ATM수수료 무료 연장기념 신규 가입
+                고객 이모티콘 증정 이벤트</p>
+                <p class="cDate">2017.12.14</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(7).png" alt="이벤트이미지">
+                <p class="cName">[종료] 카카오뱅크 고객님께 드리는
+                신라면세점 특별 혜택</p>
+                <p class="cDate">2017.09.25</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(8).png" alt="이벤트이미지">
+                <p class="cName">[종료] 카카오뱅크 프렌즈 체크카드
+                얼리버드 혜택</p>
+                <p class="cDate">2017.08.24</p>
+            </div>
+            <div class="txtBox">
+               <img src="images/sub02%20(9).png" alt="이벤트이미지">
+                <p class="cName">[종료] 카카오뱅크 런칭 기념 이모티콘 이벤트</p>
+                <p class="cDate">2017.08.24</p>
+            </div>
+        </div>
+            <script>
+        $("#gong").click(function(){
+            $(".check").removeClass("active");
+            $(this).addClass("active");
+            $('.mainTable').css({"display":"block"});
+            $('.eventTable').css({"display":"none"});
+        });
+        $("#event").click(function(){
+            $(".check").removeClass("active");
+            $(this).addClass("active");
+            $('.mainTable').css({"display":"none"});
+            $('.eventTable').css({"display":"block"});
+        });
+    </script>
+</body>
+</html>

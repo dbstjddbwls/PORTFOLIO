@@ -1,0 +1,131 @@
+        #notice {
+            border-top: 3px solid #21b000;
+            width: 100%;
+        }
+
+        .noticeTitle {
+            padding-top: 80px;
+            font-size: 1.2em;
+            font-weight: 900;
+            text-align: left;
+            color: #666;
+            padding-bottom: 20px;
+            position: relative;
+        }
+.topNotice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+        .news,
+        .empro {
+            width: 50%;
+            padding-right: 50px;
+        }
+
+        .newsList {
+            border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+            padding: 20px 0;
+            overflow: auto;
+            cursor: pointer;
+        }
+
+        .first {
+            border-top: 2px solid #666;
+        }
+
+        .sum {
+            width: 100px;
+            float: left;
+        }
+
+        .newsBox,
+        .emproBox {
+            float: left;
+            padding: 0 20px;
+            width: 450px;
+        }
+
+        .newsTitle,
+        .emproTitle {
+            font-size: 1.05em;
+            font-weight: bold;
+            padding-bottom: 5px;
+
+        }
+
+        .newsTxt,
+        .emproTxt {
+            font-size: 14px;
+        }
+
+        .more {
+            color: #999;
+            font-size: 14px;
+            position: absolute;
+            right: 0;
+            padding-right: 30px;
+            cursor: pointer;
+            font-weight: 300;
+        }
+
+        .emproList {
+            border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            overflow: auto;
+            cursor: pointer;
+        }
+
+        .last {
+            border-bottom: 2px solid #999;
+        }
+
+        .emproImg {
+            width: 100%;
+            margin-top: 20px;
+            background-image: url(../images/notice/empro.jpg);
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main {
+            clear: both;
+        }
+
+        .noticeList {
+            border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+            padding-top: 20px;
+            overflow: auto;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        .noticeList table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .noticeList table th {
+            border-bottom: 1px solid #999;
+            padding-bottom: 20px;
+        }
+
+        .noticeList table tr {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .noticeList table tr td {
+            padding: 10px 0;
+        }
+
+        .noticeList table tr:last-child {
+            border: 0;
+        }
+
+        .import {
+            color: #21b000;
+            font-weight: bold;
+        }
+

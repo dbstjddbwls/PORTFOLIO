@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/basic.css"><script src="javascript/search.js"></script>
+    <link rel="stylesheet" href="css/complain.css">
+    <style>
+        @font-face {
+            font-family: 'HS';
+            src: url(font/HS.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMJUA';
+            src: url(font/BMJUA_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'BMYEON';
+            src: url(font/BMYEONSUNG_ttf.ttf)
+        }
+
+        @font-face {
+            font-family: 'GUK';
+            src: url(font/GUK.ttf);
+        }
+
+        @font-face {
+            font-family: 'GIMJE';
+            src: url(font/GIMJE.TTF)
+        }
+
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNav">
+            <span onclick="openNav()">
+                <i class="fas fa-bars topIcon" id="menu"></i>
+            </span>
+            <script src="javascript/navSub.js"></script>
+            <div class="logo">
+                <a href="index.html"><span>신림주막</span></a>
+            </div>
+            <span class="searchIcon topIcon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></span>
+            <div class="search_box">
+                <i class="fas fa-search search"></i>
+                <input type="text" class="search_inp">
+            </div>
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                메인
+            </a>
+            <a href="seat.html">
+                <i class="fas fa-check"></i>
+                좌석현황
+            </a>
+            <a href="reservation.html">
+                <i class="far fa-calendar-minus"></i>
+                예약
+            </a>
+            <a href="food.html">
+                <i class="fas fa-utensils"></i>
+                메뉴
+            </a>
+            <a href="event.html">
+                <i class="fas fa-calendar-week"></i>
+                행사
+            </a>
+            <a href="complain.html">
+                <i class="fas fa-archive"></i>
+                소리함
+            </a>
+            <a href="map.html">
+                <i class="far fa-map"></i>
+                약도
+            </a>
+            <div class="store_text">
+                <p>가맹문의</p>
+            </div>
+            <div class="sub_box">
+                <p>대표번호 02-2404-9541</p>
+                <p>서울특별시 관악구 신림동 신림로 340</p>
+                <p>Email ceo@shinmack.net</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="comImg">
+                <i class="fas fa-archive"></i>
+                <p>저희 신림주막은 고객님의<br>소중한 의견에
+                귀 기울여 보다 나은 서비스로 <br> 보답하겠습니다</p>
+            </div>
+            <textarea id="text" cols="50" rows="8" placeholder="내용을 입력해주세요"></textarea>
+        </div>
+        <button type="button" class="submit">등 록</button>
+    </div>
+</body>
+
+</html>

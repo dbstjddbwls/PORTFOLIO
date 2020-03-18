@@ -1,0 +1,46 @@
+.seatBox {
+    clear: both;
+    padding: 30px;
+    margin: auto;
+}
+
+.seatBox img {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.seatBox span {
+    font-size: 1.8em;
+    padding-left: 10px;
+    font-family: "BMJUA"
+}
+
+.fullSeat,
+.okSeat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 12px;
+}
+
+.fullSeat {
+    background-color: #2b9b61;
+}
+
+.okSeat {
+    border: 2px solid #525051;
+    background-color: white;
+    margin-left: 80px;
+}
+
+.seatBox2 {
+    display: inline-block;
+    width: 453px;
+    margin: auto;
+    margin-left: 60px;
+}
+
+.seatBox2 span{
+    color: #666
+}

@@ -1,0 +1,228 @@
+@media screen and (max-width:1300px){
+           .gTitle{
+                font-size: 3em;
+            }
+        }
+        @media screen and (max-width:1202px) {
+            .commentTitle {
+                font-size: 1em;
+            }
+
+            .gallery {
+                height: 750px;
+            }
+        }
+
+        @media screen and (max-width:1130px) {
+
+            .aboutBox {
+                display: block;
+            }
+
+            .aboutBox .profile,
+            .aboutBox .comment {
+                width: 50%;
+                float: left;
+            }
+
+            .aboutBox .skill {
+                clear: both;
+                width: 100%;
+            }
+
+            .gallery {
+                height: 650px;
+            }
+
+            .slick-slide {
+                transform: scale(0.9);
+            }
+
+            .slick-center {
+                transform: scale(1.1);
+            }
+            .gBox .more{
+                font-size: 1.3em;
+            }
+            .gBox:hover .more {
+            bottom: 20%;
+        }
+        }
+
+        @media screen and (max-width:950px) {
+            .gallery {
+                height: 550px;
+            }
+
+            .winter {
+                font-size: 1.5em;
+            }
+
+            .gBox:hover .gTitle {
+                top: 15%;
+            }
+
+            .gBox:hover .gSub {
+                top: 40%;
+            }
+
+            .gBox:hover .more {
+                bottom: 20%;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .gallery {
+                height: 500px;
+            }
+            .topList {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+            .center{
+                padding-top: 120px;
+            }
+            .conName{
+                display: block;
+                text-align: center;
+                width: 100%;
+                padding: 0;
+            }
+            .conTxt{
+                width: 100%;
+                text-align: center;
+            }
+            .gBox .more{
+                font-size: 1.1em;
+            }
+        }
+        
+        
+        
+        @media screen and (max-width:780px){
+            .slick-prev, .slick-next {
+                display: none;
+            }
+            .gBox{
+                width: 50%;
+            }
+            .gallery {
+	        height: 100%;
+            }
+            .slick-next, .slick-prev{
+                display: none;
+            }
+            
+            .aboutBox .profile,
+            .aboutBox .comment{
+                float: none;
+                display: block;
+                width: 100%;
+            }
+            .aboutTxt{
+                width: 100%;
+                padding: 0 20px 30px 20px;
+            }
+        }
+        @media screen and (max-width:770px) {
+            .gallery {
+                height: 100%;
+            }
+            .slideTitle{
+                font-size: 16px;
+            }
+        }
+        
+        @media screen and (max-width:601px){
+            .filterBox{
+                width: 400px;
+            }
+            .conTxt{
+                font-size: 18px;
+            }
+            .gTitle{
+                font-size: 2.3em;
+            }
+            .gSub{
+                font-size: 1.3em;
+            }
+            .gBox .more{
+                font-size: 1em;
+            }
+            .slick-center{
+                transform: scale(1.3);
+            }
+            .slick-list{
+                transform: scale(1.1);
+            }
+        }
+        
+        
+        @media screen and (max-width: 500px) {
+            .top_text .top_text_box h2 {
+                font-size: 2em;
+            }
+            .gTitle{
+                font-size: 2em;
+            }
+            .gSub{
+                font-size: 1.2em;
+            }
+            .gBox .more{
+                width: 70%;
+            }
+        }
+        
+        @media screen and (max-width: 480px){
+            .conBox{
+                width: 70%;
+            }
+            .center li{
+                padding: 0;
+                
+            }
+            .slick-center{
+                transform: scale(1);
+            }
+            
+            .gBox .more{
+                bottom: -50%;
+            }
+            .aboutTxt{
+                font-size: 1.1em;
+            }
+        }
+        
+        @media screen and (max-width: 440px){
+            .gBox{
+                width: 100%;
+            }
+            .gTitle{
+                font-size: 4em;
+            }
+            .gSub{
+                font-size: 2em;
+            }
+            .gBox .more{
+                font-size: 1.3em;
+            }
+            .gSub{
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 400px){
+            .filterBox {
+	            width: 300px;
+                }
+        }
+        
+        @media screen and (max-width: 380px){
+            
+            .aboutBox .comment{
+                display: none;
+            }
+        }

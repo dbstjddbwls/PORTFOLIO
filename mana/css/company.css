@@ -1,0 +1,85 @@
+#company{
+            width: 100%;
+            border-top: 3px solid #21b000;
+        }
+        .companyTitle{
+            padding-top: 100px;
+            padding-bottom: 40px;
+            font-size: 2em;
+            font-weight: 900;
+            text-align: center;
+        }
+        .companyImg{
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 40px;
+        }
+        .comImg1{
+            background-image: url(../images/company/company1.jpg);
+        }
+        .companyTxt{
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: center;
+            width: 1000px;
+            margin: auto;
+            padding-bottom: 0px;
+        }
+        .comImg2 {
+	       background-image: url(../images/company/company2.jpg);
+}
+        .comImg3{
+            background-image: url(../images/company/company3.jpg);
+        }
+        
+        .helpBox {
+	       overflow: auto;
+            clear: both;
+            padding-top: 50px;
+            padding-bottom: 50px;
+}
+        .empro, .donate{
+            width: 50%;
+            float: left;
+            background-color: rgba(0,0,0,0.6);
+            background-size: cover;
+            background-position: center;
+            transition: 0.5s;
+        }
+        .empro a, .donate a{
+            color: #ffbf26;
+            font-size: 2.3em;
+            font-weight: 900;
+            text-align: center;
+            padding: 120px 0 120px 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .empro{
+            background-image: url(../images/company/empro.png);
+        }
+        .donate{
+            background-image: url(../images/company/donate.png);
+        }
+        .helpMore{
+            background-color: transparent;
+            border: 4px solid #ffbf26;
+            padding: 8px 20px;
+            color: #ffbf26;
+            margin-top: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .empro:hover .helpMore, .donate:hover .helpMore{
+            transform: scale(1.1);
+        }
+        .empro:hover, .donate:hover{
+            background-color: rgba(0,0,0,0.4);
+        }

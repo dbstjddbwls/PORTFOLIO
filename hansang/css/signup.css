@@ -1,0 +1,180 @@
+.ess {
+    color: red;
+    position: relative;
+    top: 3px;
+}
+
+*:focus{
+    outline: none;
+}
+.signup_subtext {
+    color: dimgray;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.signup_title {
+    height: 80px;
+    border-bottom: 3px solid #f2a099;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.signup_title .title_bold {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.signup_box {}
+
+.signup_box p {
+    padding: 20px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.signup_box p .signup_text {
+    display: inline-block;
+    width: 200px;
+    font-weight: 600;
+    color: #5c636b;
+}
+
+.signup_box p input {
+    width: 150px;
+    height: 20px;
+}
+
+#post_num{
+    margin-left: 2px;
+}
+.signup_box .sign_email select {
+    height: 24px;
+    width: 150px;
+}
+
+.signup_box .sign_birth select {
+    height: 26px;
+    margin-right: 10px;
+}
+
+.signup_box .sign_birth select:nth-child(3) {
+    width: 80px;
+}
+
+.signup_box .sign_birth select:nth-child(4) {
+    width: 80px;
+}
+
+.signup_box .sign_birth select option {
+    text-align: center;
+}
+
+.signup_box .sign_gender select {
+    height: 26px;
+}
+
+.signup_box .sign_tel select {
+    height: 26px;
+}
+
+.signup_box .sign_tel input {
+    width: 80px;
+}
+
+.signup_box .sign_phone input {
+    width: 80px;
+}
+
+.signup_box .sign_adress .adress_main {
+    margin-left: 206px;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.signup_box .sign_adress .signup_text {
+    position: relative;
+    top: 30px;
+}
+
+.signup_box .sign_adress .adress_sub {
+    margin-left: 206px;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.signup_box .sign_adress button {
+    background-color: #4a525c;
+    color: white;
+    width: 60px;
+    height: 24px;
+    border-radius: 3px;
+}
+
+.signup_box .sign_sms input {
+    width: 20px;
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}
+.signup_box .sign_sms input + label {
+    font-size: 0.9em;
+}
+
+.hidden{
+    display: none;
+}
+#pw_pass{ 
+    padding-left: 10px;
+    color: green;
+    
+}
+#pw_err{
+    padding-left: 10px;
+    color: red;
+}
+
+.signup_btn {
+    margin-top: 50px;
+}
+
+.signup_btn button {
+    width: 400px;
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    margin-left: 30%;
+    color: white;
+    font-size: 1.5em;
+    background-color: #D9322E;
+    cursor:pointer;
+
+}
+.signup_btn button:active{
+    background-color: #c02b28;
+}
+
+#title1 > h1 {
+    margin-top: 50px;
+    width: 1050px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    color: #495057;
+}
+
+#title2 {
+    width: 1050px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: #868e96;
+    padding-top: 22px;
+    padding-bottom: 80px;
+}
+
+#line {
+    border-top: 2px solid #d9322e;
+    width: 1070px;
+    margin: auto;
+}

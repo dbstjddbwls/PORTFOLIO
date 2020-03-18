@@ -1,0 +1,52 @@
+        .topNav {
+            height: 110px;
+        }
+
+        .content {
+            clear: both;
+            margin-bottom: 20px;
+        }
+
+        .comImg {
+            width: 288px;
+            margin: auto;
+            padding-top: 120px;
+            text-align: center;
+        }
+
+        .comImg i {
+            color: darkgreen;
+            font-size: 18em;
+        }
+
+        .comImg p {
+            font-size: 1.8em;
+            font-family: 'BMJUA';
+            color: #545a4c;
+            padding-top: 20px;
+        }
+
+        #text {
+            display: block;
+            margin: auto;
+            border: 2px solid #545a4c;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #text::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .submit {
+            margin: auto;
+            width: 373px;
+            display: block;
+            height: 50px;
+            border: 0;
+            color: #eee;
+            border-radius: 10px;
+            background-color: darkgreen;
+            font-family: 'BMJUA';
+            font-size: 1.5em;
+        }
