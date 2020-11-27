@@ -1,0 +1,55 @@
+(function() {
+        var path = window.location.pathname,
+            site_code = '/'+path.split('/')[1]+'/',
+            cnt = 0,
+            cnt2 = 0,
+            rst = '';
+
+         var html = '"<div id="tmpDiv" style="z-index:9999;position:fixed;right:0;top:0;color:#fff;padding:25px;font-weight:bold;"></div>',
+             tmpDiv;
+
+         // 결과 페이지
+         $("body").append(html);
+         tmpDiv = $("#tmpDiv");         
+       
+        // 경로 확인
+        $(".root img").each(function() {
+            var $this = $(this),
+                $src = $this.attr("data-desktop-src"),
+                $src_mo = $this.attr("data-mobile-src");
+
+
+            var reg = new RegExp("//images.samsung.com/is/image/samsung/assets/", "gi"),
+                reg2 = new RegExp(site_code, "gi"),
+                reg3 = new RegExp("//images.samsung.com/is/image/samsung/assets/", "gi"),
+                reg4 = new RegExp(site_code, "gi");
+
+             if( reg.test($src) && !reg2.test($src) ) {
+                $this.css({
+                    "border" : "10px solid red"
+                });
+                cnt++;
+                console.log("desktop : " + $src);
+            
+            }
+
+             if( reg3.test($src_mo) && !reg4.test($src_mo) ) {
+                $this.css({
+                    "border" : "10px solid red"
+                });
+                cnt2++;
+                console.log("mobile : " + $src_mo);
+            
+            }            
+
+        });
+   
+       // 결과
+        rst  = cnt == 0 ? 'Desktop : 0' : 'Desktop : ' + cnt;
+        rst += cnt2 == 0 ? 'Mobile : 0' : '<br />Mobile : ' + cnt2;
+        tmpDiv.html(rst);
+        
+        cnt == 0 && cnt2 == 0 ? tmpDiv.css("background","green") : tmpDiv.css("background","red");
+
+
+})();
