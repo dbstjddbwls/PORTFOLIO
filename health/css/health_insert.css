@@ -1,0 +1,38 @@
+#insert{width: 660px; margin: 40px auto 0; position: relative; min-height: 88vh; overflow-y: hidden;}
+#insert .insert_form{}
+#insert .insert_form{}
+#insert .insert_form input{font-size:18px; border: 0; border-bottom: 2px solid #000; padding:12px 15px;}
+#insert .insert_form input::placeholder{font-size:18px;}
+#insert .insert_form #parts{width: 410px; margin-right: 20px;}
+#insert .insert_form #date{width:220px}
+#insert .insert_form #memo{margin: 20px 0 40px; width: 100%;}
+
+#insert .insert_form .health_box{margin-top: 40px; position: relative; padding-bottom: 30px;}
+#insert .insert_form .health_box ul{}
+#insert .insert_form .health_box ul li{position: relative; margin-bottom: 60px;}
+#insert .insert_form .health_box ul li .category{width:150px; position: relative; border-bottom: 2px solid #000; padding-bottom: 5px;}
+#insert .insert_form .health_box ul li .category select{display: none;}
+#insert .insert_form .health_box ul li .category .select_value_box{cursor: pointer; position: relative;}
+#insert .insert_form .health_box ul li .category .select_value_box .select_value{padding-left: 5px;}
+#insert .insert_form .health_box ul li .category .select_value_box .select_value_btn{width: 14px; display: block; position: absolute; top: -4px; right: 6px;}
+#insert .insert_form .health_box ul li .category .select_value_box .select_value_btn img{width: 100%;}
+#insert .insert_form .health_box ul li .category .select_value{font-size: 24px; padding-left: 5px; cursor: pointer;}
+#insert .insert_form .health_box ul li .category  ul{ position: absolute; width: 100%; top: 10px; left: 0;}
+#insert .insert_form .health_box .info_list_insert_btn{position: relative; width: 60px; height: 60px; font-size: 32px; bottom: 0px; left: 50%; padding: 10px; transform: translateX(-50%); cursor: pointer;}
+#insert .insert_form .health_box ul li .insert_info{overflow: hidden; margin-top: 40px;}
+#insert .insert_form .health_box ul li .insert_info input{float: left; width: 80px; margin-right: 20px; padding: 0; text-align: center; padding-bottom: 10px;}
+#insert .insert_form .health_box ul li .insert_info input[name="insert_name"]{width: 300px; padding-left: 10px; text-align: left;}
+#insert .insert_form .health_box ul li .insert_info input[name="insert_set"]{}
+#insert .insert_form .health_box ul li .insert_info input[name="insert_weight"]{}
+#insert .insert_form .health_box ul li .insert_info input[name="insert_reps"]{}
+#insert .insert_form .health_box ul li .insert_info .insert_remove{float: right; cursor: pointer; padding: 0 5px;}
+#insert .insert_form .health_box ul li .insert_info .insert_remove img{width: 24px; }
+
+#insert .select_category{position: fixed; z-index: 10; width: 500px; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px; display: none; overflow: hidden;}
+#insert .select_category.active{display:block}
+#insert .select_category li{font-size: 24px; padding: 20px 0; cursor: pointer; text-align: center; background-color: #fff;}
+#insert .select_category li:nth-child(odd){background-color: #eee;}
+#insert .select_category li:hover{background-color: #000; color: #fff;}
+
+#insert .insert_form .add_health{position: relative;width: 200px; height:50px; font-size: 20px; font-weight: bold; cursor: pointer; text-align: center; color: #fff; background-color: #000; border: 0; border-radius: 30px; left: 50%; transform: translateX(-50%);}
+

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'YJChe';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paybooc-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{margin:0; padding:0; font-size: 30px; box-sizing: border-box; color: #333; text-decoration: none; list-style: none; outline: none; font-family: 'paybooc-Medium'; font-weight: normal; letter-spacing: 1px;}
+html{background-color:#fff; min-height: 100vh;}
+body{ max-width: 720px; margin: 0 auto; overflow-x: hidden; border: 1px solid red; letter-spacing: 1px;  background-color: #fff;}
+section{height: 100%;}
+
+#nav{padding: 30px 0; text-align: center; position: relative; border-bottom:4px solid #000}
+#nav .menu{position: absolute; top: 50%; transform: translateY(-50%); left: 30px; cursor: pointer;}
+#nav .menu span{width: 40px; height: 4px; display: block; background-color: #000; margin-bottom: 6px;}
+#nav .menu span:last-child{margin-bottom:0}
+#nav .now_year, #nav .now_year span{font-size: 30px; text-align: center; font-weight: bold;}
+
+body .dimed{position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); z-index: 5; top: 0; left: 0; display: none;}
+body .dimed.active{display:block}
